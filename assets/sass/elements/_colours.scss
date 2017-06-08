@@ -1,0 +1,80 @@
+/* Primary colour */
+$primary: #097567; // Dark green
+
+$primary-dark: mix(black, $primary, 15%);
+$primary-darker: mix(black, $primary, 30%);
+$primary-darkest: mix(black, $primary, 50%);
+
+$primary-light: mix(white, $primary, 20%);
+$primary-lighter: mix(white, $primary, 50%);
+$primary-lightest: mix(white, $primary, 80%);
+
+/* Secondary colour */
+$secondary: #0070B3; // Blue
+
+$secondary-dark: mix(black, $secondary, 15%);
+$secondary-darker: mix(black, $secondary, 30%);
+$secondary-darkest: mix(black, $secondary, 50%);
+
+$secondary-light: mix(white, $secondary, 20%);
+$secondary-lighter: mix(white, $secondary, 50%);
+$secondary-lightest: mix(white, $secondary, 80%);
+
+/* Success colour */
+$success: #84BF24; // Blue
+
+$success-dark: mix(black, $success, 15%);
+$success-darker: mix(black, $success, 30%);
+$success-darkest: mix(black, $success, 50%);
+
+$success-light: mix(white, $success, 20%);
+$success-lighter: mix(white, $success, 50%);
+$success-lightest: mix(white, $success, 80%);
+
+/* Error colour */
+$error: #B10E1E; // Blue
+
+$error-dark: mix(black, $error, 15%);
+$error-darker: mix(black, $error, 30%);
+$error-darkest: mix(black, $error, 50%);
+
+$error-light: mix(white, $error, 20%);
+$error-lighter: mix(white, $error, 50%);
+$error-lightest: mix(white, $error, 80%);
+
+/* Warning colour */
+$warning: #EA890A; // Blue
+
+$warning-dark: mix(black, $warning, 15%);
+$warning-darker: mix(black, $warning, 30%);
+$warning-darkest: mix(black, $warning, 50%);
+
+$warning-light: mix(white, $warning, 20%);
+$warning-lighter: mix(white, $warning, 50%);
+$warning-lightest: mix(white, $warning, 80%);
+
+/* General colours */
+
+$text-primary-colour: #0B0C0C;
+$text-secondary-colour: #6F777B;
+$link-colour: #005EA5;
+$link-hover-colour: #2B8CCC;
+$focus-colour: #FFBF47;
+$visited-colour: #4C2C92;
+$black: #0B0C0C;
+$grey-1: #6F777B;
+$grey-2: #BFC1C3;
+$grey-3: #DEE0E2;
+$grey-4: #F4F4F4;
+
+$alpha: #D54780;
+$beta: #F47A40;
+$discovery: #913A87;
+$live: #85964E;
+$gov-uk-blue: #005EA5;
+$mellow-red: #DF3034;
+$mauve: #6F71AF;
+$baby-pink: #6F777B;
+$green: #005EA5;
+$light-blue: #005EA5;
+$brown: #FFBF47;
