@@ -1,0 +1,35 @@
+/* Primary colour */
+/* Secondary colour */
+/* Success colour */
+/* Error colour */
+/* Warning colour */
+/* General colours */
+.button {
+  color: #097567; }
+
+.full-width {
+  width: 100%;
+  margin: 0; }
+
+#global-header {
+  display: block; }
+
+.header-wrapper {
+  padding: 0.5em 0 0.5em 0;
+  display: block;
+  width: 100%;
+  background: #097567;
+  color: white;
+  height: 2em; }
+
+.header-logo {
+  margin-left: 2.5em; }
+  .header-logo img {
+    margin-right: 1.5em; }
+  .header-logo .name {
+    font-size: 28px;
+    font-kerning: 0.8;
+    line-height: 28px; }
+
+body {
+  font-size: 16px; }

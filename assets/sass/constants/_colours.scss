@@ -1,5 +1,5 @@
 /* Primary colour */
-$primary: #097567; // Dark green
+$primary: #097567;
 
 $primary-dark: mix(black, $primary, 15%);
 $primary-darker: mix(black, $primary, 30%);
@@ -10,7 +10,7 @@ $primary-lighter: mix(white, $primary, 50%);
 $primary-lightest: mix(white, $primary, 80%);
 
 /* Secondary colour */
-$secondary: #0070B3; // Blue
+$secondary: #0070B3;
 
 $secondary-dark: mix(black, $secondary, 15%);
 $secondary-darker: mix(black, $secondary, 30%);
@@ -21,7 +21,7 @@ $secondary-lighter: mix(white, $secondary, 50%);
 $secondary-lightest: mix(white, $secondary, 80%);
 
 /* Success colour */
-$success: #84BF24; // Blue
+$success: #84BF24;
 
 $success-dark: mix(black, $success, 15%);
 $success-darker: mix(black, $success, 30%);
@@ -32,7 +32,7 @@ $success-lighter: mix(white, $success, 50%);
 $success-lightest: mix(white, $success, 80%);
 
 /* Error colour */
-$error: #B10E1E; // Blue
+$error: #B10E1E;
 
 $error-dark: mix(black, $error, 15%);
 $error-darker: mix(black, $error, 30%);
@@ -43,7 +43,7 @@ $error-lighter: mix(white, $error, 50%);
 $error-lightest: mix(white, $error, 80%);
 
 /* Warning colour */
-$warning: #EA890A; // Blue
+$warning: #EA890A;
 
 $warning-dark: mix(black, $warning, 15%);
 $warning-darker: mix(black, $warning, 30%);
