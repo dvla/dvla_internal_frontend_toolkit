@@ -1,0 +1,59 @@
+@mixin heading() {
+    font-weight: bold;
+    color: $text-primary-colour;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.25px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text-large {
+    color: $text-primary-colour;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.text-small {
+    color: $text-primary-colour;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul, ol {
+    &.list-bulleted {
+        list-style-type: disc;
+    }
+
+    &.list-numbered {
+        list-style-type: decimal; 
+    }
+
+    &.list-bulleted, &.list-numbered {
+        color: $text-primary-colour;
+        line-height: 28px;
+    }
+}
