@@ -1,3 +1,55 @@
-.button {
+@mixin button() {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-style: solid;
+
+    &:active, &:focus {
+        outline: 3px solid $focus-colour;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+.btn {
+    @include button();
+    font-size: 15px;
+    padding: 8px 14px;
+}
+
+.btn-sml {
+    @include button();
+    font-size: 14px;
+    padding: 6.5px 12px;
+}
+
+.btn-lrg {
+    @include button();
+    font-size: 16px;
+    padding: 10px 16px;
+}
+
+.btn-primary {
+    color: white;
+    background: $primary;
+    border-bottom: 2px solid $primary-darkest;
+    cursor: pointer;
+
+    &:hover {
+        background: $primary-dark;
+    }
+}
+
+.btn-secondary {
     color: $primary;
+    background: $grey-4;
+    border: 1px solid $grey-2;
+    border-bottom-width: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background: $grey-3;
+    }
 }

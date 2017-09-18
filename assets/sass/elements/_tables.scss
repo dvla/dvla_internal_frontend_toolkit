@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead {
+        th {
+            height: 48px;
+            font-weight: bold;
+            border-color: $grey-2;
+            border-width: 1px 0;
+            border-style: solid;
+
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                background: $grey-4;
+                height: 48px;
+                border-color: $grey-2;
+                border-width: 0 0 1px 0;
+                border-style: solid;
+
+                &:first-child {
+                    padding-left: 16px;
+                }
+            }
+        }
+    }
+}

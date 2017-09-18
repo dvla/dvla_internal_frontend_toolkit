@@ -1,0 +1,60 @@
+.list {
+    width: 100%;
+    color: $black;
+
+    .list-title-row {
+        border-bottom: 2px solid $grey-2;
+        box-sizing: border-box;
+        height: 40px;
+        clear: both;
+
+        .list-title {
+            font-weight: bold;
+            font-size: 20px;
+            width: 50%;
+            float: left;
+        }
+
+        .list-change {
+            width: 50%;
+            float: left;
+            text-align: right;
+            font-weight: bold;
+            color: $primary;
+
+            a {
+                &:visited {
+                    color: $primary;
+                }
+
+                &:hover {
+                    color: $primary-darker;
+                }
+            }
+        }
+
+    }
+
+    .list-row {
+        height: 48px;
+        border-bottom: 1px solid $grey-2;
+        font-size: 16px;
+        clear: both;
+
+        .list-property {
+            width: 50%;
+            float: left;
+            line-height: 48px;
+            padding-left: 16px;
+        }
+
+        .list-data {
+            font-weight: bold;
+            width: 50%;
+            float: left;
+            line-height: 48px;
+        }
+        
+    }
+
+}

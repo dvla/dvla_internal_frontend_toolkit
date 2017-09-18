@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    font-size: 16px;
     width: 100%;
     margin: 0 auto;
 }
@@ -49,6 +48,7 @@ body {
         .name {
             float: left;
             font-size: 28px;
+            line-height: 32px;
             letter-spacing: 0.8;
             color: white;
             font-weight: bold;
@@ -163,7 +163,22 @@ p.grid-example {
 
 h1, h2, h3, h4, h5 {
     &.example {
-        border-bottom: 1px solid;
         padding-bottom: 0.25em;
+        border-radius: 3px;
+        border: 2px solid $secondary;
+        border-left-width: 10px;
+        padding: 10px;
     }
+}
+
+h2.example {
+    border-left-width: 12px;
+}
+
+h3.example {
+    border-left-width: 8px;
+}
+
+h4.example {
+    border-left-width: 6px;
 }

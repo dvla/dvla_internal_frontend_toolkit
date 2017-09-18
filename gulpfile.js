@@ -25,7 +25,7 @@ gulp.task('clean', () => {
 // ---------------------------------------
 
 gulp.task('build', cb => {
-  runsequence('clean', ['styles', 'images', 'scripts'], cb)
+  runsequence('clean', ['styles', 'images', 'fonts', 'scripts'], cb)
 })
 
 // Styles build task ---------------------
@@ -49,6 +49,15 @@ gulp.task('styles', () => {
 gulp.task('images', () => {
   return gulp.src(paths.assetsImg + '**/*')
     .pipe(gulp.dest(paths.publicImg))
+})
+
+// Font build task ---------------------
+// Copies images to /public/images
+// ---------------------------------------
+
+gulp.task('fonts', () => {
+  return gulp.src(paths.assetsFnt + '**/*')
+    .pipe(gulp.dest(paths.publicFnt))
 })
 
 // Scripts build task ---------------------

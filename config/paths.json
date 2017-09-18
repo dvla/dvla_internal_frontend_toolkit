@@ -1,5 +1,6 @@
 {
   "assetsImg": "assets/images/",
+  "assetsFnt": "assets/fonts/",
   "assetsJs": "assets/javascripts/",
   "assetsScss": "assets/sass/",
   "config": "config/",
@@ -7,6 +8,7 @@
   "package": "packages/dvla-internal-elements-sass/",
   "public": "public/",
   "publicImg": "public/images/",
+  "publicFnt": "public/fonts/",
   "publicCss": "public/stylesheets/",
   "publicJs": "public/javascripts/",
   "testSpecs": "test/specs/",
