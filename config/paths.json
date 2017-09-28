@@ -1,8 +1,8 @@
 {
-  "assetsImg": "assets/images/",
-  "assetsFnt": "assets/fonts/",
-  "assetsJs": "assets/javascripts/",
-  "assetsScss": "assets/sass/",
+  "assetsImg": "vendor/assets/images/",
+  "assetsFnt": "vendor/assets/fonts/",
+  "assetsJs": "vendor/assets/javascripts/",
+  "assetsScss": "vendor/assets/sass/",
   "config": "config/",
   "nodeModules": "node_modules/",
   "package": "packages/dvla-internal-elements-sass/",

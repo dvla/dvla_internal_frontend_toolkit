@@ -1,12 +1,12 @@
 {
   "name": "dvla-internal-elements",
-  "private": "true",
   "description": "The DVLA internal elements application",
   "repository": "liam-betsworth/dvla_internal_elements",
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
+  "version": "0.0.1",
   "license": "MIT",
   "engines": {
-    "node": ">=6.0"
+    "node": ">=8.1.4"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -36,10 +36,15 @@
     ]
   },
   "author": {
-    "name": "Driver & Vehicle Licensing Agency",
-    "email": "liam.betsworth@leadin.co.uk"
+    "name": "Driver & Vehicle Licensing Agency"
   },
+  "contributors": [
+    {
+      "name" : "Liam Betsworth",
+      "email" : "liam.betsworth@gofore.com"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/alphagov/govuk_elements/issues"
+    "url": "https://github.com/liam-betsworth/dvla_internal_elements/issues"
   }
 }
