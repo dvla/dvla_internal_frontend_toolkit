@@ -3,7 +3,7 @@
   "description": "The DVLA internal elements application",
   "repository": "liam-betsworth/dvla_internal_elements",
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "engines": {
     "node": ">=8.1.4"
@@ -40,8 +40,8 @@
   },
   "contributors": [
     {
-      "name" : "Liam Betsworth",
-      "email" : "liam.betsworth@gofore.com"
+      "name": "Liam Betsworth",
+      "email": "liam.betsworth@gofore.com"
     }
   ],
   "bugs": {
