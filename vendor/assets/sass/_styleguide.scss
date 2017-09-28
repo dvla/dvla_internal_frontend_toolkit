@@ -1,0 +1,12 @@
+// EXAMPLES
+p.grid-example {
+    background-color: $secondary;
+    min-height: 30px;
+    border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5 {
+    &.example {
+        color: $primary;
+    }
+}

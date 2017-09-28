@@ -1,0 +1,95 @@
+.tabs {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    box-sizing: border-box;
+    font-size: 0;
+    font-weight: 500;
+    border-bottom: 1px solid $grey-2;
+
+    .tab {
+        display: inline-block;
+        background: $grey-4;
+        border: 1px solid $grey-2;
+        font-size: 16px;
+        margin-right: -1px;
+        color: $black;
+
+        &:hover {
+            background: $grey-3;
+        }
+
+        &.active {
+            color: $primary;
+            background: white;
+            border-bottom: 1px solid white;
+
+            &:hover {
+                background: white;
+            }
+
+            a {
+                &:visited {
+                    color: $primary;
+                }
+            }
+            
+        }
+
+        a {
+            display: block;
+            height: calc(100% - 1px);
+            text-decoration: none;
+            padding: 0 24px;
+
+            &:visited {
+                color: $black;
+            }
+        }
+    }
+}
+
+.sub-tabs {
+    margin-top: 32px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 0;
+    font-weight: 500;
+    border-bottom: 1px solid $grey-2;
+
+    .sub-tab {
+        display: inline-block;
+        font-size: 16px;
+        margin-right: -1px;
+        color: $black;
+
+        &:hover {
+            border-bottom: 2px solid $grey-2;
+        }
+
+        &.active {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+
+            a {
+                &:visited {
+                    color: $primary;
+                }
+            }
+            
+        }
+
+        a {
+            display: block;
+            height: calc(100% - 1px);
+            text-decoration: none;
+            padding: 0 32px;
+
+            &:visited {
+                color: $black;
+            }
+        }
+    }
+}

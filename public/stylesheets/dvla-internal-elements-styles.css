@@ -84,6 +84,12 @@ body {
 
 #global-header {
   display: block; }
+  #global-header #global-header-bar {
+    width: 928px;
+    max-width: calc(100% - 32px);
+    height: 8px;
+    margin: 0 auto;
+    background: #DEE0E2; }
 
 #header-wrapper {
   padding: 0.5em 0 0.5em 0;
@@ -265,27 +271,6 @@ div {
   padding: 0 8px;
   float: left; }
 
-p.grid-example {
-  background-color: #0070B3;
-  min-height: 30px;
-  border-radius: 3px; }
-
-h1.example, h2.example, h3.example, h4.example, h5.example {
-  padding-bottom: 0.25em;
-  border-radius: 3px;
-  border: 2px solid #0070B3;
-  border-left-width: 10px;
-  padding: 10px; }
-
-h2.example {
-  border-left-width: 12px; }
-
-h3.example {
-  border-left-width: 8px; }
-
-h4.example {
-  border-left-width: 6px; }
-
 .list {
   width: 100%;
   color: #0B0C0C; }
@@ -347,6 +332,68 @@ table {
     border-style: solid; }
     table tbody tr td:first-child {
       padding-left: 16px; }
+
+.tabs {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: 500;
+  border-bottom: 1px solid #BFC1C3; }
+  .tabs .tab {
+    display: inline-block;
+    background: #F4F4F4;
+    border: 1px solid #BFC1C3;
+    font-size: 16px;
+    margin-right: -1px;
+    color: #0B0C0C; }
+    .tabs .tab:hover {
+      background: #DEE0E2; }
+    .tabs .tab.active {
+      color: #097567;
+      background: white;
+      border-bottom: 1px solid white; }
+      .tabs .tab.active:hover {
+        background: white; }
+      .tabs .tab.active a:visited {
+        color: #097567; }
+    .tabs .tab a {
+      display: block;
+      height: calc(100% - 1px);
+      text-decoration: none;
+      padding: 0 24px; }
+      .tabs .tab a:visited {
+        color: #0B0C0C; }
+
+.sub-tabs {
+  margin-top: 32px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: 500;
+  border-bottom: 1px solid #BFC1C3; }
+  .sub-tabs .sub-tab {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: -1px;
+    color: #0B0C0C; }
+    .sub-tabs .sub-tab:hover {
+      border-bottom: 2px solid #BFC1C3; }
+    .sub-tabs .sub-tab.active {
+      color: #097567;
+      border-bottom: 2px solid #097567; }
+      .sub-tabs .sub-tab.active a:visited {
+        color: #097567; }
+    .sub-tabs .sub-tab a {
+      display: block;
+      height: calc(100% - 1px);
+      text-decoration: none;
+      padding: 0 32px; }
+      .sub-tabs .sub-tab a:visited {
+        color: #0B0C0C; }
 
 body {
   font-size: 16px;
@@ -433,3 +480,37 @@ a {
   a:focus {
     outline: 3px solid #FFBF47;
     background: #FFBF47; }
+
+.alert {
+  width: 100%;
+  text-align: center;
+  border-top-width: 4px;
+  border-top-style: solid;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0B0C0C;
+  padding: 40px 32px 44px 32px; }
+  .alert.success {
+    border-top-color: #84BF24;
+    background: #e6f2d3; }
+    .alert.success:before {
+      content: '✓'; }
+  .alert.info {
+    border-top-color: #0070B3;
+    background: #cce2f0; }
+    .alert.info:before {
+      content: 'ⓘ'; }
+  .alert.warning {
+    border-top-color: #EA890A;
+    background: #fbe7ce; }
+    .alert.warning:before {
+      content: '⚠'; }
+
+p.grid-example {
+  background-color: #0070B3;
+  min-height: 30px;
+  border-radius: 3px; }
+
+h1.example, h2.example, h3.example, h4.example, h5.example {
+  color: #097567; }

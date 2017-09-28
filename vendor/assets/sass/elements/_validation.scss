@@ -1,0 +1,38 @@
+.alert {
+    width: 100%;
+    text-align: center;
+    border-top-width: 4px;
+    border-top-style: solid;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+    padding: 40px 32px 44px 32px;
+
+    &.success {
+        border-top-color: $success;
+        background: $success-lightest;
+
+        &:before {
+            content: '✓';
+        }
+    }
+
+    &.info {
+        border-top-color: $secondary;
+        background: $secondary-lightest;
+
+        &:before {
+            content: 'ⓘ';
+        }
+    }
+
+    &.warning {
+        border-top-color: $warning;
+        background: $warning-lightest;
+
+        &:before {
+            content: '⚠';
+        }
+    }
+}
