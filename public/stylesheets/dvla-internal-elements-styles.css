@@ -85,11 +85,11 @@ body {
 #global-header {
   display: block; }
   #global-header #global-header-bar {
-    width: 928px;
+    width: 960px;
     max-width: calc(100% - 32px);
     height: 8px;
     margin: 0 auto;
-    background: #DEE0E2; }
+    background: #84bab3; }
 
 #header-wrapper {
   padding: 0.5em 0 0.5em 0;
@@ -165,26 +165,24 @@ div {
 
 .container {
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: calc(100% - 32px);
   margin: 0 auto;
-  padding: 0 8px;
   width: 960px;
   min-height: 1px; }
 
 .container-fluid {
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: calc(100% - 32px);
   margin: 0 auto;
-  padding: 0 8px;
   width: 960px;
   min-height: 1px; }
-  @media screen and (min-width: 1012px) {
+  @media screen and (min-width: 1056px) {
     .container-fluid {
       width: 100%;
       padding: 0 32px; } }
 
 .row {
-  margin: 0 0px;
+  margin: 0 -8px;
   clear: both; }
 
 .col-1 {

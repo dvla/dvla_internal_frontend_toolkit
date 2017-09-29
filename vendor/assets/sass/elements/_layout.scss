@@ -11,11 +11,11 @@ body {
      display: block;
 
      #global-header-bar {
-        width: 928px;
+        width: 960px;
         max-width: calc(100% - 32px);
         height: 8px;
         margin: 0 auto;
-        background: $grey-3;
+        background: $primary-lighter;
     }
 }
 
@@ -122,9 +122,9 @@ div {
 
 @mixin container() {
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: calc(100% - 32px);
     margin: 0 auto;
-    padding: 0 8px;
+    // padding: 0 8px;
     width: 960px;
     min-height: 1px;
 }
@@ -136,14 +136,14 @@ div {
 .container-fluid {
     @include container();
 
-    @media screen and (min-width: 1012px) {
+    @media screen and (min-width: 1056px) {
         width: 100%;
         padding: 0 32px;
     }
 }
 
 .row {
-    margin: 0 0px;
+    margin: 0 -8px;
     clear: both;
 }
 
