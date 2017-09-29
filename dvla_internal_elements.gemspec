@@ -20,7 +20,9 @@ Gem::Specification.new do |s|
         "vendor/assets/sass/elements/_layout.scss".freeze,
         "vendor/assets/sass/elements/_lists.scss".freeze,
         "vendor/assets/sass/elements/_tables.scss".freeze,
-        "vendor/assets/sass/elements/_typography.scss".freeze
+        "vendor/assets/sass/elements/_tabs.scss".freeze,
+        "vendor/assets/sass/elements/_typography.scss".freeze,
+        "vendor/assets/sass/elements/_validation.scss".freeze
     ]
     s.homepage = "https://github.com/liam-betsworth/dvla_internal_elements".freeze
     s.summary = "A gem for https://github.com/liam-betsworth/dvla_internal_elements".freeze

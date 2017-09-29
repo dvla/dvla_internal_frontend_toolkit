@@ -11,7 +11,7 @@ body {
      display: block;
 
      #global-header-bar {
-        width: 960px;
+        width: 944px;
         max-width: calc(100% - 32px);
         height: 8px;
         margin: 0 auto;
@@ -122,9 +122,9 @@ div {
 
 @mixin container() {
     box-sizing: border-box;
-    max-width: calc(100% - 32px);
+    max-width: 100%;
     margin: 0 auto;
-    // padding: 0 8px;
+    padding: 0 8px;
     width: 960px;
     min-height: 1px;
 }
@@ -136,7 +136,7 @@ div {
 .container-fluid {
     @include container();
 
-    @media screen and (min-width: 1056px) {
+    @media screen and (min-width: 1012px) {
         width: 100%;
         padding: 0 32px;
     }
