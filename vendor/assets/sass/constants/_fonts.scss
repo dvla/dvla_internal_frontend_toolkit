@@ -19,4 +19,10 @@
     font-weight: bold
 }
 
+@font-face{
+    font-family: dvla-icons;
+    src: url('/public/fonts/myicons.woff');
+}
+
 $primary-font: Interface, 'Helvetica Neue', Arial sans-serif;
+$icon-font: dvla-icons;

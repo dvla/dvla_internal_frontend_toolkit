@@ -53,3 +53,19 @@
         background: $grey-3;
     }
 }
+
+.btn-refresh{
+    position: relative;
+    padding-left: 47.3px;
+    padding-top: 10.6px;
+    padding-bottom: 11.4px;
+    &:before{
+        font-family: $icon-font;
+        content: "\ea03";
+        font-size: 16px;
+        position: absolute;
+        left: 16px;
+        width: 36px;
+        height: 32px;
+    }
+}

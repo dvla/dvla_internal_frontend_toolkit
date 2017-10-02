@@ -1,5 +1,6 @@
 .tabs {
     display: block;
+    padding-left: 0px;
     height: 48px;
     line-height: 48px;
     box-sizing: border-box;
@@ -36,6 +37,7 @@
             
         }
 
+
         a {
             display: block;
             height: calc(100% - 1px);
@@ -46,6 +48,14 @@
                 color: $black;
             }
         }
+    }
+
+    .action{
+        list-style: none;
+        // display: inline-block;
+        float: right;
+        line-height: normal;
+        margin-top: 8px;
     }
 }
 
