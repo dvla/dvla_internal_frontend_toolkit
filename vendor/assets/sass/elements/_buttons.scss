@@ -53,3 +53,19 @@
         background: $grey-3;
     }
 }
+
+.btn-refresh{
+    position: relative;
+    padding-left: 47.3px;
+    padding-top: 10.6px;
+    padding-bottom: 11.4px;
+    &:before{
+        content: "";
+        background-image: url('/public/images/refresh.svg');
+        background-repeat: no-repeat; 
+        position: absolute;
+        left: 16px;
+        width: 36px;
+        height: 32px;
+    }
+}
