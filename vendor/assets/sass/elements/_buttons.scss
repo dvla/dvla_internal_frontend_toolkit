@@ -60,9 +60,9 @@
     padding-top: 10.6px;
     padding-bottom: 11.4px;
     &:before{
-        content: "";
-        background-image: url('/public/images/refresh.svg');
-        background-repeat: no-repeat; 
+        font-family: $icon-font;
+        content: "\ea03";
+        font-size: 16px;
         position: absolute;
         left: 16px;
         width: 36px;
