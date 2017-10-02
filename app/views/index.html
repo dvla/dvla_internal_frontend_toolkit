@@ -119,7 +119,9 @@
                   </div>
                 </div>
               </div>
+
               <h3 class="example">Tables</h3>
+              <h4 class="example">Standard</h2>
               <div>
                 <table>
                   <thead>
@@ -144,6 +146,76 @@
                   </tbody>
                 </table>
               </div>
+              <h4 class="example">TACHOnet</h2>
+              <div>
+                <table class="tachonet-queue">
+                  <thead>
+                    <th class="transaction-type">Transaction type</th>
+                    <th class="tacho-number">Tacho number</th>
+                    <th class="date">Date received</th>
+                    <th class="status">Days old<br />(calendar)</th>
+                  </thead>
+                  <tbody>
+                    <tr class="urgent">
+                      <td class="transaction-type">MCS</td>
+                      <td class="tacho-number"><a href="#">DB17160903129000</a></td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">6</span>
+                      </td>
+                    </tr>
+                    <tr class="waiting">
+                      <td class="transaction-type">ICDL</td>
+                      <td class="tacho-number"><a href="#">DB17160903123420</a></td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">4</span>
+                      </td>
+                    </tr>
+                    <tr class="parked">
+                      <td class="transaction-type">MCS</td>
+                      <td class="tacho-number"><a href="#">DB17160934529000</a></td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">2</span>
+                      </td>
+                    </tr>
+                    <tr class="completed">
+                      <td class="transaction-type">ICDL</td>
+                      <td class="tacho-number"><a href="#">DB17160903129452</a></td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble"></span>
+                      </td>
+                    </tr>
+                    <tr class="urgent disabled">
+                      <td class="transaction-type">MCS</td>
+                      <td class="tacho-number">DB17160903129000</td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">6</span>
+                      </td>
+                    </tr>
+                    <tr class="waiting disabled">
+                      <td class="transaction-type">ICDL</td>
+                      <td class="tacho-number">DB17160903123420</td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">4</span>
+                      </td>
+                    </tr>
+                    <tr class="parked disabled">
+                      <td class="transaction-type">MCS</td>
+                      <td class="tacho-number">DB17160934529000</td>
+                      <td class="date">02 08 2017</td>
+                      <td class="status">
+                        <span class="bubble">2</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
               <h3 class="example">Tabs</h3>
               <div>
                 <ul class="tabs">
@@ -162,8 +234,7 @@
                   <div class="sub-tab"><a href="#">Stock</a></div>
                 </div>
               </div>
-
-              <h3 class="example">Validation</h3>
+        
               <h3 class="example">Forms</h3>
               <div>
                 <div class="list">
@@ -193,7 +264,7 @@
                       Response
                     </div>
                     <div class="list-data">
-                      <select>
+                      <select class="form-control">
                         <option>Not found</option>
                         <option>Not updated</option>
                         <option>Updated</option>
@@ -211,123 +282,28 @@
                 </div>
               </div>
             </div>
-            <h3 class="example">Tables</h3>
-            <h4 class="example">Standard</h2>
+            <h3 class="example">Validation</h3>
+            <h4 class="example">Alert</h4>
+            <h5 class="example">Success</h5>
             <div>
-              <table>
-                <thead>
-                  <th>VIN</th>
-                  <th>Retailer</th>
-                  <th>Make</th>
-                  <th>Model</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="#">EXAMPLEVIN001</a></td>
-                    <td>Harison Motors</td>
-                    <td>Volkswagen</td>
-                    <td>Golf 2.0 TDI</td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">EXAMPLEVIN002</a></td>
-                    <td>Bob‘s Motors</td>
-                    <td>Audi</td>
-                    <td>A4</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="alert success">
+                Successfully created a new user
+              </div>
             </div>
-            <h4 class="example">TACHOnet</h2>
+            <h5 class="example">Information</h5>
             <div>
-              <table class="tachonet-queue">
-                <thead>
-                  <th class="transaction-type">Transaction type</th>
-                  <th class="tacho-number">Tacho number</th>
-                  <th class="date">Date received</th>
-                  <th class="status">Days old<br />(calendar)</th>
-                </thead>
-                <tbody>
-                  <tr class="urgent">
-                    <td class="transaction-type">MCS</td>
-                    <td class="tacho-number"><a href="#">DB17160903129000</a></td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">6</span>
-                    </td>
-                  </tr>
-                  <tr class="waiting">
-                    <td class="transaction-type">ICDL</td>
-                    <td class="tacho-number"><a href="#">DB17160903123420</a></td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">4</span>
-                    </td>
-                  </tr>
-                  <tr class="parked">
-                    <td class="transaction-type">MCS</td>
-                    <td class="tacho-number"><a href="#">DB17160934529000</a></td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">2</span>
-                    </td>
-                  </tr>
-                  <tr class="completed">
-                    <td class="transaction-type">ICDL</td>
-                    <td class="tacho-number"><a href="#">DB17160903129452</a></td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble"></span>
-                    </td>
-                  </tr>
-                  <tr class="urgent disabled">
-                    <td class="transaction-type">MCS</td>
-                    <td class="tacho-number">DB17160903129000</td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">6</span>
-                    </td>
-                  </tr>
-                  <tr class="waiting disabled">
-                    <td class="transaction-type">ICDL</td>
-                    <td class="tacho-number">DB17160903123420</td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">4</span>
-                    </td>
-                  </tr>
-                  <tr class="parked disabled">
-                    <td class="transaction-type">MCS</td>
-                    <td class="tacho-number">DB17160934529000</td>
-                    <td class="date">02 08 2017</td>
-                    <td class="status">
-                      <span class="bubble">2</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="alert info">
+                Update available
+              </div>
             </div>
-
-              <h4 class="example">Alert</h4>
-              <h5 class="example">Success</h5>
-              <div>
-                <div class="alert success">
-                  The user was successfully created
-                </div>
+            <h5 class="example">Warning</h5>
+            <div>
+              <div class="alert warning">
+                There are too many users in the database
               </div>
-              <h5 class="example">Information</h5>
-              <div>
-                <div class="alert info">
-                  Update available
-                </div>
-              </div>
-              <h5 class="example">Warning</h5>
-              <div>
-                <div class="alert warning">
-                  There are too many users in the database
-                </div>
-              </div>
-              <h2 class="example">Grid system</h2>
-              <h3 class="example">Fluid</h3>
+            </div>
+            <h2 class="example">Grid system</h2>
+            <h3 class="example">Fluid</h3>
           </div>
 
           <div class="col-12">

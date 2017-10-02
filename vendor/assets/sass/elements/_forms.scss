@@ -1,7 +1,10 @@
-select{
+form-control {
+    width: 100%;
+    border-radius: 0;
+}
+
+select {
     height: 40px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    border: 2px solid #6d6e70;
-    width: 209px;
+    border: 2px solid $grey-2;
+    font-size: inherit;
 }

@@ -54,14 +54,15 @@
     }
 }
 
-.btn-refresh{
+.btn-refresh {
     position: relative;
     padding-left: 47.3px;
     padding-top: 10.6px;
     padding-bottom: 11.4px;
-    &:before{
+    
+    &:before {
         font-family: $icon-font;
-        content: "\ea03";
+        content: "\ea02";
         font-size: 16px;
         position: absolute;
         left: 16px;

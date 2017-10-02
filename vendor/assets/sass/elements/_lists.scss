@@ -6,18 +6,16 @@
         border-bottom: 2px solid $grey-2;
         box-sizing: border-box;
         height: 40px;
-        clear: both;
+        display: flex;
 
         .list-title {
             font-weight: bold;
             font-size: 20px;
-            width: 50%;
-            float: left;
+            flex: 1 1 50%;
         }
 
         .list-change {
-            width: 50%;
-            float: left;
+            flex: 1 1 50%;
             text-align: right;
             font-weight: bold;
             color: $primary;
@@ -36,24 +34,20 @@
     }
 
     .list-row {
-        height: 48px;
+        padding: 16px;
         border-bottom: 1px solid $grey-2;
         font-size: 16px;
-        clear: both;
+        display: flex;
 
         .list-property {
-            width: 50%;
-            float: left;
-            line-height: 48px;
-            padding-left: 16px;
+            min-height: 16px;
+            flex: 1 1 50%;
         }
 
         .list-data {
             font-weight: bold;
-            width: 50%;
-            float: left;
-            line-height: 48px;
-            min-height: 48px;
+            min-height: 16px;
+            flex: 1 1 50%;
         }
         
     }
