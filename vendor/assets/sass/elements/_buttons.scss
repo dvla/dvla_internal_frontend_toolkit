@@ -62,12 +62,16 @@
     
     &:before {
         font-family: $icon-font;
-        content: "\ea02";
+        content: "\e906";
         font-size: 16px;
         position: absolute;
         left: 16px;
-        top: 8px;
+        top: 12px;
         width: 16px;
         height: 16px;
     }
+}
+
+.btn-spacer-right{
+    margin-right: 32px;
 }

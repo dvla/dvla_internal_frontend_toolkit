@@ -102,6 +102,10 @@ table.tachonet-queue {
                 .bubble {
                     color: white;
                     background: $success;
+                    &::before{
+                        font-family: $icon-font;
+                        content: '\e90a';
+                    }
                 }
             }
 

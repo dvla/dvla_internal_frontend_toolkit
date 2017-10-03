@@ -25,4 +25,10 @@ textarea{
     resize: none;
     height: 144px;
     border: 2px solid $grey-2;
+    margin-bottom: 24px;
+}
+
+.textarea-title{
+    font-weight: bold;    
+    margin-bottom: 8px;
 }
