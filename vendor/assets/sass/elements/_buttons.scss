@@ -107,6 +107,10 @@
             color: $link-hover-colour;
         }
     }
+
+    &:visited{
+        color: $text-primary-colour;
+    }
     
     
 }
