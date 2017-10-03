@@ -75,3 +75,43 @@
 .btn-spacer-right{
     margin-right: 32px;
 }
+
+.btn-spacer-left{
+    margin-left: 32px;
+}
+.btn-spacer-top{
+    margin-top: 32px;
+}
+
+.btn-spacer-bottom{
+    margin-bottom: 32px;
+}
+
+.btn-back{
+    padding-left: 16px;
+    color: $text-primary-colour;
+    &::before{
+        content: '\25BC';
+        // background-image: url('/public/images/triangle-caret-down.svg');
+        // background-repeat: no-repeat;
+        background-size: 28px 12px;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -2px;
+        top: 6px;
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        font-size: 12px;
+
+        &:hover{
+            cursor: pointer;
+            color: $link-hover-colour;
+        }
+    }
+    &:hover::after{
+        // background-color: $link-hover-colour;
+        // background-color: red;
+    }
+    
+}
