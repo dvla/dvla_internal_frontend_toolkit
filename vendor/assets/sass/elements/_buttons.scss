@@ -92,8 +92,6 @@
     color: $text-primary-colour;
     &::before{
         content: '\25BC';
-        // background-image: url('/public/images/triangle-caret-down.svg');
-        // background-repeat: no-repeat;
         background-size: 28px 12px;
         transform: rotate(90deg);
         position: absolute;
@@ -109,9 +107,6 @@
             color: $link-hover-colour;
         }
     }
-    &:hover::after{
-        // background-color: $link-hover-colour;
-        // background-color: red;
-    }
+    
     
 }
