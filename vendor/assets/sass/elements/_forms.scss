@@ -32,3 +32,13 @@ textarea{
     font-weight: bold;    
     margin-bottom: 8px;
 }
+
+.textarea-playback-date{
+    text-align: right;
+}
+
+.textarea-playback{
+    background-color: $grey-3;
+    height: 120px;
+    padding: 24px 22px;
+}
