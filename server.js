@@ -8,7 +8,6 @@ var port = (process.env.PORT || 3000)
 module.exports = app
 
 // Application settings
-app.set('view engine', 'html')
 
 // Set the location of the views file
 var appViews = [
@@ -24,25 +23,33 @@ nunjucks.configure(appViews, {
   noCache: true
 })
 
+app.engine('html', nunjucks.render);
+app.set('view engine', 'html')
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')))
 
-app.use('/', express.static(path.join(__dirname, '/app/views')))
+// app.use('/', express.static(path.join(__dirname, '/app/views')))
+app.get('/', (req, res) => {
+  res.render('index.html');
+})
+app.get('/:page', (req, res) => {
+  res.render(req.params.page);
+})
 
 // Support for parsing data in POSTs
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({
-  extended: true
-}))
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({
+//   extended: true
+// }))
 
-// send assetPath to all views
-app.use(function (req, res, next) {
-  res.locals.asset_path = '/public/'
-  next()
-})
+// // send assetPath to all views
+// app.use(function (req, res, next) {
+//   res.locals.asset_path = '/public/'
+//   next()
+// })
 
 // start the app
 
 app.listen(port, function () {
-    console.log('Listening on port ' + port + '   url: http://localhost:' + port)
+  console.log('Listening on port ' + port + '   url: http://localhost:' + port)
 })

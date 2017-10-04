@@ -1,0 +1,42 @@
+{% block top_of_page %}{% endblock %}
+<html>
+
+<head>
+    <title>{% block page_title %} {% endblock %} DVLA Internal Elements</title>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
+    {% block head %} {% endblock %}
+</head>
+
+<body class="{% block body_classes %}{% endblock %}">
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    {% block body_start %}{% endblock %}
+
+    <div id="global-cookie-message">
+        {% block cookie_message %}{% endblock %}
+    </div>
+
+    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+        <div id="header-wrapper">
+            <div id="header-float-left">
+                <div id="header-logo">
+                    <a href="/" title="Home" id="logo" class="content">
+                        <div id="coat-of-arms" alt=""></div>
+                        <div class="name">DVLA</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="global-header-bar"></div>
+    </header>
+
+    {% block after_header %}{% endblock %}
+
+    <div id="global-header-bar"></div>
+
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>
