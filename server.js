@@ -32,6 +32,9 @@ app.use('/public', express.static(path.join(__dirname, '/public')))
 app.get('/', (req, res) => {
   res.render('index.html');
 })
+app.get('/examples/:page', (req, res) => {
+  res.render(`examples/${req.params.page}`);
+})
 app.get('/:page', (req, res) => {
   res.render(req.params.page);
 })
