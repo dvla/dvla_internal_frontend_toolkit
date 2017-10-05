@@ -28,6 +28,7 @@ body {
     height: 2em;
 
     #header-contents {
+        clear: both;
         margin: 0 auto;
         width: 944px;
         max-width: calc(100% - 32px);
@@ -136,6 +137,7 @@ div {
 
 #content {
     margin: 0 auto;
+    margin-bottom: 2em;
 }
 
 @mixin container() {
@@ -170,7 +172,7 @@ div {
     position: relative;
     min-height: 1px;
     padding: 0 8px;
-    float: left;
+    display: inline-block;
 }
 
 @for $i from 1 through 12 {
