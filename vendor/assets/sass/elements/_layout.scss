@@ -26,16 +26,34 @@ body {
     background: $primary;
     color: white;
     height: 2em;
+
+    #header-contents {
+        margin: 0 auto;
+        width: 944px;
+        max-width: calc(100% - 32px);
+
+        // @media screen and (max-width: 1023px) {
+        //     width: 960px;
+        //     // max-width: calc(100% - 32px);
+        // }
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            padding: 0 40px;
+        }
+    }
 }
 
 #header-float-left {
-    position: absolute;
-    left: 2.5em;
+    // position: absolute;
+    // left: 2.5em;
+    float: left;
 }
 
 #header-float-right {
-    position: absolute;
-    right: 2.5em;
+    // position: absolute;
+    // right: 2.5em;
+    float: right;
 }
 
 #header-logo {
