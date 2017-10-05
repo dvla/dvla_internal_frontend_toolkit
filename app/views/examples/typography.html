@@ -30,11 +30,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <h1>h1. What would you like to do?</h1>
-                <h2>h2. What would you like to do?</h2>
-                <h3>h3. What would you like to do?</h3>
-                <h4>h4. What would you like to do?</h4>
-                <h5>h5. What would you like to do?</h5>
+                {% include './includes/typography/headings.html' %}
             </div>
         </div>
     </div>
@@ -51,8 +47,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <p class="text-small">This is a small paragraph</p>
-                <p class="text-large">This is a large paragraph</p>
+                {% include './includes/typography/paragraphs.html' %}
             </div>
         </div>
     </div>
@@ -69,9 +64,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <p>This is an example <a href="#">link to something</a>.</p>
-                <p><a href="#">An orphan link</a></p>
-                <a href="#" class="btn-back">Back</a>
+                {% include './includes/typography/links.html' %}
             </div>
         </div>
     </div>
@@ -88,18 +81,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <ul class="list-bulleted">
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                </ul>
-                <ol class="list-numbered">
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                </ol>
+                {% include "./includes/typography/lists.html" %}
             </div>
         </div>
     </div>
@@ -116,9 +98,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <p class="inset">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.</p>
+                {% include "./includes/typography/inset.html" %}
             </div>
         </div>
     </div>
@@ -135,9 +115,7 @@
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
-                <div style="margin-top: 8px;" class="important">
-                    <p>This is an important paragraph</p>
-                </div>
+                {% include "./includes/typography/important.html" %}
             </div>
         </div>
     </div>

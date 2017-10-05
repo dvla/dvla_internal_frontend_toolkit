@@ -1,14 +1,22 @@
-{% extends "../layout.html" %}
-
-{% block page_title %}
-  Colour
-{% endblock %}
-
-{% block content %}
+{% extends "../layout.html" %} {% block page_title %} Colour {% endblock %} {% block content %}
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Colour</h1>
+            <h1 class="example">Colours</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="list-numbered">
+                <li><a href="#text">Sass variables</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                {% include './includes/colours/variables.html' %}
+            </div>
         </div>
     </div>
 </div>
