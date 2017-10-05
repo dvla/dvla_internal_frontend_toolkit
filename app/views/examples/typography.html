@@ -40,14 +40,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="headings" class="language-markup"><code><xmp>
-                <h1>h1. What would you like to do?</h1>
-                <h2>h2. What would you like to do?</h2>
-                <h3>h3. What would you like to do?</h3>
-                <h4>h4. What would you like to do?</h4>
-                <h5>h5. What would you like to do?</h5>
-                
-            </xmp></code></pre>
+            <pre id="headings" class="line-numbers language-markup"><code><xmp>{% include './includes/typography/headings.html' %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -65,10 +58,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="paragraphs" class="language-markup"><code><xmp>
-                <p class="text-small">This is a small paragraph</p>
-                <p class="text-large">This is a large paragraph</p>
-            </xmp></code></pre>
+            <pre id="paragraphs" class="line-numbers language-markup"><code><xmp>{% include './includes/typography/paragraphs.html' %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -87,11 +77,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="links" class="language-markup"><code><xmp>
-                <p>This is an example <a href="#">link to something</a>.</p>
-                <p><a href="#">An orphan link</a></p>
-                <a href="#" class="btn-back">Back</a>
-            </xmp></code></pre>
+            <pre id="links" class="line-numbers language-markup"><code><xmp>{% include './includes/typography/links.html' %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -119,21 +105,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="lists" class="language-markup"><code><xmp>
-                <ul class="list-bulleted">
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                    <li>here is an example bulleted list</li>
-                </ul>
-
-                <ol class="list-numbered">
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                    <li>here is an example numbered list</li>
-                </ol>
-            </xmp></code></pre>
+            <pre id="lists" class="line-numbers language-markup"><code><xmp>{% include "./includes/typography/lists.html"  %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -152,9 +124,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="inset" class="language-markup"><code><xmp>
-                <p class="inset">This is an inseted paragraph</p>
-            </xmp></code></pre>
+            <pre id="inset" class="line-numbers language-markup"><code><xmp>{% include "./includes/typography/inset.html"  %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -173,11 +143,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="important" class="language-markup"><code><xmp>
-                <div class="important">
-                    <p>This is an important paragraph</p>
-                </div>
-            </xmp></code></pre>
+            <pre id="important" class="line-numbers language-markup"><code><xmp>{% include "./includes/typography/important.html"  %}</xmp></code></pre>
         </div>
     </div>
     {% endblock %}
