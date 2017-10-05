@@ -35,6 +35,9 @@ app.get('/', (req, res) => {
 app.get('/examples/:page', (req, res) => {
   res.render(`examples/${req.params.page}`);
 })
+app.get('/tacho/:page', (req, res) => {
+  res.render(`tacho/${req.params.page}`);
+})
 app.get('/:page', (req, res) => {
   res.render(req.params.page);
 })
