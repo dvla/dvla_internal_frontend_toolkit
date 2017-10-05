@@ -2,6 +2,8 @@
     width: 100%;
     border-radius: 0;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     &.form-control-1-2 {
         width: 50%;

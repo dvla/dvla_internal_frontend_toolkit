@@ -7,17 +7,7 @@
     <link rel="stylesheet" href="/public/stylesheets/prism.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script src="/public/scripts/prism.js"></script>
-    <script>
-        $(document).ready(() => {
-            $('.xml').each(function(){
-                var html = $(this).html();
-                $(this).empty();
-                $(this).text(html);
-            });
-        });
-        hljs.initHighlightingOnLoad();
-    </script>
+    <script src="/public/javascripts/prism.js"></script>
     {% block head %} {% endblock %}
 </head>
 

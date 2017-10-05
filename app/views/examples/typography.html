@@ -1,11 +1,10 @@
-{% extends "../layout.html" %}
-
-{% block page_title %}
-  Typography
-{% endblock %}
-
-{% block content %}
+{% extends "../layout.html" %} {% block page_title %} Typography {% endblock %} {% block content %}
 <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a href="/" class="btn-back">Back</a>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12">
             <h1 class="example">Typography</h1>
@@ -14,7 +13,12 @@
     <div class="row">
         <div class="col-12">
             <ol class="list-numbered">
-                <li><a href="#">Headings</a></li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#paragraphs">Paragraphs</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#insets">Insets</a></li>
+                <li><a href="#important">Important</a></li>
             </ol>
         </div>
     </div>
@@ -36,16 +40,144 @@
     </div>
     <div class="row">
         <div class="col-12">
-                <pre>
-                    <code class="language-html">
-                        <h1>h1. What would you like to do?</h1>
-                        <h2>h2. What would you like to do?</h2>
-                        <h3>h3. What would you like to do?</h3>
-                        <h4>h4. What would you like to do?</h4>
-                        <h5>h5. What would you like to do?</h5>
-                    </code>
-                </pre>
+            <pre id="headings" class="language-markup"><code><xmp>
+                <h1>h1. What would you like to do?</h1>
+                <h2>h2. What would you like to do?</h2>
+                <h3>h3. What would you like to do?</h3>
+                <h4>h4. What would you like to do?</h4>
+                <h5>h5. What would you like to do?</h5>
+                
+            </xmp></code></pre>
         </div>
     </div>
-</div>
-{% endblock %}
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Paragraphs</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                <p class="text-small">This is a small paragraph</p>
+                <p class="text-large">This is a large paragraph</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="paragraphs" class="language-markup"><code><xmp>
+                <p class="text-small">This is a small paragraph</p>
+                <p class="text-large">This is a large paragraph</p>
+            </xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Links</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                <p>This is an example <a href="#">link to something</a>.</p>
+                <p><a href="#">An orphan link</a></p>
+                <a href="#" class="btn-back">Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="links" class="language-markup"><code><xmp>
+                <p>This is an example <a href="#">link to something</a>.</p>
+                <p><a href="#">An orphan link</a></p>
+                <a href="#" class="btn-back">Back</a>
+            </xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Lists</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                <ul class="list-bulleted">
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                </ul>
+                <ol class="list-numbered">
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="lists" class="language-markup"><code><xmp>
+                <ul class="list-bulleted">
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                    <li>here is an example bulleted list</li>
+                </ul>
+
+                <ol class="list-numbered">
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                    <li>here is an example numbered list</li>
+                </ol>
+            </xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Insets</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                <p class="inset">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="lists" class="language-markup"><code><xmp>
+                <p class="inset">This is an inseted paragraph</p>
+            </xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Important</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                <div style="margin-top: 8px;" class="important">
+                    <p>This is an important paragraph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="important" class="language-markup"><code><xmp>
+                <div class="important">
+                    <p>This is an important paragraph</p>
+                </div>
+            </xmp></code></pre>
+        </div>
+    </div>
+    {% endblock %}

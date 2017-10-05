@@ -88,7 +88,8 @@
 }
 
 .btn-back{
-    padding-left: 16px;
+    position: relative;
+    padding-left: 24px;
     color: $text-primary-colour;
     &::before{
         content: '\25BC';
@@ -96,18 +97,18 @@
         transform: rotate(90deg);
         position: absolute;
         left: -2px;
-        top: 6px;
+        top: 4px;
         display: inline-block;
         height: 28px;
         width: 28px;
         font-size: 12px;
 
-        &:hover{
-            cursor: pointer;
-            color: $link-hover-colour;
-        }
     }
 
+    &:hover{
+        cursor: pointer;
+        color: $link-hover-colour;
+    }
     &:visited{
         color: $text-primary-colour;
     }
