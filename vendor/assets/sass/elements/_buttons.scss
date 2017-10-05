@@ -88,26 +88,32 @@
 }
 
 .btn-back{
-    position: relative;
-    padding-left: 24px;
+    padding-left: 16px;
     color: $text-primary-colour;
+    display: inline-block;
+    margin-top: 16px;
+    position: relative;
+    border-bottom: 1px solid $text-primary-colour;
+    text-decoration: none;
+    
     &::before{
-        content: '\25BC';
-        background-size: 28px 12px;
-        transform: rotate(90deg);
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 5px solid rgba(0, 0, 0, 0);
+        border-right: 6px solid $text-primary-colour;
+        border-bottom: 5px solid rgba(0, 0, 0, 0);
         position: absolute;
-        left: -2px;
-        top: 4px;
-        display: inline-block;
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
 
     }
 
     &:hover{
         cursor: pointer;
-        color: $link-hover-colour;
+        color: $text-primary-colour;
     }
     &:visited{
         color: $text-primary-colour;

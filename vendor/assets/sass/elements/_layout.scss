@@ -122,9 +122,9 @@ div {
 
 @mixin container() {
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: calc(100% - 16px);
     margin: 0 auto;
-    padding: 0 8px;
+    // padding: 0 8px;
     width: 960px;
     min-height: 1px;
 }
@@ -136,14 +136,14 @@ div {
 .container-fluid {
     @include container();
 
-    @media screen and (min-width: 1012px) {
+    @media screen and (min-width: 1024px) {
         width: 100%;
         padding: 0 32px;
     }
 }
 
 .row {
-    margin: 0 -8px;
+    // margin: 0 -8px;
     clear: both;
 }
 

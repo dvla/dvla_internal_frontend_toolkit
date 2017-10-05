@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/public/stylesheets/dvla-internal-elements-styles.css" />
     <link rel="stylesheet" href="/public/stylesheets/prism.css">
     <link rel="stylesheet" href="/public/stylesheets/prism-line-numbers.css">
+    <meta name="viewport" content="width=device-width"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="/public/javascripts/prism.js"></script>
@@ -39,10 +40,9 @@
 
     {% block after_header %}{% endblock %}
 
-    <div id="global-header-bar"></div>
-
-    {% block content %}{% endblock %}
-
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 
 </html>
