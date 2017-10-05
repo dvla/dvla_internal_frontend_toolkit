@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/public/stylesheets/prism-line-numbers.css">
     <meta name="viewport" content="width=device-width"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="/public/javascripts/prism.js"></script>
     <script src="/public/javascripts/prism-line-numbers.js"></script>
     {% block head %} {% endblock %}
@@ -19,7 +19,7 @@
         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
     </script>
     {% block body_start %}{% endblock %}
-
+    
     <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
         <div id="header-wrapper">
             <div id="header-contents">
@@ -35,10 +35,10 @@
         </div>
         <div id="global-header-bar"></div>
     </header>
-
+    
     {% block after_header %}{% endblock %}
-
-    <main>
+    
+    <main id="content">
         {% block content %}{% endblock %}
     </main>
 </body>
