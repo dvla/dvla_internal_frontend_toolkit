@@ -40,6 +40,7 @@ pre.language-markup{
     text-align: center;
      span{
         display: block;
+        font-weight: bold;
     }
     .swatch{
         margin: 8px;
@@ -82,7 +83,7 @@ pre.language-markup{
         &.swatch-grey-4{
             background-color: $grey-4;
         }
-        &.swatch-aplha{
+        &.swatch-alpha{
             background-color: $alpha;
         }
         &.swatch-beta{
