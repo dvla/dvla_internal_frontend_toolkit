@@ -164,7 +164,9 @@ div {
 
 .row {
     // margin: 0 -8px;
-    clear: both;
+    //clear: both;
+    box-sizing: border-box;
+    font-size: 0;
 }
 
 @mixin col($ratio) {
@@ -173,6 +175,8 @@ div {
     min-height: 1px;
     padding: 0 8px;
     display: inline-block;
+    vertical-align: top;
+    font-size: $normal-font-size;
 }
 
 @for $i from 1 through 12 {
