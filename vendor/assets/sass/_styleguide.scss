@@ -49,6 +49,102 @@ pre.language-markup{
         height: 60px;
         border-radius: 100%;
 
+        &.swatch-primary-dark{
+            background-color: $primary-dark;
+        }
+        &.swatch-primary-darker{
+            background-color: $primary-darker;
+        }
+        &.swatch-primary-darkest{
+            background-color: $primary-darkest;
+        }
+        &.swatch-primary-light{
+            background-color: $primary-light;
+        }
+        &.swatch-primary-lighter{
+            background-color: $primary-lighter;
+        }
+        &.swatch-primary-lightest{
+            background-color: $primary-lightest;
+        }
+
+        &.swatch-secondary-dark{
+            background-color: $secondary-dark;
+        }
+        &.swatch-secondary-darker{
+            background-color: $secondary-darker;
+        }
+        &.swatch-secondary-darkest{
+            background-color: $secondary-darkest;
+        }
+        &.swatch-secondary-light{
+            background-color: $secondary-light;
+        }
+        &.swatch-secondary-lighter{
+            background-color: $secondary-lighter;
+        }
+        &.swatch-secondary-lightest{
+            background-color: $secondary-lightest;
+        }
+
+        &.swatch-success-dark{
+            background-color: $success-dark;
+        }
+        &.swatch-success-darker{
+            background-color: $success-darker;
+        }
+        &.swatch-success-darkest{
+            background-color: $success-darkest;
+        }
+        &.swatch-success-light{
+            background-color: $success-light;
+        }
+        &.swatch-success-lighter{
+            background-color: $success-lighter;
+        }
+        &.swatch-success-lightest{
+            background-color: $success-lightest;
+        }
+
+        &.swatch-error-dark{
+            background-color: $error-dark;
+        }
+        &.swatch-error-darker{
+            background-color: $error-darker;
+        }
+        &.swatch-error-darkest{
+            background-color: $error-darkest;
+        }
+        &.swatch-error-light{
+            background-color: $error-light;
+        }
+        &.swatch-error-lighter{
+            background-color: $error-lighter;
+        }
+        &.swatch-error-lightest{
+            background-color: $error-lightest;
+        }
+        
+        &.swatch-warning-dark{
+            background-color: $warning-dark;
+        }
+        &.swatch-warning-darker{
+            background-color: $warning-darker;
+        }
+        &.swatch-warning-darkest{
+            background-color: $warning-darkest;
+        }
+        &.swatch-warning-light{
+            background-color: $warning-light;
+        }
+        &.swatch-warning-lighter{
+            background-color: $warning-lighter;
+        }
+        &.swatch-warning-lightest{
+            background-color: $warning-lightest;
+        }        
+        
+
         &.swatch-text-primary{
             background-color: $text-primary-colour;
         }
