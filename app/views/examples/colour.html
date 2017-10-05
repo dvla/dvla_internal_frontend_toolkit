@@ -13,14 +13,54 @@
     <div class="row">
         <div class="col-12">
             <ol class="list-numbered">
-                <li><a href="#text">Sass variables</a></li>
+                <li><a href="#sass">Sass variables</a>
+                    <ol class="list-numbered">
+                        <li><a href="#interface">Interface</a></li>
+                        <li><a href="#status">Status</a></li>
+                        <li><a href="#accents">Accents</a></li>
+                    </ol>
+                </li>
             </ol>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <div class="example-demo">
-                {% include './includes/colours/variables.html' %}
+            <h2 id="sass" class="example"> Sass variables</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3 class="example">Interface colours</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="interface" class="example-demo">
+                {% include './includes/colours/interface.html' %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3 class="example">Status colours</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="status" class="example-demo">
+                {% include './includes/colours/status.html' %}
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-12">
+            <h3 class="example">Accents colours</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="accents" class="example-demo">
+                {% include './includes/colours/accents.html' %}
             </div>
         </div>
     </div>
