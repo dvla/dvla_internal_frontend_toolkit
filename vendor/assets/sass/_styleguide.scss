@@ -48,6 +48,10 @@ pre.language-markup{
         width: 60px;
         height: 60px;
         border-radius: 100%;
+        
+        &.swatch-primary{
+            background-color: $primary;
+        }
 
         &.swatch-primary-dark{
             background-color: $primary-dark;
@@ -68,6 +72,10 @@ pre.language-markup{
             background-color: $primary-lightest;
         }
 
+
+        &.swatch-secondary{
+            background-color: $secondary;
+        }
         &.swatch-secondary-dark{
             background-color: $secondary-dark;
         }
@@ -86,7 +94,9 @@ pre.language-markup{
         &.swatch-secondary-lightest{
             background-color: $secondary-lightest;
         }
-
+        &.swatch-success{
+            background-color: $success;
+        }
         &.swatch-success-dark{
             background-color: $success-dark;
         }
@@ -106,6 +116,9 @@ pre.language-markup{
             background-color: $success-lightest;
         }
 
+        &.swatch-error{
+            background-color: $error;
+        }
         &.swatch-error-dark{
             background-color: $error-dark;
         }
@@ -124,7 +137,10 @@ pre.language-markup{
         &.swatch-error-lightest{
             background-color: $error-lightest;
         }
-        
+
+        &.swatch-warning{
+            background-color: $warning;
+        }        
         &.swatch-warning-dark{
             background-color: $warning-dark;
         }
