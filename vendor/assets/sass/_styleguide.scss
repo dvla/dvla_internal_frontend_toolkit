@@ -40,7 +40,12 @@ pre.language-markup{
     text-align: center;
      span{
         display: block;
-        font-weight: bold;
+        &.variable{
+            font-style: italic;
+        }
+        &.hex{
+            
+        }
     }
     .swatch{
         margin: 8px;
