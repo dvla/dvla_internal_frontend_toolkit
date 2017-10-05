@@ -1,4 +1,4 @@
-{% extends "../layout.html" %}
+{% extends "layout.html" %}
 
 {% block page_title %}
   Data
@@ -6,6 +6,12 @@
 
 {% block content %}
 <div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/">DVLA internal elements</a></li> 
+            <li>Data</li>
+        </ol>
+    </div>
     <div class="row">
         <div class="col-12">
             <h1>Data</h1>
