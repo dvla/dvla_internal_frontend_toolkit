@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = "dvla_internal_elements".freeze
-    s.version = "0.1.2"
+    s.version = "0.1.3"
     s.licenses = ["MIT".freeze]
     s.authors = ["Liam Betsworth".freeze, "Driver and Vehicle Licencing Agency".freeze]
     s.require_paths = ["lib".freeze, "vendor".freeze]
@@ -11,6 +11,9 @@ Gem::Specification.new do |s|
     s.files = [
         "LICENSE".freeze,
         "README.md".freeze,
+        "lib/dvla-internal-elements.rb".freeze,
+        "lib/dvla-internal-elements/engine.rb".freeze,
+        "lib/dvla-internal-elements/version.rb".freeze,
         "vendor/assets/stylesheets/_dvla-internal-elements.scss".freeze,
         "vendor/assets/stylesheets/constants/_colours.scss".freeze,
         "vendor/assets/stylesheets/constants/_fonts.scss".freeze,
