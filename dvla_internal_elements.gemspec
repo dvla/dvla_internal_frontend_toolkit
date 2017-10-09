@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
     s.name = "dvla_internal_elements".freeze
-    s.version = "0.0.4"
+    s.version = "0.1.0"
     s.licenses = ["MIT".freeze]
     s.authors = ["Liam Betsworth".freeze, "Driver and Vehicle Licencing Agency".freeze]
     s.require_paths = ["lib".freeze, "vendor".freeze]
-    s.date = "2017-09-28"
+    s.date = "2017-10-09"
     s.description = "DVLA Internal Elements".freeze
     s.email = "liam.betsworth@gofore.com".freeze
     s.extra_rdoc_files = ["README.md".freeze]
@@ -22,7 +22,9 @@ Gem::Specification.new do |s|
         "vendor/assets/sass/elements/_tables.scss".freeze,
         "vendor/assets/sass/elements/_tabs.scss".freeze,
         "vendor/assets/sass/elements/_typography.scss".freeze,
-        "vendor/assets/sass/elements/_validation.scss".freeze
+        "vendor/assets/sass/elements/_validation.scss".freeze,
+        "vendor/assets/images/coat-of-arms-logo.svg".freeze,
+        "vendor/assets/images/triangle-caret-down.svg".freeze
     ]
     s.homepage = "https://github.com/liam-betsworth/dvla_internal_elements".freeze
     s.summary = "A gem for https://github.com/liam-betsworth/dvla_internal_elements".freeze
