@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = "dvla_internal_elements".freeze
-    s.version = "0.1.1"
+    s.version = "0.1.2"
     s.licenses = ["MIT".freeze]
     s.authors = ["Liam Betsworth".freeze, "Driver and Vehicle Licencing Agency".freeze]
     s.require_paths = ["lib".freeze, "vendor".freeze]
@@ -11,18 +11,18 @@ Gem::Specification.new do |s|
     s.files = [
         "LICENSE".freeze,
         "README.md".freeze,
-        "vendor/assets/sass/_dvla-internal-elements.scss".freeze,
-        "vendor/assets/sass/constants/_colours.scss".freeze,
-        "vendor/assets/sass/constants/_fonts.scss".freeze,
-        "vendor/assets/sass/constants/_measurements.scss".freeze,
-        "vendor/assets/sass/elements/_buttons.scss".freeze,
-        "vendor/assets/sass/elements/_forms.scss".freeze,
-        "vendor/assets/sass/elements/_layout.scss".freeze,
-        "vendor/assets/sass/elements/_lists.scss".freeze,
-        "vendor/assets/sass/elements/_tables.scss".freeze,
-        "vendor/assets/sass/elements/_tabs.scss".freeze,
-        "vendor/assets/sass/elements/_typography.scss".freeze,
-        "vendor/assets/sass/elements/_validation.scss".freeze,
+        "vendor/assets/stylesheets/_dvla-internal-elements.scss".freeze,
+        "vendor/assets/stylesheets/constants/_colours.scss".freeze,
+        "vendor/assets/stylesheets/constants/_fonts.scss".freeze,
+        "vendor/assets/stylesheets/constants/_measurements.scss".freeze,
+        "vendor/assets/stylesheets/elements/_buttons.scss".freeze,
+        "vendor/assets/stylesheets/elements/_forms.scss".freeze,
+        "vendor/assets/stylesheets/elements/_layout.scss".freeze,
+        "vendor/assets/stylesheets/elements/_lists.scss".freeze,
+        "vendor/assets/stylesheets/elements/_tables.scss".freeze,
+        "vendor/assets/stylesheets/elements/_tabs.scss".freeze,
+        "vendor/assets/stylesheets/elements/_typography.scss".freeze,
+        "vendor/assets/stylesheets/elements/_validation.scss".freeze,
         "vendor/assets/images/coat-of-arms-logo.svg".freeze,
         "vendor/assets/images/separator.png".freeze,
         "vendor/assets/images/triangle-caret-down.svg".freeze,
