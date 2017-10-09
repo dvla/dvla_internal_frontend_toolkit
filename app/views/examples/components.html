@@ -1,0 +1,75 @@
+{% extends "layout.html" %} {% block page_title %} Data {% endblock %} {% block content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/">DVLA internal elements</a></li>
+            <li>Components</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="example">Components</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="numbered-list">
+                <li><a href="#list">List component</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#tacho">TACHOnet queue</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">List component</h2>
+        </div>
+    </div>
+    <div id="list" class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                {% include './includes/components/list.html' %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/components/list.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Table component</h2>
+        </div>
+    </div>
+    <div id="table" class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                {% include './includes/components/table.html' %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/components/table.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">TACHOnet queue</h2>
+        </div>
+    </div>
+    <div id="tacho" class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                {% include './includes/components/tacho.html' %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/components/tacho.html' %}</xmp></code></pre>
+        </div>
+    </div>
+</div>
+{% endblock %}
