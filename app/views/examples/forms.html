@@ -1,20 +1,68 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  Forms
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} Forms {% endblock %} {% block content %}
 <div class="container">
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/">DVLA internal elements</a></li> 
+            <li><a href="/">DVLA internal elements</a></li>
             <li>Forms</li>
         </ol>
     </div>
     <div class="row">
         <div class="col-12">
-            <h1>Forms</h1>
+            <h1 class="example">Forms</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="numbered-list">
+                <li><a href="#select">Select</a></li>
+                <li><a href="#textarea">Textarea</a></li>
+                <li><a href="#textareaplayback">Textarea playback</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Select</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">{% include './includes/forms/select.html' %}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/select.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Textarea</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">{% include './includes/forms/textarea.html' %}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/textarea.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="example">Textarea playback</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">{% include './includes/forms/textareaplayback.html' %}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/textareaplayback.html' %}</xmp></code></pre>
         </div>
     </div>
 </div>
