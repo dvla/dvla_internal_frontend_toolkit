@@ -1,8 +1,8 @@
 {
-  "assetsImg": "vendor/assets/images/",
-  "assetsFnt": "vendor/assets/fonts/",
-  "assetsJs": "vendor/assets/javascripts/",
-  "assetsScss": "vendor/assets/sass/",
+  "vendorImg": "vendor/assets/images/",
+  "vendorFnt": "vendor/assets/fonts/",
+  "vendorJs": "vendor/assets/javascripts/",
+  "vendorScss": "vendor/assets/sass/",
   "config": "config/",
   "nodeModules": "node_modules/",
   "package": "packages/dvla-internal-elements-sass/",
@@ -12,5 +12,6 @@
   "publicCss": "public/stylesheets/",
   "publicJs": "public/javascripts/",
   "testSpecs": "test/specs/",
-  "views": "views/"
+  "views": "views/",
+  "assetsJs": "app/assets/javascripts/"
 }

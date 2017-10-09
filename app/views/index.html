@@ -1,498 +1,62 @@
-<html>
-
-<head>
-  <title>DVLA Internal Elements</title>
-  <link rel="stylesheet" type="text/css" href="/public/stylesheets/dvla-internal-elements-styles.css" />
-</head>
-
-<body>
-  <header role="banner" id="global-header" class="">
-    <div id="header-wrapper">
-      <div id="header-float-left">
-        <div id="header-logo">
-          <a href="/" title="Home" id="logo" class="content">
-            <div id="coat-of-arms" alt=""></div>
-            <div class="name">DVLA</div>
-          </a>
+{% extends "layout.html" %} {% block page_title %} DVLA internal elements {% endblock %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>DVLA internal elements</h1>
         </div>
-      </div>
-      <div id="header-float-right">
-        <div id="user-account">
-          <div id="logout">
-            <a href="#">Log out</a>
-          </div>
-          <div id="user-account-email">
-            admin@account.com
-          </div>
-        </div>
-      </div>
     </div>
-    <div id="global-header-bar"></div>
-  </header>
-
-  <div id="wrapper" class="direction-ltr">
-    <main role="main" id="content" lang="en">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="example">Typography</h2>
-            <h3 class="example">Headings</h3>
-            <h1>h1. What would you like to do?</h1>
-            <h2>h2. What would you like to do?</h2>
-            <h3>h3. What would you like to do?</h3>
-            <h4>h4. What would you like to do?</h4>
-            <h5>h5. What would you like to do?</h5>
-            <h3 class="example">Paragraphs</h3>
-            <h4 class="example">Small</h4>
-            <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget mi egestas lectus posuere facilisis at ac
-              ipsum. Vivamus egestas augue interdum pulvinar congue. Nullam ut vehicula arcu. Sed eget sodales odio, eget
-              commodo tortor. Vivamus quis ante elementum.</p>
-            <h4 class="example">Large</h4>
-            <p class="text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget mi egestas lectus posuere facilisis at ac
-              ipsum. Vivamus egestas augue interdum pulvinar congue. Nullam ut vehicula arcu. Sed eget sodales odio, eget
-              commodo tortor. Vivamus quis ante elementum.</p>
-            <h3 class="example">Lists</h3>
-            <h4 class="example">Bulleted</h4>
-            <ul class="list-bulleted">
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-            </ul>
-            <h4 class="example">Numbered</h4>
-            <ol class="list-numbered">
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-              <li>here is an example bulleted list</li>
-            </ol>
-            <h2 class="example">Other</h2>
-            <h3 class="example">Inset</h3>
-            <p class="inset">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Ayenean eget mi egestas lectus posuere facilisis.</p>
-            <h3 class="example">Important</h3>
-            <div class="important">
-              <p>You can be fined up to £5,000 if you don’t register.</p>
-            </div>
-            <h3 class="example">Links</h3>
-            <p>This is an example <a href="#">link to something</a>.</p>
-            <p><a href="#">An orphan link</a>
-
-              <h2 class="example">Buttons</h2>
-              <h3 class="example">Primary</h3>
-              <button class="btn-lrg btn-primary">Large button</button>
-              <button class="btn btn-primary">Medium button</button>
-              <button class="btn-sml btn-primary">Small button</button>
-              <h3 class="example">Secondary</h3>
-              <button class="btn-lrg btn-secondary">Large button</button>
-              <button class="btn btn-secondary">Medium button</button>
-              <button class="btn-sml btn-secondary">Small button</button>
-
-              <h2 class="example">Components</h2>
-              <h3 class="example">Lists</h3>
-              <div>
-                <div class="list">
-                  <div class="list-title-row">
-                    <div class="list-title">
-                      Details
-                    </div>
-                    <div class="list-change">
-                      <a href="#">Change</a>
-                    </div>
-                  </div>
-                  <div class="list-row">
-                    <div class="list-property">
-                      Name
-                    </div>
-                    <div class="list-data">
-                      Liam Betsworth
-                    </div>
-                  </div>
-                  <div class="list-row">
-                    <div class="list-property">
-                      User ID
-                    </div>
-                    <div class="list-data">
-                      1091
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <h3 class="example">Tables</h3>
-              <h4 class="example">Standard</h2>
-              <div>
-                <table>
-                  <thead>
-                    <th>VIN</th>
-                    <th>Retailer</th>
-                    <th>Make</th>
-                    <th>Model</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="#">EXAMPLEVIN001</a></td>
-                      <td>Harison Motors</td>
-                      <td>Volkswagen</td>
-                      <td>Golf 2.0 TDI</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">EXAMPLEVIN002</a></td>
-                      <td>Bob‘s Motors</td>
-                      <td>Audi</td>
-                      <td>A4</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <h4 class="example">TACHOnet</h2>
-              <div>
-                <table class="tachonet-queue">
-                  <thead>
-                    <th class="transaction-type">Transaction type</th>
-                    <th class="tacho-number">Tacho number</th>
-                    <th class="date">Date received</th>
-                    <th class="status">Days old<br />(calendar)</th>
-                  </thead>
-                  <tbody>
-                    <tr class="urgent">
-                      <td class="transaction-type">MCS</td>
-                      <td class="tacho-number"><a href="#">DB17160903129000</a></td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">6</span>
-                      </td>
-                    </tr>
-                    <tr class="waiting">
-                      <td class="transaction-type">ICDL</td>
-                      <td class="tacho-number"><a href="#">DB17160903123420</a></td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">4</span>
-                      </td>
-                    </tr>
-                    <tr class="parked">
-                      <td class="transaction-type">MCS</td>
-                      <td class="tacho-number"><a href="#">DB17160934529000</a></td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">2</span>
-                      </td>
-                    </tr>
-                    <tr class="completed">
-                      <td class="transaction-type">ICDL</td>
-                      <td class="tacho-number"><a href="#">DB17160903129452</a></td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble"></span>
-                      </td>
-                    </tr>
-                    <tr class="urgent disabled">
-                      <td class="transaction-type">MCS</td>
-                      <td class="tacho-number">DB17160903129000</td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">6</span>
-                      </td>
-                    </tr>
-                    <tr class="waiting disabled">
-                      <td class="transaction-type">ICDL</td>
-                      <td class="tacho-number">DB17160903123420</td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">4</span>
-                      </td>
-                    </tr>
-                    <tr class="parked disabled">
-                      <td class="transaction-type">MCS</td>
-                      <td class="tacho-number">DB17160934529000</td>
-                      <td class="date">02 08 2017</td>
-                      <td class="status">
-                        <span class="bubble">2</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
-              <h3 class="example">Tabs</h3>
-              <div>
-                <ul class="tabs">
-                  <li class="tab active"><a href="#">Overview</a></li>
-                  <li class="tab"><a href="#">Retailers</a></li>
-                  <li class="tab"><a href="#">Users</a></li>
-                  <li class="tab"><a href="#">Details</a></li>
-                  <li class="action"><a class="btn-secondary btn-sml btn-refresh">Refresh Queue</a></li>
-                </ul>
-              </div>
-              <div>
-                <div class="sub-tabs">
-                  <div class="sub-tab"><a href="#">All</a></div>
-                  <div class="sub-tab active"><a href="#">Financial</a></div>
-                  <div class="sub-tab"><a href="#">Performance</a></div>
-                  <div class="sub-tab"><a href="#">Stock</a></div>
-                </div>
-              </div>
-        
-              <h3 class="example">Forms</h3>
-              <h4 class="example">Select</h4>
-              <div>
-                <select class="form-control">
-                  <option>Not found</option>
-                  <option>Not updated</option>
-                  <option>Updated</option>
-                </select>
-            </div>
-              <h4 class="example">Textarea</h4>
-              <div>
-                <textarea class="form-control"></textarea>
-              </div>
-              <h4 class="example">Textarea playback</h4>
-              <div>
-                <div class="textarea-playback-date">
-                    <strong>Date: </strong>
-                    <span>03.10.2017</span>
-                </div>
-                <div class="textarea-playback">
-                  <span>Awaiting phone call</span>
-                </div>
-              </div>
-            <h3 class="example">Validation</h3>
-            <h4 class="example">Alert</h4>
-            <h5 class="example">Success</h5>
-            <div>
-              <div class="alert success">
-                Successfully created a new user
-              </div>
-            </div>
-            <h5 class="example">Information</h5>
-            <div>
-              <div class="alert info">
-                This case has been parked
-              </div>
-            </div>
-            <h5 class="example">Warning</h5>
-            <div>
-              <div class="alert warning">
-                This transaction must be completed within 24 hours
-              </div>
-            </div>
-            <h2 class="example">Grid system</h2>
-            <h3 class="example">Fluid</h3>
-          </div>
-
-          <div class="col-12">
-
-          </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-large">This guide shows how to make your service look consistent with the rest of DVLA.</p>
         </div>
-      </div>
-
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h4><a href="examples/layouts">Layout</a></h4>
+            <p>Grid unit proportions, gutters and spacing.</p>
         </div>
-
-        <div class="row">
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/typography">Typography</a></h4>
+            <p>Headings, body text, links, lists, inset text, hidden text.</p>
         </div>
-
-        <div class="row">
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/colour">Colour</a></h4>
+            <p>Colour contrast, Sass variables, colour palettes.</p>
         </div>
-
-        <div class="row">
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h4><a href="examples/icons-and-images">Icons and images</a></h4>
+            <p>Icons and image ratios.</p>
         </div>
-
-        <div class="row">
-          <div class="col-6">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-6">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/data">Data</a></h4>
+            <p>Data in a table, numeric tabular data, data visualisation.</p>
         </div>
-
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-12">
-            <h3 class="example">Fixed (960px)</h3>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-1">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/buttons">Buttons</a></h4>
+            <p>Button text, button alignment, creating buttons.</p>
         </div>
-
-        <div class="row">
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-2">
-            <p class="grid-example"></p>
-          </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h4><a href="examples/forms">Form elements</a></h4>
+            <p>Form fields, labels, focus states, radio buttons, checkboxes.</p>
         </div>
-
-        <div class="row">
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-3">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/validation">Errors and validation</a></h4>
+            <p>Summary boxes, highlighting errors in forms.</p>
         </div>
-
-        <div class="row">
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-4">
-            <p class="grid-example"></p>
-          </div>
+        <div class="col-4">
+            <h4><a href="examples/navigation">Navigation</a></h4>
+            <p>Breadcrumbs, navigation bars.</p>
         </div>
-
-        <div class="row">
-          <div class="col-6">
-            <p class="grid-example"></p>
-          </div>
-          <div class="col-6">
-            <p class="grid-example"></p>
-          </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h4><a href="examples/components">Components</a></h4>
+            <p>Rich elements responsible for displaying specific types for data</p>
         </div>
-
-      </div>
-    </main>
-  </div>
-</body>
-
-</html>
+    </div>
+</div>
+{% endblock %}

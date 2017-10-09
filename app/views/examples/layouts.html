@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Layouts and grids
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/">DVLA internal elements</a></li> 
+            <li>Layouts</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1>Layouts</h1>
+            <ol class="list-numbered">
+                <li><a href="#fixed-container">Fixed container</a></li>
+                <li><a href="#fluid-container">Fluid container</a></li>
+            </ol>
+            <h2 id="fixed-container" class="example">Fixed container</h2>
+            <div class="example-demo">
+                {% include "./includes/layouts/fixed-container.html" %}
+            </div>
+            <pre class="line-numbers language-markup"><code><xmp>{% include "./includes/layouts/fixed-container.html" %}</xmp></code></pre>
+            <h2 id="fluid-container" class="example">Fluid container</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="example-demo">
+                {% include "./includes/layouts/fluid-container.html" %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/layouts/fluid-container.html' %}</xmp></code></pre>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

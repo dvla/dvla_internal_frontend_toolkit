@@ -25,7 +25,7 @@ gulp.task('clean', () => {
 // ---------------------------------------
 
 gulp.task('build', cb => {
-  runsequence('clean', ['styles', 'images', 'fonts', 'scripts'], cb)
+  runsequence('clean', ['styles', 'images', 'fonts', 'scripts', 'examplescripts'], cb)
 })
 
 // Styles build task ---------------------
@@ -34,7 +34,7 @@ gulp.task('build', cb => {
 // ---------------------------------------
 
 gulp.task('styles', () => {
-  return gulp.src(paths.assetsScss + '**/*.scss')
+  return gulp.src(paths.vendorScss + '**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(paths.publicCss))
     .pipe(rename({ suffix: '.min' }))
@@ -47,7 +47,7 @@ gulp.task('styles', () => {
 // ---------------------------------------
 
 gulp.task('images', () => {
-  return gulp.src(paths.assetsImg + '**/*')
+  return gulp.src(paths.vendorImg + '**/*')
     .pipe(gulp.dest(paths.publicImg))
 })
 
@@ -56,7 +56,7 @@ gulp.task('images', () => {
 // ---------------------------------------
 
 gulp.task('fonts', () => {
-  return gulp.src(paths.assetsFnt + '**/*')
+  return gulp.src(paths.vendorFnt + '**/*')
     .pipe(gulp.dest(paths.publicFnt))
 })
 
@@ -64,6 +64,14 @@ gulp.task('fonts', () => {
 // Copies JavaScript to /public/javascripts
 // ---------------------------------------
 gulp.task('scripts', () => {
+  return gulp.src(paths.vendorJs + '**/*.js')
+    .pipe(gulp.dest(paths.publicJs))
+})
+
+// Example scripts build task ---------------------
+// Copies JavaScript to /public/javascripts
+// ---------------------------------------
+gulp.task('examplescripts', () => {
   return gulp.src(paths.assetsJs + '**/*.js')
     .pipe(gulp.dest(paths.publicJs))
 })
@@ -77,7 +85,7 @@ gulp.task('server', () => {
     script: 'server.js',
     ignore: [
       paths.public + '*',
-      paths.assets + '*',
+      paths.vendor + '*',
       paths.nodeModules + '*'
     ]
   })
@@ -107,18 +115,22 @@ gulp.task('test:app', () =>
 // When a file is changed, re-run the build task.
 // ---------------------------------------
 
-gulp.task('watch', ['watch:styles', 'watch:scripts', 'watch:images'])
+gulp.task('watch', ['watch:styles', 'watch:scripts', 'watch:examplescripts', 'watch:images'])
 
 gulp.task('watch:styles', () => {
-  return gulp.watch(paths.assetsScss + '**/*.scss', ['styles'])
+  return gulp.watch(paths.vendorScss + '**/*.scss', ['styles'])
 })
 
 gulp.task('watch:scripts', () => {
-  return gulp.watch(paths.assetsJs + '**/*.js', ['scripts'])
+  return gulp.watch(paths.vendorJs + '**/*.js', ['scripts'])
+})
+
+gulp.task('watch:examplescripts', () => {
+  return gulp.watch(paths.vendorJs + '**/*.js', ['examplescripts'])
 })
 
 gulp.task('watch:images', () => {
-  return gulp.watch(paths.assetsImg + '**/*', ['images'])
+  return gulp.watch(paths.vendorImg + '**/*', ['images'])
 })
 
 // Develop task --------------------------
@@ -142,10 +154,10 @@ gulp.task('package', cb => {
 gulp.task('package:prepare', () => {
   return gulp.src(
     [
-      paths.assetsScss + '**/elements/**/*.scss',
-      paths.assetsScss + '_govuk-elements.scss',
-      paths.assetsScss + '_frontend-toolkit.scss',
-      paths.assetsScss + '_elements.scss'
+      paths.vendorScss + '**/elements/**/*.scss',
+      paths.vendorScss + '_govuk-elements.scss',
+      paths.vendorScss + '_frontend-toolkit.scss',
+      paths.vendorScss + '_elements.scss'
     ])
     .pipe(gulp.dest(paths.package + 'public/sass/'))
 })
