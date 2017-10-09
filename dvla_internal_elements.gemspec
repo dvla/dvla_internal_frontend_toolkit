@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
         "vendor/assets/sass/elements/_validation.scss".freeze,
         "vendor/assets/images/coat-of-arms-logo.svg".freeze,
         "vendor/assets/images/separator.png".freeze,
-        "vendor/assets/images/triangle-caret-down.svg".freeze
+        "vendor/assets/images/triangle-caret-down.svg".freeze,
         "vendor/assets/fonts/dvla-icons.woff".freeze,
         "vendor/assets/fonts/Inter-UI-Bold".freeze,
         "vendor/assets/fonts/Inter-UI-Medium".freeze,
