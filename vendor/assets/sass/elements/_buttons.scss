@@ -4,6 +4,7 @@
     border-top: 0;
     border-style: solid;
     text-decoration: none;
+    line-height: normal;
 
     &:active, &:focus {
         outline: 3px solid $focus-colour;

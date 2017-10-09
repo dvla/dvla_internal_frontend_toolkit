@@ -170,7 +170,7 @@ div {
 }
 
 @mixin col($ratio) {
-    width: calc((#{$ratio}/12) * 100%);
+    width: percentage($ratio);
     position: relative;
     min-height: 1px;
     padding: 0 8px;
@@ -181,6 +181,6 @@ div {
 
 @for $i from 1 through 12 {
     .col-#{$i} {
-        @include col(#{$i});
+        @include col($i / 12);
     }
 }
