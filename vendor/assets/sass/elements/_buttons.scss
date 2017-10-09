@@ -3,6 +3,7 @@
     border-right: 0;
     border-top: 0;
     border-style: solid;
+    text-decoration: none;
 
     &:active, &:focus {
         outline: 3px solid $focus-colour;
@@ -10,9 +11,11 @@
 
     &:disabled {
         opacity: 0.5;
-    }
 
-    
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
 }
 
 .btn {
@@ -39,8 +42,17 @@
     border-bottom: 2px solid $primary-darkest;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
         background: $primary-dark;
+        color: white;
+
+        &:disabled {
+            background: $primary;
+        }
+    }
+
+    &:visited {
+        color: white;
     }
 
 }
@@ -52,8 +64,17 @@
     border-bottom-width: 2px;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
         background: $grey-3;
+        color: $primary;
+
+        &:disabled {
+            background: $grey-3;
+        }
+    }
+
+    &:visited {
+        color: $primary;
     }
 }
 
