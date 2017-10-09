@@ -27,9 +27,9 @@ Gem::Specification.new do |s|
         "vendor/assets/images/separator.png".freeze,
         "vendor/assets/images/triangle-caret-down.svg".freeze,
         "vendor/assets/fonts/dvla-icons.woff".freeze,
-        "vendor/assets/fonts/Inter-UI-Bold".freeze,
-        "vendor/assets/fonts/Inter-UI-Medium".freeze,
-        "vendor/assets/fonts/Inter-UI-Regular".freeze
+        "vendor/assets/fonts/Inter-UI-Bold.woff".freeze,
+        "vendor/assets/fonts/Inter-UI-Medium.woff".freeze,
+        "vendor/assets/fonts/Inter-UI-Regular.woff".freeze
     ]
     s.homepage = "https://github.com/liam-betsworth/dvla_internal_elements".freeze
     s.summary = "A gem for https://github.com/liam-betsworth/dvla_internal_elements".freeze
