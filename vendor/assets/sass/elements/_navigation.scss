@@ -1,0 +1,37 @@
+.breadcrumbs {
+
+  ol {
+    list-style-type: none;
+    padding: 0 8px;
+
+    li {
+      display: inline-block;
+
+      &:first-child {
+        background-image: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      background-image: url('/public/images/separator.png');
+      background-position: 0% 50%;
+      background-repeat: no-repeat;
+      margin-left: 1em;
+      padding-left: 1.5em;
+    }
+  }
+
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:visited {
+      color: $black;
+    }
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

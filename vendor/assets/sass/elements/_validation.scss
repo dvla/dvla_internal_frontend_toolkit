@@ -1,3 +1,14 @@
+@mixin alert-icon() {
+    font-size: 22px;
+    font-family: $icon-font;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
 .alert {
     width: 100%;
     text-align: center;
@@ -14,19 +25,11 @@
         background: $success-lightest;
 
         &:before {
-            font-size: 16px;
-            font-family: $icon-font;
-            color: white;
+            @include alert-icon();
+            font-size: 18px;
             content: '\e90a';
+            color: white;
             background: $success;
-            height: 32px;
-            width: 32px;
-            display: inline-block;
-            border-radius: 16px;
-            padding-left: 2px;
-            padding-top: 6px;
-            margin-right: 4px;
-            line-height: 24px;
         }
     }
 
@@ -35,7 +38,10 @@
         background: $secondary-lightest;
 
         &:before {
-            content: 'ⓘ';
+            @include alert-icon();
+            content: '\e903';
+            color: white;
+            background: $secondary;
         }
     }
 
@@ -44,7 +50,10 @@
         background: $warning-lightest;
 
         &:before {
-            content: '⚠';
+            @include alert-icon();
+            content: '\e90c';
+            color: white;
+            background: $warning;
         }
     }
 }

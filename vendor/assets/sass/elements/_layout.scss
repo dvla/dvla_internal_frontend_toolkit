@@ -26,16 +26,36 @@ body {
     background: $primary;
     color: white;
     height: 2em;
+    box-sizing: content-box;
+
+    #header-contents {
+        clear: both;
+        margin: 0 auto;
+        width: 944px;
+        max-width: calc(100% - 32px);
+
+        // @media screen and (max-width: 1023px) {
+        //     width: 960px;
+        //     // max-width: calc(100% - 32px);
+        // }
+
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            padding: 0 40px;
+        }
+    }
 }
 
 #header-float-left {
-    position: absolute;
-    left: 2.5em;
+    // position: absolute;
+    // left: 2.5em;
+    float: left;
 }
 
 #header-float-right {
-    position: absolute;
-    right: 2.5em;
+    // position: absolute;
+    // right: 2.5em;
+    float: right;
 }
 
 #header-logo {
@@ -118,13 +138,14 @@ div {
 
 #content {
     margin: 0 auto;
+    margin-bottom: 2em;
 }
 
 @mixin container() {
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: calc(100% - 16px);
     margin: 0 auto;
-    padding: 0 8px;
+    // padding: 0 8px;
     width: 960px;
     min-height: 1px;
 }
@@ -136,27 +157,31 @@ div {
 .container-fluid {
     @include container();
 
-    @media screen and (min-width: 1012px) {
+    @media screen and (min-width: 1024px) {
         width: 100%;
         padding: 0 32px;
     }
 }
 
 .row {
-    margin: 0 -8px;
-    clear: both;
+    // margin: 0 -8px;
+    //clear: both;
+    box-sizing: border-box;
+    font-size: 0;
 }
 
 @mixin col($ratio) {
-    width: calc((#{$ratio}/12) * 100%);
+    width: percentage($ratio);
     position: relative;
     min-height: 1px;
     padding: 0 8px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: $normal-font-size;
 }
 
 @for $i from 1 through 12 {
     .col-#{$i} {
-        @include col(#{$i});
+        @include col($i / 12);
     }
 }

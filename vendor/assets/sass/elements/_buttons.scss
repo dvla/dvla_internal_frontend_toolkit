@@ -3,6 +3,8 @@
     border-right: 0;
     border-top: 0;
     border-style: solid;
+    text-decoration: none;
+    line-height: normal;
 
     &:active, &:focus {
         outline: 3px solid $focus-colour;
@@ -10,6 +12,10 @@
 
     &:disabled {
         opacity: 0.5;
+
+        &:hover {
+            cursor: not-allowed;
+        }
     }
 }
 
@@ -37,9 +43,19 @@
     border-bottom: 2px solid $primary-darkest;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
         background: $primary-dark;
+        color: white;
+
+        &:disabled {
+            background: $primary;
+        }
     }
+
+    &:visited {
+        color: white;
+    }
+
 }
 
 .btn-secondary {
@@ -49,8 +65,17 @@
     border-bottom-width: 2px;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
         background: $grey-3;
+        color: $primary;
+
+        &:disabled {
+            background: $grey-3;
+        }
+    }
+
+    &:visited {
+        color: $primary;
     }
 }
 
@@ -90,24 +115,31 @@
 .btn-back{
     padding-left: 16px;
     color: $text-primary-colour;
+    display: inline-block;
+    margin-top: 16px;
+    position: relative;
+    border-bottom: 1px solid $text-primary-colour;
+    text-decoration: none;
+    
     &::before{
-        content: '\25BC';
-        background-size: 28px 12px;
-        transform: rotate(90deg);
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 5px solid rgba(0, 0, 0, 0);
+        border-right: 6px solid $text-primary-colour;
+        border-bottom: 5px solid rgba(0, 0, 0, 0);
         position: absolute;
-        left: -2px;
-        top: 6px;
-        display: inline-block;
-        height: 28px;
-        width: 28px;
-        font-size: 12px;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
 
-        &:hover{
-            cursor: pointer;
-            color: $link-hover-colour;
-        }
     }
 
+    &:hover{
+        cursor: pointer;
+        color: $text-primary-colour;
+    }
     &:visited{
         color: $text-primary-colour;
     }
