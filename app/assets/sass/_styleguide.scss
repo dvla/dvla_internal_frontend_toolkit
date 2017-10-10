@@ -24,6 +24,10 @@ p.grid-example {
         padding: 8px;
         margin-bottom: 16px;
     }
+
+    .side-bar, #global-header{
+        position: static;
+    }
 }
 
 pre.language-markup{
