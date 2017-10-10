@@ -35,3 +35,38 @@
     }
   }
 }
+
+.side-bar{
+  position: fixed;
+  left: 0px;
+  top: 56px;
+  width: 208px;
+  height:100%;
+  background-color: $grey-4; 
+  border-right: 1px solid $grey-2; 
+  margin-top: -8px;
+
+  ul{
+    padding: 0px;
+
+    li{
+      list-style: none;
+      padding-left: 40px;
+      line-height: 40px;
+      font-weight: bold;
+
+      &:hover{
+        cursor: pointer;
+        background-color: $primary-lightest;
+        text-decoration: underline;
+      }
+
+      &:active, &.active{
+        color: $primary;
+        border-left: 8px solid $primary;
+        padding-left: 32px;
+        background-color: $primary-lightest;
+      }
+    }
+  }
+}

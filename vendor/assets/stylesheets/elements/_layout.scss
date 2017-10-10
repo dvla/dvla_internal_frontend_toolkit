@@ -9,6 +9,11 @@ body {
 
 #global-header {
      display: block;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     z-index: 10;
 
      #global-header-bar {
         width: 944px;
