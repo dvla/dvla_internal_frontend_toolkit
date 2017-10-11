@@ -11,6 +11,7 @@ const nodemon = require('gulp-nodemon')
 const rename = require('gulp-rename')
 const runsequence = require('run-sequence')
 const sass = require('gulp-sass')
+const base64 = require('gulp-base64')
 
 // Clean task ----------------------------
 // Deletes the /public directory
@@ -36,6 +37,12 @@ gulp.task('build', cb => {
 gulp.task('styles', () => {
   return gulp.src(paths.vendorScss + '**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(base64({
+      baseDir: 'vendor/assets',
+      extensions: ['svg', 'png', 'woff'],
+      maxImageSize: 200 * (1024 * 1024),
+      debug: true
+    }))
     .pipe(gulp.dest(paths.publicCss))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
