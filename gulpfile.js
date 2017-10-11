@@ -47,6 +47,7 @@ gulp.task('styles', () => {
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.publicCss))
+    .pipe(gulp.dest(paths.vendorScss))
 })
 
 // Images build task ---------------------
