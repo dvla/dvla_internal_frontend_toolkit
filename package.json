@@ -3,7 +3,7 @@
   "description": "The DVLA internal elements application",
   "repository": "liam-betsworth/dvla_internal_elements",
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "license": "MIT",
   "engines": {
     "node": ">=8.1.4"
