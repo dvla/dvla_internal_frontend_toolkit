@@ -26,15 +26,31 @@
                 </div>
             </div>
         </div>
-        {% block header_bar %}
-            <div id="header-bar"></div>
+        {% block tabs_top %}
+            <ul>
+                <li>Tab title one</li>
+                <li class="active">Active tab</li>
+                <li>Tab title two</li>
+            </ul>
         {% endblock %}
     </header>
 
-    {% block after_header %}{% endblock %}
+    {% block after_header %}
+    
+    {% endblock %}
 
     <main id="content">
-        <div class="container">
+        <div id="side-bar">
+            {% block tabs_left %}
+            <ul>
+                <li>Tab title one</li>
+                <li class="active">Tab title two</li>
+                <li>Tab title three</li>
+                <li>Tab title four</li>
+            </ul>
+            {% endblock %}
+        </div>
+        <div class="container-fluid">
             {% block content %}{% endblock %}
         </div>
     </main>

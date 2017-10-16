@@ -12,6 +12,7 @@ body {
 
 #global-header {
      display: block;
+     position: fixed;
      position: sticky;
      left: 0;
      top: 0;
@@ -25,31 +26,6 @@ body {
         height: 8px;
         margin: 0 auto;
         background: $primary-lighter;
-    }
-
-    #global-header-tabs{
-        display: block;
-        width: 100%;
-        background-color: $grey-4;
-        line-height: 48px;
-        margin: 0 auto;
-        border: 1px solid $grey-2;
-        
-        li{
-            display: inline-block;
-            padding: 0 32px;
-            list-style: none;
-            font-weight: bold;
-
-            &:hover{
-                cursor: pointer;
-            }
-
-            &:active, &.active{
-                color: $primary;
-                border-bottom: 2px solid $primary;
-            }
-        }
     }
 }
 
@@ -175,10 +151,6 @@ div {
     padding-bottom: 2em;
     // margin-top: 3em; 
     background: white;
-
-    &.has-bar{
-        // margin-top: 3.5em;
-    }
 }
 
 @mixin container() {
