@@ -1,7 +1,7 @@
 {
-  "name": "dvla-internal-elements",
-  "description": "The DVLA internal elements application",
-  "repository": "liam-betsworth/dvla_internal_elements",
+  "name": "dvla-internal-frontend-toolkit",
+  "description": "DVLA internal frontend toolkit. Contains assets including styles, elements and layouts.",
+  "repository": "liam-betsworth/dvla_internal_frontend_toolkit",
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
   "version": "0.2.1",
   "license": "MIT",
@@ -43,9 +43,13 @@
     {
       "name": "Liam Betsworth",
       "email": "liam.betsworth@gofore.com"
+    },
+    {
+      "name": "Lewis Campbell",
+      "email": "lewis.campbell@gofore.com"
     }
   ],
   "bugs": {
-    "url": "https://github.com/liam-betsworth/dvla_internal_elements/issues"
+    "url": "https://github.com/liam-betsworth/dvla_internal_frontend_toolkit/issues"
   }
 }

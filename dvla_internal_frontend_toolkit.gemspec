@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "dvla_internal_elements/version"
+require "dvla_internal_frontend_toolkit/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "dvla_internal_elements"
-  spec.version       = DvlaInternalElements::VERSION
+  spec.name          = "dvla_internal_frontend_toolkit"
+  spec.version       = DvlaInternalFrontendToolkit::VERSION
   spec.authors       = ["Liam Betsworth", "Lewis Campbell", "Driver and Vehicle Licencing Agency"]
   spec.email         = ["liam.betsworth@gofore.com"]
 
-  spec.summary       = "DVLA Internal Elements"
-  spec.description   = "A gem for https://github.com/liam-betsworth/dvla_internal_elements"
-  spec.homepage      = "https://github.com/liam-betsworth/dvla_internal_elements"
+  spec.summary       = "DVLA Internal Frontend Toolkit"
+  spec.description   = "A gem for https://github.com/liam-betsworth/dvla_internal_frontend_toolkit"
+  spec.homepage      = "https://github.com/liam-betsworth/dvla_internal_frontend_toolkit"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README.md"]
