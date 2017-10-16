@@ -4,6 +4,7 @@
 <head>
     <title>{% block page_title %} {% endblock %}</title>
     <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="/public/javascripts/sticky-bits.js"></script>
     {% block head %} {% endblock %}
 </head>
 
@@ -26,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div id="global-header-bar"></div>
+        {% block header_bar %}{% endblock %}
     </header>
 
     {% block after_header %}{% endblock %}
