@@ -1,8 +1,11 @@
 .breadcrumbs {
 
+  font-size: 16px;
+
   ol {
     list-style-type: none;
-    padding: 0 8px;
+    padding: 8px 8px 0;
+    margin: 0;
 
     li {
       display: inline-block;
