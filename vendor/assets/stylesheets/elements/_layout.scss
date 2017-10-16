@@ -6,12 +6,13 @@ body {
     width: 100%;
     margin: 0 auto;
     background: $grey-4;
+    height:100%;
 }
 
 
 #global-header {
      display: block;
-     position: fixed;
+     position: sticky;
      left: 0;
      top: 0;
      width: 100%;
@@ -172,11 +173,11 @@ div {
 #content {
     margin: 0 auto;
     padding-bottom: 2em;
-    margin-top: 3em; 
+    // margin-top: 3em; 
     background: white;
 
     &.has-bar{
-        margin-top: 3.5em;
+        // margin-top: 3.5em;
     }
 }
 

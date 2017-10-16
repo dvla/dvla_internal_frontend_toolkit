@@ -5,6 +5,10 @@
     -moz-appearance: none;
     appearance: none;
 
+    &::-ms-expand{
+        display: none;
+    }
+
     &.form-control-1-2 {
         width: 50%;
     }
