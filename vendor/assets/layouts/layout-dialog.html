@@ -4,7 +4,15 @@
 <head>
     <title>{% block page_title %} {% endblock %}</title>
     <meta name="viewport" content="width=device-width" />
-    <script type="text/javascript" src="/public/javascripts/sticky-bits.js"></script>
+    <script type="text/javascript" src="/public/javascripts/stickyfill.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // your code here
+            var header = document.querySelector('#global-header');
+            console.log('header', header);
+            Stickyfill.add(header);
+        }, false);
+    </script>
     {% block head %} {% endblock %}
 </head>
 

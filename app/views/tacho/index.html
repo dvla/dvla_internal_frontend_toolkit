@@ -1,5 +1,16 @@
-{% extends "layout-fixed.html" %} {% block page_title %} TACHOnet {% endblock %} {% block content %}
+{% extends "layout-fixed.html" %} {% block page_title %} TACHOnet {% endblock %} 
 {% block head %} <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> {% endblock %}
+{% block header_bar %} 
+  <ul id="global-header-tabs">
+        <li>Tab title one</li>
+        <li class="active">Active tab</li>
+        <li>Tab title two</li>
+    </ul>
+<!-- <div id="global-header-bar"></div> -->
+ {% endblock %}
+
+{% block content %}
+
 <div class="row">
     <div class="col-1">
         <a href="#" class="btn-back">Back</a>
