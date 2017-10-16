@@ -1,0 +1,40 @@
+{% block top_of_page %}{% endblock %}
+<html>
+
+<head>
+    <title>{% block page_title %} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width" />
+    {% block head %} {% endblock %}
+</head>
+
+<body class="{% block body_classes %}{% endblock %}">
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    {% block body_start %}{% endblock %}
+
+    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+        <div id="header-wrapper">
+            <div id="header-contents">
+                <div id="header-float-left">
+                    <div id="header-logo">
+                        <a href="/" title="Home" id="logo" class="content">
+                            <div id="coat-of-arms" alt=""></div>
+                            <div class="name">DVLA</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block after_header %}{% endblock %}
+
+    <main id="content">
+        <div class="container-fluid">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</body>
+
+</html>

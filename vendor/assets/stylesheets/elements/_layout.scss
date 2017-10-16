@@ -23,6 +23,7 @@ body {
         max-width: calc(100% - 32px);
         height: 8px;
         margin: 0 auto;
+        margin-bottom: 0.5em;
         background: $primary-lighter;
     }
 
@@ -172,8 +173,12 @@ div {
 #content {
     margin: 0 auto;
     padding-bottom: 2em;
-    margin-top: 3.5em; 
+    margin-top: 3em; 
     background: white;
+
+    &.has-bar{
+        margin-top: 3.5em;
+    }
 }
 
 @mixin container() {
