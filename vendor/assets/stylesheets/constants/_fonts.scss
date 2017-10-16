@@ -1,31 +1,31 @@
 /* Interface version 2.0 – 09/09/2017 @ https://github.com/rsms/inter */
 
 @font-face {
-    font-family: Interface;
-    src: url('/fonts/Inter-UI-Regular.woff');
+    font-family: 'Interface';
+    src: url('/fonts/Inter-UI-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Interface;
-    src: url('/fonts/Inter-UI-Medium.woff');
+    font-family: 'Interface';
+    src: url('/fonts/Inter-UI-Medium.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: Interface;
-    src: url('/fonts/Inter-UI-Bold.woff');
+    font-family: 'Interface';
+    src: url('/fonts/Inter-UI-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face{
-    font-family: dvla-icons;
-    src: url('/fonts/dvla-icons.woff');
+    font-family: 'dvla-icons';
+    src: url('/fonts/dvla-icons.woff') format('woff');
 }
 
-$primary-font: Interface, 'Helvetica Neue', Arial sans-serif;
-$icon-font: dvla-icons;
+$primary-font: 'Interface', 'Helvetica Neue', Arial, sans-serif;
+$icon-font: 'dvla-icons';
 
 $normal-font-size: 16px;
 $large-font-size: 20px;
