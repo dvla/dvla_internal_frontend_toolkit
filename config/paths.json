@@ -1,8 +1,8 @@
 {
-  "vendorImg": "vendor/assets/images/",
-  "vendorFnt": "vendor/assets/fonts/",
-  "vendorJs": "vendor/assets/javascripts/",
-  "vendorScss": "vendor/assets/stylesheets/",
+  "assetsImg": "app/assets/images/",
+  "assetsFnt": "app/assets/fonts/",
+  "assetsJs": "app/assets/javascripts/",
+  "assetsScss": "app/assets/stylesheets/",
   "config": "config/",
   "nodeModules": "node_modules/",
   "public": "public/",
@@ -11,6 +11,5 @@
   "publicCss": "public/stylesheets/",
   "publicJs": "public/javascripts/",
   "testSpecs": "test/specs/",
-  "views": "views/",
-  "assetsJs": "app/assets/javascripts/"
+  "views": "views/"
 }

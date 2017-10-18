@@ -35,10 +35,10 @@ gulp.task('build', cb => {
 // ---------------------------------------
 
 gulp.task('styles', () => {
-  return gulp.src(paths.vendorScss + '**/*.scss')
+  return gulp.src(paths.assetsScss + '**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(base64({
-      baseDir: 'vendor/assets',
+      baseDir: 'app/assets',
       extensions: ['svg', 'png', 'woff'],
       maxImageSize: 200 * (1024 * 1024),
       debug: true
@@ -47,7 +47,7 @@ gulp.task('styles', () => {
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.publicCss))
-    .pipe(gulp.dest(paths.vendorScss))
+    .pipe(gulp.dest(paths.assetsScss))
 })
 
 // Images build task ---------------------
@@ -55,7 +55,7 @@ gulp.task('styles', () => {
 // ---------------------------------------
 
 gulp.task('images', () => {
-  return gulp.src(paths.vendorImg + '**/*')
+  return gulp.src(paths.assetsImg + '**/*')
     .pipe(gulp.dest(paths.publicImg))
 })
 
@@ -64,7 +64,7 @@ gulp.task('images', () => {
 // ---------------------------------------
 
 gulp.task('fonts', () => {
-  return gulp.src(paths.vendorFnt + '**/*')
+  return gulp.src(paths.assetsFnt + '**/*')
     .pipe(gulp.dest(paths.publicFnt))
 })
 
@@ -72,7 +72,7 @@ gulp.task('fonts', () => {
 // Copies JavaScript to /public/javascripts
 // ---------------------------------------
 gulp.task('scripts', () => {
-  return gulp.src(paths.vendorJs + '**/*.js')
+  return gulp.src(paths.assetsJs + '**/*.js')
     .pipe(gulp.dest(paths.publicJs))
 })
 
@@ -93,7 +93,7 @@ gulp.task('server', () => {
     script: 'server.js',
     ignore: [
       paths.public + '*',
-      paths.vendor + '*',
+      paths.assets + '*',
       paths.nodeModules + '*'
     ]
   })
@@ -126,19 +126,19 @@ gulp.task('test:app', () =>
 gulp.task('watch', ['watch:styles', 'watch:scripts', 'watch:examplescripts', 'watch:images'])
 
 gulp.task('watch:styles', () => {
-  return gulp.watch(paths.vendorScss + '**/*.scss', ['styles'])
+  return gulp.watch(paths.assetsScss + '**/*.scss', ['styles'])
 })
 
 gulp.task('watch:scripts', () => {
-  return gulp.watch(paths.vendorJs + '**/*.js', ['scripts'])
+  return gulp.watch(paths.assetsJs + '**/*.js', ['scripts'])
 })
 
 gulp.task('watch:examplescripts', () => {
-  return gulp.watch(paths.vendorJs + '**/*.js', ['examplescripts'])
+  return gulp.watch(paths.assetsJs + '**/*.js', ['examplescripts'])
 })
 
 gulp.task('watch:images', () => {
-  return gulp.watch(paths.vendorImg + '**/*', ['images'])
+  return gulp.watch(paths.assetsImg + '**/*', ['images'])
 })
 
 // Develop task --------------------------
@@ -148,26 +148,6 @@ gulp.task('develop', cb => {
   runsequence('build',
               'watch',
               'server', cb)
-})
-
-// Package task ----------------------------
-// Copies the scss files to packages/govuk-elements-sass/
-// Ignores the elements-documentation stylesheets
-// ---------------------------------------
-
-gulp.task('package', cb => {
-  runsequence('package:prepare', cb)
-})
-
-gulp.task('package:prepare', () => {
-  return gulp.src(
-    [
-      paths.vendorScss + '**/elements/**/*.scss',
-      paths.vendorScss + '_govuk-elements.scss',
-      paths.vendorScss + '_frontend-toolkit.scss',
-      paths.vendorScss + '_elements.scss'
-    ])
-    .pipe(gulp.dest(paths.package + 'public/sass/'))
 })
 
 // Default task --------------------------
