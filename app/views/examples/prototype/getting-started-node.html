@@ -1,0 +1,98 @@
+{% extends "layout.html" %} {% block page_title %} Prototype kit {% endblock %} {% block content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/examples/prototype/getting-started">DVLA prototype kit</a></li> 
+            <li>Getting started with Node</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Prototype kit</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="list-numbered">
+                <li><a href="#prerequsites">Prerequisites</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#running">Running</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div id="prerequsites" class="col-12">
+            <h3>Prerequisites</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>In order to use the prototype kit, you must have installed the following on your development machine</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul>
+                <li>Node &amp; NPM</li>
+                <li>Text editor of your choice</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="installation" class="col-12">
+            <h3>Installation</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Node</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Once you have Node &amp; NPM installed on your machine you're ready to <a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">download the prototype kit</a>.
+                This can be done by either downloading the project as a zip, or by forking the project. After the download
+                has finished, move the project to a suitable place on your computer, then open a terminal and navigate to
+                it and run the following command:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-bash"><code><xmp>npm install</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>This will install all of the depenancies that the prototype kit requires to run, includuing the DVLA internal
+                frontend kit.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="running" class="col-12">
+            <h3>Running</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Node</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Now that you have the prototype kit installed and setup, you can verify everything works by starting your prototype.
+                To do so, open your terminal and run the following command:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-bash"><code><xmp>npm start</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>So long as everything happened correctly, you should now be running your prototype app. To view it, vist localhost:3000
+                in your browser.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

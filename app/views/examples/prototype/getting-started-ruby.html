@@ -1,0 +1,117 @@
+{% extends "layout.html" %} {% block page_title %} Prototype kit {% endblock %} {% block content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/examples/prototype/getting-started">DVLA prototype kit</a></li> 
+            <li>Getting started with Ruby on Rails</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Prototype kit</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="list-numbered">
+                <li><a href="#prerequsites">Prerequisites</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#running">Running</a></li>
+            </ol>
+        </div>
+    </div>
+    <div id="prerequsites" class="row">
+        <div class="col-12">
+            <h3>Prerequisites</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>In order to use the prototype kit, you must have installed the following on your development machine</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul>
+                <li>Ruby &amp; Ruby on Rails</li>
+                <li>Text editor of your choice</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="installation" class="col-12">
+            <h3>Installation</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Ruby</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>After install Ruby and Ruby on Rails on your device, you are ready to create your prototype. To do so, run the
+                following command</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-bash"><code><xmp>rails new my-prototype</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Rails will have now generated a new project named my-prototype for you. Now, in an editor of your choice, open
+                your newly created project then open the Gemfile and add the following line.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-ruby"><code><xmp>gem 'dvla_internal_frontend_toolkit', '~> 0.3.2'</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>This will add the DVLA frontend kit as a depenancy to your prototype, which in turn will give you access to all
+                of the internal elements and styles. Finally, now that you've added the dependancy to the project, you have
+                to tell your project to update it's depenancies. To do this, run the following command</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-ruby"><code><xmp>bundle update</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>You are now ready to begin working on your prototype.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="running" class="col-12">
+            <h3>Running</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Ruby</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Now that your Rails project has all it's depenancies installed, you're ready to run the project. To do so, run
+                the following command</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-bash"><code><xmp>rails server</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>This will start your prototype app running on localhost:3000.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
