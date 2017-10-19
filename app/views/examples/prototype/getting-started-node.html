@@ -2,7 +2,7 @@
 <div class="container">
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/examples/prototype/getting-started">DVLA prototype kit</a></li> 
+            <li><a href="/examples/prototype/getting-started">DVLA prototype kit</a></li>
             <li>Getting started with Node</li>
         </ol>
     </div>
@@ -118,22 +118,50 @@ README.md</xmp></code></pre>
     </div>
     <div class="row">
         <div class="col-12">
-            <p>The views for your prototype are kept under app/views. Creating a new file here would create a new page within your app.</p>
-            <p>The styles for your prototype are kept under app/assets/stylesheets.
-                 The application.scss sheet imports the DVLA internal elements and is including within all layouts in the prototype kit.
-                 Any css written in the application file will have full access to all of the internal-frontend-kit elements and variables.
-                To see exactly what is in the frontend-tool-kit, you can read the documentation <a href="/">here</a> .</p>
+            <p>The views for your prototype are kept under app/views. Creating a new file here would create a new page within
+                your app.</p>
+            <p>The styles for your prototype are kept under app/assets/stylesheets. The application.scss sheet imports the DVLA
+                internal elements and is including within all layouts in the prototype kit. Any css written in the application
+                file will have full access to all of the internal-frontend-kit elements and variables. To see exactly what
+                is in the frontend-tool-kit, you can read the documentation <a href="/">here</a> .</p>
         </div>
     </div>
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-12">
             <h3>Creating your first screen</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <p></p>
+            <p>To add a new screen - create a new file under the app/view folder with the name "users.html" and paste the following
+                code within it.</p>
         </div>
-    </div> -->
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% include "./includes/helloworld.html" %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Save the file and view your new screen by typing localhost:3000/hello in your web browser.</p>            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Table component</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>For an example, we'll create a table to display some user data. For this we'll be using the <a href="/examples/components#table">Table Component</a>.</p>
+            <p>Change your users.html file to look like the following</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% include "./includes/usertable.html" %}</xmp></code></pre>
+        </div>
+    </div>
 </div>
 {% endblock %}
