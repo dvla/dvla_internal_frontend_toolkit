@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/liam-betsworth/dvla_internal_frontend_toolkit"
   spec.license       = "MIT"
 
-  spec.files         = Dir["lib/**/*"] + Dir["app/assets/{fonts, images, javascripts, stylesheets}/**/*"] + Dir["app/views/layouts/**/*"] + ["LICENSE", "README.md"]
+  spec.files         = Dir["lib/**/*"] + Dir["app/assets/**/*"] + Dir["app/views/layouts/**/*"] + ["LICENSE", "README.md"]
   spec.bindir        = "exe"
   spec.require_paths = ["lib"]
 
