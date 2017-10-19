@@ -1,0 +1,43 @@
+<%= yield :top_of_page %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= yield :page_title %> </title>
+    <meta name="viewport" content="width=device-width" />
+    <%= yield :head %>
+</head>
+
+<body class="<%= yield :body_classes %>">
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    <%= yield :body_start %>
+
+    <header role="banner" id="global-header" class="<%= yield :header_class%>">
+        <div id="header-wrapper">
+            <div id="header-contents">
+                <div id="header-float-left">
+                    <div id="header-logo">
+                        <a href="/" title="Home" id="logo" class="content">
+                            <div id="coat-of-arms" alt=""></div>
+                            <div class="name">DVLA</div>
+                            <div class="service-name"><%= yield :service_name %></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <%= yield :after_header %>
+
+    <main id="content">
+        <div class="container-dialog">
+            <div class="dialog">
+                <%= yield :content %>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
