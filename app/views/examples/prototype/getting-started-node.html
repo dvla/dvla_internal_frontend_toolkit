@@ -17,6 +17,7 @@
                 <li><a href="#prerequsites">Prerequisites</a></li>
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#running">Running</a></li>
+                <li><a href="#structure">Prototype structure</a></li>
             </ol>
         </div>
     </div>
@@ -45,11 +46,6 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <h4>Node</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <p>Once you have Node &amp; NPM installed on your machine you're ready to <a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">download the prototype kit</a>.
                 This can be done by either downloading the project as a zip, or by forking the project. After the download
                 has finished, move the project to a suitable place on your computer, then open a terminal and navigate to
@@ -74,11 +70,6 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <h4>Node</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <p>Now that you have the prototype kit installed and setup, you can verify everything works by starting your prototype.
                 To do so, open your terminal and run the following command:</p>
         </div>
@@ -94,5 +85,55 @@
                 in your browser.</p>
         </div>
     </div>
+    <div class="row">
+        <div id="structure" class="col-12">
+            <h3>Prototype Structure</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>The prototype's structure is laid out as below</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-bash">
+<code><xmp>app/
+ - assets/
+  -- images/
+  --- javascripts/
+   ---- application.js
+  --- stylesheets/
+   --- application.scss
+ - views/
+  -- index.html
+node_modules/
+public/
+app.js
+gulpfile.js
+package-lock.json
+package.json
+README.md</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>The views for your prototype are kept under app/views. Creating a new file here would create a new page within your app.</p>
+            <p>The styles for your prototype are kept under app/assets/stylesheets.
+                 The application.scss sheet imports the DVLA internal elements and is including within all layouts in the prototype kit.
+                 Any css written in the application file will have full access to all of the internal-frontend-kit elements and variables.
+                To see exactly what is in the frontend-tool-kit, you can read the documentation <a href="/">here</a> .</p>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-12">
+            <h3>Creating your first screen</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p></p>
+        </div>
+    </div> -->
 </div>
 {% endblock %}
