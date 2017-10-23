@@ -1,27 +1,31 @@
 {% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
-    tabs_left %}
-    <ul>
-        <li><a href="/examples/prototype/getting-started/">1. Getting started</a></li>
-        <li><a href="/examples/prototype/layouts/">2. Layouts</a></li>
-        <li class="active"><a href="/examples/prototype/grids/">3. Grids</a></li>
-    </ul>
-    {% endblock %} {% block head %}
-    <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
-    <script src="/public/javascripts/styleguide/prism.js"></script>
-    <script src="/public/javascripts/styleguide/prism-line-numbers.js"></script>
-    {% endblock %} {% block content %}
-    <div class="container">
-        <div class="breadcrumbs">
-            <ol>
-                <li>
-                    <a href="/">DVLA internal elements</a>
-                </li>
-                <li>
-                    <a href="/examples/prototype/getting-started">Prototype kit</a>
-                </li>
-                <li>Grids</li>
-            </ol>
-        </div>
+tabs_left %}
+<ul>
+    <li>
+        <a href="/examples/prototype/getting-started/">1. Getting started</a>
+    </li>
+    <li>
+        <a href="/examples/prototype/layouts/">2. Layouts</a>
+    </li>
+    <li class="active">
+        <a href="/examples/prototype/grids/">3. Grids</a>
+    </li>
+</ul>
+{% endblock %} {% block head %}
+<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
+<script src="/public/javascripts/styleguide/prism.js"></script>
+<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script> {% endblock %} {% block content %}
 
-    </div>
-    {% endblock %}
+<div class="breadcrumbs">
+    <ol>
+        <li>
+            <a href="/">DVLA internal elements</a>
+        </li>
+        <li>
+            <a href="/examples/prototype/getting-started">Prototype kit</a>
+        </li>
+        <li>Grids</li>
+    </ol>
+</div>
+
+{% endblock %}
