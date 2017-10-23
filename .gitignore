@@ -3,3 +3,5 @@ node_modules
 public
 
 Gemfile\.lock
+
+app/assets/stylesheets/dvla-internal-elements-styles\.min\.css
