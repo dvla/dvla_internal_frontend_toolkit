@@ -4,38 +4,47 @@ body {
 }
 
 @mixin heading() {
-    font-weight: bold;
-    color: $text-primary-colour;
+    font-weight: 500;
+    color: $primary;
+    margin-top: 1.25em;
+    margin-bottom: 0.25em;
 }
 
 h1 {
+    @include heading();
     font-size: 40px;
     line-height: 48px;
-    color: $primary;
+    letter-spacing: -0.3px;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
 }
 
 h2 {
+    @include heading();
     font-size: 32px;
     line-height: 40px;
-    color: $primary;
+    letter-spacing: -0.2px;
 }
 
 h3 {
+    @include heading();
     font-size: 28px;
-    line-height: 36px;
-    color: $primary;
+    line-height: 32px;
+    letter-spacing: -0.1px;
 }
 
 h4 {
+    @include heading();
     font-size: 24px;
-    line-height: 32px;
-    color: $primary;
+    line-height: 28px;
+    letter-spacing: 0;
 }
 
 h5 {
+    @include heading();
     font-size: 20px;
     line-height: 24px;
-    color: $primary;
+    letter-spacing: 0.1px;
 }
 
 .text-large {
@@ -50,6 +59,17 @@ h5 {
     line-height: 24px;
     font-size: 16px;
     font-weight: normal;
+}
+
+.lede {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    font-weight: normal;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
+    margin-top: 0;
 }
 
 ul, ol {
