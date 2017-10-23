@@ -41,7 +41,7 @@ gulp.task('styles', () => {
       baseDir: 'app/assets',
       extensions: ['svg', 'png', 'woff'],
       maxImageSize: 200 * (1024 * 1024),
-      debug: true
+      debug: false
     }))
     .pipe(gulp.dest(paths.publicCss))
     .pipe(rename({ suffix: '.min' }))
