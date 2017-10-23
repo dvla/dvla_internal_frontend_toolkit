@@ -1,0 +1,18 @@
+.data-highlight{
+    background: $primary-light;
+    text-align: center;
+    color: white;
+    height: 184px;
+    font-weight: bold;
+    font-size: 32px;
+    vertical-align: middle;
+    .header{
+        background: $primary-dark;
+        line-height: 48px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .content{
+        line-height: 134px;
+    }
+}
