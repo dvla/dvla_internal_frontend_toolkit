@@ -1,157 +1,137 @@
-{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %}
-{% block tabs_left %}
+{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
+tabs_left %}
 <ul>
-    <li class="active"><a href="/examples/prototype/getting-started/">1. Getting started</a></li>
-    <li><a href="/examples/prototype/layouts/">2. Layouts</a></li>
+    <li class="active">
+        <a href="/examples/prototype/getting-started/">1. Getting started</a>
+    </li>
+    <li>
+        <a href="/examples/prototype/layouts/">2. Layouts</a>
+    </li>
+    <li>
+        <a href="/examples/prototype/grids/">3. Grids</a>
+    </li>
 </ul>
- {% endblock %}
-{% block head %}
-<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
-{% endblock %}
-{% block content %}
-<div class="container">
-    <div class="breadcrumbs">
-        <ol>
+{% endblock %} {% block head %}
+<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
+<script src="/public/javascripts/styleguide/prism.js"></script>
+<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script> {% endblock %} {% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li>
+            <a href="/">DVLA internal elements</a>
+        </li>
+        <li>
+            <a href="/examples/prototype/getting-started">Prototype kit</a>
+        </li>
+        <li>Getting started with Node</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Prototype kit</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol class="list-numbered">
             <li>
-                <a href="/">DVLA internal elements</a>
+                <a href="#prerequsites">Prerequisites</a>
             </li>
             <li>
-                <a href="/examples/prototype/getting-started">Prototype kit</a>
+                <a href="#installation">Installation</a>
             </li>
-            <li>Getting started with Node</li>
+            <li>
+                <a href="#running">Running</a>
+            </li>
+            <li>
+                <a href="#structure">Prototype structure</a>
+            </li>
+            <li>
+                <a href="#first-screen">First screen</a>
+            </li>
+            <li>
+                <a href="#table-component">Table component</a>
+            </li>
         </ol>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h2>Prototype kit</h2>
-        </div>
+</div>
+<div class="row">
+    <div id="prerequsites" class="col-12">
+        <h3>Prerequisites</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <ol class="list-numbered">
-                <li>
-                    <a href="#prerequsites">Prerequisites</a>
-                </li>
-                <li>
-                    <a href="#installation">Installation</a>
-                </li>
-                <li>
-                    <a href="#running">Running</a>
-                </li>
-                <li>
-                    <a href="#structure">Prototype structure</a>
-                </li>
-                <li>
-                    <a href="#first-screen">First screen</a>
-                </li>
-                <li>
-                    <a href="#table-component">Table component</a>
-                </li>
-                <li>
-                    <a href="#layouts">Layouts</a>
-                    <ul>
-                        <li>
-                            <a href="#layout-fixed">Fixed</a>
-                        </li>
-                        <li>
-                            <a href="#layout-fluid">Fluid</a>
-                            <ul>
-                                <li>
-                                    <a href="#layout-fluid-topbar">Fluid with top bar</a>
-                                </li>
-                                <li>
-                                    <a href="#layout-fluid-sidebar">Fluid with side bar</a>
-                                </li>
-                                <li>
-                                    <a href="#layout-fluid-topbar-sidebar">Fluid with top bar and side bar</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#layout-dialog">Dialog</a>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>In order to use the prototype kit, you must have installed the following on your development machine</p>
     </div>
-    <div class="row">
-        <div id="prerequsites" class="col-12">
-            <h3>Prerequisites</h3>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ul>
+            <li>Node &amp; NPM</li>
+            <li>Text editor of your choice</li>
+        </ul>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>In order to use the prototype kit, you must have installed the following on your development machine</p>
-        </div>
+</div>
+<div class="row">
+    <div id="installation" class="col-12">
+        <h3>Installation</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <ul>
-                <li>Node &amp; NPM</li>
-                <li>Text editor of your choice</li>
-            </ul>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>Once you have Node &amp; NPM installed on your machine you're ready to
+            <a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">download the prototype kit</a>. This can be done by either downloading the project as a zip, or by forking the
+            project. After the download has finished, move the project to a suitable place on your computer, then open a
+            terminal and navigate to it and run the following command:</p>
     </div>
-    <div class="row">
-        <div id="installation" class="col-12">
-            <h3>Installation</h3>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre id="text" class="language-bash"><code><xmp>npm install</xmp></code></pre>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>Once you have Node &amp; NPM installed on your machine you're ready to
-                <a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">download the prototype kit</a>. This can be done by either downloading the project as a zip, or by forking
-                the project. After the download has finished, move the project to a suitable place on your computer, then
-                open a terminal and navigate to it and run the following command:</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>This will install all of the depenancies that the prototype kit requires to run, includuing the DVLA internal frontend
+            kit.</p>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-bash"><code><xmp>npm install</xmp></code></pre>
-        </div>
+</div>
+<div class="row">
+    <div id="running" class="col-12">
+        <h3>Running</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>This will install all of the depenancies that the prototype kit requires to run, includuing the DVLA internal
-                frontend kit.</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>Now that you have the prototype kit installed and setup, you can verify everything works by starting your prototype.
+            To do so, open your terminal and run the following command:</p>
     </div>
-    <div class="row">
-        <div id="running" class="col-12">
-            <h3>Running</h3>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre id="text" class="language-bash"><code><xmp>npm start</xmp></code></pre>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>Now that you have the prototype kit installed and setup, you can verify everything works by starting your prototype.
-                To do so, open your terminal and run the following command:</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>So long as everything happened correctly, you should now be running your prototype app. To view it, vist localhost:3000
+            in your browser.</p>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-bash"><code><xmp>npm start</xmp></code></pre>
-        </div>
+</div>
+<div class="row">
+    <div id="structure" class="col-12">
+        <h3>Prototype Structure</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>So long as everything happened correctly, you should now be running your prototype app. To view it, vist localhost:3000
-                in your browser.</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>The prototype's structure is laid out as below</p>
     </div>
-    <div class="row">
-        <div id="structure" class="col-12">
-            <h3>Prototype Structure</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <p>The prototype's structure is laid out as below</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-bash">
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre id="text" class="language-bash">
 <code><xmp>app/
  - assets/
   -- images/
@@ -168,61 +148,60 @@ gulpfile.js
 package-lock.json
 package.json
 README.md</xmp></code></pre>
-        </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>The views for your prototype are kept under app/views. Creating a new file here would create a new page within
-                your app.</p>
-            <p>The styles for your prototype are kept under app/assets/stylesheets. The application.scss sheet imports the DVLA
-                internal elements and is including within all layouts in the prototype kit. Any css written in the application
-                file will have full access to all of the internal-frontend-kit elements and variables. To see exactly what
-                is in the frontend-tool-kit, you can read the documentation
-                <a href="/">here</a> .</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>The views for your prototype are kept under app/views. Creating a new file here would create a new page within your
+            app.</p>
+        <p>The styles for your prototype are kept under app/assets/stylesheets. The application.scss sheet imports the DVLA
+            internal elements and is including within all layouts in the prototype kit. Any css written in the application
+            file will have full access to all of the internal-frontend-kit elements and variables. To see exactly what is
+            in the frontend-tool-kit, you can read the documentation
+            <a href="/">here</a> .</p>
     </div>
-    <div class="row">
-        <div id="first-screen" class="col-12">
-            <h3>Creating your first screen</h3>
-        </div>
+</div>
+<div class="row">
+    <div id="first-screen" class="col-12">
+        <h3>Creating your first screen</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>To add a new screen - create a new file under the app/view folder with the name "users.html" and paste the following
-                code within it.</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>To add a new screen - create a new file under the app/view folder with the name "users.html" and paste the following
+            code within it.</p>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-markup"><code><xmp>{% include "./includes/helloworld.html" %}</xmp></code></pre>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre id="text" class="line-numbers  language-markup"><code><xmp>{% include "./includes/helloworld.html" %}</xmp></code></pre>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>Save the file and view your new screen by typing localhost:3000/users in your web browser.</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>Save the file and view your new screen by typing localhost:3000/users in your web browser.</p>
     </div>
-    <div class="row">
-        <div id="table-component" class="col-12">
-            <h3>Table component</h3>
-        </div>
+</div>
+<div class="row">
+    <div id="table-component" class="col-12">
+        <h3>Table component</h3>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>For an example, we'll create a table to display some user data. For this we'll be using the
-                <a href="/examples/components#table">Table Component</a>.</p>
-            <p>Change your users.html file to look like the following</p>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>For an example, we'll create a table to display some user data. For this we'll be using the
+            <a href="/examples/components#table">Table Component</a>.</p>
+        <p>Change your users.html file to look like the following</p>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-markup"><code><xmp>{% include "./includes/usertable.html" %}</xmp></code></pre>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre id="text" class="language-markup"><code><xmp>{% include "./includes/usertable.html" %}</xmp></code></pre>
     </div>
-    <div class="row">
-        <div class="col-12 btn-pushdown" style="text-align: right;">
-            <a href="/examples/prototype/layouts" class="btn btn-primary">Layouts</a>
-        </div>
+</div>
+<div class="row">
+    <div class="col-12 btn-pushdown" style="text-align: right;">
+        <a href="/examples/prototype/layouts" class="btn btn-primary">Layouts</a>
     </div>
 </div>
 {% endblock %}
