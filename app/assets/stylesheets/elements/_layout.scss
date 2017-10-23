@@ -1,5 +1,6 @@
 html {
     font-family: $primary-font;
+    box-sizing: border-box;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
         margin: 0 auto;
         width: 944px;
         max-width: calc(100% - 32px);
+        box-sizing: border-box;
 
         // @media screen and (max-width: 1023px) {
         //     width: 960px;
@@ -53,7 +55,7 @@ body {
 
         @media screen and (min-width: 1024px) {
             width: 100%;
-            padding: 0 40px;
+            padding: 0 24px;
         }
     }
 }
