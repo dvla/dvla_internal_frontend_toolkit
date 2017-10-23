@@ -238,6 +238,74 @@ pre.language-markup{
     }
 }
 
+.icon-swatch-wrapper{
+    margin: 24px 16px;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+     span{
+        display: block;
+        &.code{
+            font-style: italic;
+        }
+    }
+
+    .swatch{
+        margin: 8px;
+        margin-left: 33%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: $primary;
+        color: white;
+        position: relative;
+        padding-top: 16px;
+        text-align: center;
+        font-family: $icon-font;
+
+        &.swatch-add::before{
+            content: '\e900';
+        }
+        &.swatch-calendar::before{
+            content: '\e901';
+        }
+        &.swatch-download::before{
+            content: '\e902';
+        }
+        &.swatch-info::before{
+            content: '\e903';
+        }
+        &.swatch-key::before{
+            content: '\e904';
+        }
+        &.swatch-manufacturer::before{
+            content: '\e905';
+        }
+        &.swatch-refresh::before{
+            content: '\e906';
+        }
+        &.swatch-retrospective-registration::before{
+            content: '\e907';
+        }
+        &.swatch-search::before{
+            content: '\e908';
+        }
+        &.swatch-tag::before{
+            content: '\e909';
+        }
+        &.swatch-tick::before{
+            content: '\e90a';
+        }
+        &.swatch-user::before{
+            content: '\e90b';
+        }
+        &.swatch-warning::before{
+            content: '\e90c';
+        }
+    }
+
+}
+
 .btn-pushdown{
     margin-top: 8px;
 }

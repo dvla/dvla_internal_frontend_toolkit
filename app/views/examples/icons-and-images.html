@@ -1,21 +1,24 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  Icons and Images
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} Icons and Images {% endblock %} {% block content %}
 <div class="container">
-    <div class="breadcrumbs">
-        <ol>
-            <li><a href="/">DVLA internal elements</a></li> 
-            <li>Icons and images</li>
-        </ol>
+  <div class="breadcrumbs">
+    <ol>
+      <li>
+        <a href="/">DVLA internal elements</a>
+      </li>
+      <li>Icons and images</li>
+    </ol>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h1>Icons and images</h1>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h1>Icons and images</h1>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="example-demo">
+          {% include './includes/icons/icons.html' %}
+      </div>
     </div>
+  </div>
 </div>
 {% endblock %}
