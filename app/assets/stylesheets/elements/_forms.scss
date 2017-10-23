@@ -25,6 +25,10 @@ select {
     background-size: 28px 12px;
     background-position: right center;
     padding-left: 16px;
+    min-width: 160px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 textarea{
