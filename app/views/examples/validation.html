@@ -9,23 +9,44 @@
     <div class="breadcrumbs">
         <ol>
             <li><a href="/">DVLA internal elements</a></li> 
-            <li>Errors and Validation</li>
+            <li>Errors and validation</li>
         </ol>
     </div>
     <div class="row">
         <div class="col-12">
-            <h1>Errors and Validation</h1>
-            <h2>Success alert</h2>
+            <h1>Errors and validation</h1>
+            <ol class="numbered-list">
+                <li><a href="#form-validation">Form validation</a></li>
+                <li><a href="#alerts">Alerts</a>
+                    <ul>
+                        <li><a href="#alert-success">Success alert</a></li>
+                        <li><a href="#alert-info">Info alert</a></li>
+                        <li><a href="#alert-warning">Warning alert</a></li>
+                    </ul>
+                </li>
+            </ol>
+            <h2 id="form-validation">Form validation</h2>
+            <p>To active the error styling on a form-group, add the <code>.error</code> class to the surrounding element. The specific error should be placed within a <code>.label-error</code> class.</p>
+            <div class="example-demo">
+                {% include './includes/errors-and-validation/input-error.html' %}
+            </div>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/input-error.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 id="alerts">Alerts</h2>
+            <h3>Success alert</h3>
             <div class="example-demo">
                 {% include './includes/errors-and-validation/success-alert.html' %}
             </div>
             <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/success-alert.html' %}</xmp></code></pre>
-            <h2>Information alert</h2>
+            <h3>Information alert</h3>
             <div class="example-demo">
                 {% include './includes/errors-and-validation/info-alert.html' %}
             </div>
             <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/info-alert.html' %}</xmp></code></pre>
-            <h2>Warning alert</h2>
+            <h3>Warning alert</h3>
             <div class="example-demo">
                 {% include './includes/errors-and-validation/warning-alert.html' %}
             </div>

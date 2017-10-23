@@ -9,60 +9,54 @@
     <div class="row">
         <div class="col-12">
             <h1>Forms</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <ol class="numbered-list">
+                <li><a href="#form-control">Form control</a></li>
+                <li><a href="#input">Input</a>
+                    <ul>
+                        <li><a href="#input-text">Text</a></li>
+                        <li><a href="#input-radio">Radio</a></li>
+                        <li><a href="#input-checkbox">Checkbox</a></li>
+                    </ul>
+                </li>
                 <li><a href="#select">Select</a></li>
                 <li><a href="#textarea">Textarea</a></li>
-                <li><a href="#textareaplayback">Textarea playback</a></li>
             </ol>
         </div>
     </div>
+    <div id="form-control" class="row">
+        <div class="col-12">
+            <h2>Form control</h2>
+            <p>Form controls inherit the majority of their styling through the <code>.form-control</code> class. By default, form controls are 100% width of their parent. If you require a smaller form control, use the <code>.form-control</code> class alongside the other form control ratio classes, e.g. <code>.form-control-1-2</code>.</p>
+            <div class="example-demo">{% include './includes/forms/form-control.html' %}</div>
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/form-control.html' %}</xmp></code></pre>
+        </div>
+    </div>
     <div class="row">
+        <div class="col-12">
+            <h2 id="input">Input</h2>
+            <h3 id="input-text">Text</h3>
+            <div class="example-demo">{% include './includes/forms/input/text.html' %}</div>
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/input/text.html' %}</xmp></code></pre>
+            <h3 id="input-radio">Radio</h3>
+            <div class="example-demo">{% include './includes/forms/input/radio.html' %}</div>
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/input/radio.html' %}</xmp></code></pre>
+            <h3 id="input-checkbox">Checkbox</h3>
+            <div class="example-demo">{% include './includes/forms/input/checkbox.html' %}</div>
+            <pre><code class="language-markup"><xmp>{% include './includes/forms/input/checkbox.html' %}</xmp></code></pre>
+        </div>
+    </div>
+    <div id="select" class="row">
         <div class="col-12">
             <h2>Select</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <div class="example-demo">{% include './includes/forms/select.html' %}</div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <pre><code class="language-markup"><xmp>{% include './includes/forms/select.html' %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <h2>Textarea</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <div class="example-demo">{% include './includes/forms/textarea.html' %}</div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
             <pre><code class="language-markup"><xmp>{% include './includes/forms/textarea.html' %}</xmp></code></pre>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h2>Textarea playback</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="example-demo">{% include './includes/forms/textareaplayback.html' %}</div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <pre><code class="language-markup"><xmp>{% include './includes/forms/textareaplayback.html' %}</xmp></code></pre>
         </div>
     </div>
 </div>
