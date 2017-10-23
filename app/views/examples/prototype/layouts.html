@@ -1,0 +1,120 @@
+{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
+tabs_left %}
+<ul>
+    <li>
+        <a href="/examples/prototype/getting-started/">Getting started</a>
+    </li>
+    <li class="active">
+        <a href="/examples/prototype/layouts/">Layouts</a>
+    </li>
+</ul>
+{% endblock %} {% block head %}
+<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> {% endblock %} {% block content %}
+<div class="container">
+    <div class="breadcrumbs">
+        <ol>
+            <li>
+                <a href="/">DVLA internal elements</a>
+            </li>
+            <li>
+                <a href="/examples/prototype/getting-started">Prototype kit</a>
+            </li>
+            <li>Getting started with Node</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Prototype kit</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol class="list-numbered">
+                <li>
+                    <a href="#layout-fixed">Fixed</a>
+                </li>
+                <li>
+                    <a href="#layout-fluid">Fluid</a>
+                    <ul>
+                        <li>
+                            <a href="#layout-fluid-topbar">Fluid with top bar</a>
+                        </li>
+                        <li>
+                            <a href="#layout-fluid-sidebar">Fluid with side bar</a>
+                        </li>
+                        <li>
+                            <a href="#layout-fluid-topbar-sidebar">Fluid with top bar and side bar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#layout-dialog">Dialog</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>Layouts</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>When creating a screen using the prototype kit, we only have control over what content is shown within a view.
+                For the most part this is ok, however certain screens will require us to use a different layout. Up until
+                now, we have been using the fixed layout, however there are many different layouts that exist in the system
+                as shown below.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Fixed</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-fixed.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4>Fluid</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-fluid.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div id="fluid-tabs-left" class="col-12">
+            <h4>Fluid - tabs left</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-fluid-tabs-left.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div id="fluid-tabs-top" class="col-12">
+            <h4>Fluid - tabs top</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-fluid-tabs-top.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div id="dialog" class="col-12">
+            <h4>Dialog</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-dialog.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+</div>
+{% endblock %}

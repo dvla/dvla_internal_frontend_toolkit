@@ -1,4 +1,14 @@
-{% extends "layout.html" %} {% block page_title %} Prototype kit {% endblock %} {% block content %}
+{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} 
+{% block tabs_left %}
+<ul>
+    <li class="active"><a href="/examples/prototype/getting-started/">Getting started</a></li>
+    <li><a href="/examples/prototype/layouts/">Layouts</a></li>
+</ul>
+ {% endblock %}
+ {% block head %}
+ <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
+ {% endblock %}
+ {% block content %}
 <div class="container">
     <div class="breadcrumbs">
         <ol>
