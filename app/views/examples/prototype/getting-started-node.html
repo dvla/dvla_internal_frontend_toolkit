@@ -3,10 +3,13 @@
 <ul>
     <li class="active"><a href="/examples/prototype/getting-started/">1. Getting started</a></li>
     <li><a href="/examples/prototype/layouts/">2. Layouts</a></li>
+    <li><a href="/examples/prototype/grids/">3. Grids</a></li>
 </ul>
  {% endblock %}
 {% block head %}
 <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
+<script src="/public/javascripts/styleguide/prism.js"></script>
+<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script>
 {% endblock %}
 {% block content %}
 <div class="container">
@@ -46,31 +49,6 @@
                 </li>
                 <li>
                     <a href="#table-component">Table component</a>
-                </li>
-                <li>
-                    <a href="#layouts">Layouts</a>
-                    <ul>
-                        <li>
-                            <a href="#layout-fixed">Fixed</a>
-                        </li>
-                        <li>
-                            <a href="#layout-fluid">Fluid</a>
-                            <ul>
-                                <li>
-                                    <a href="#layout-fluid-topbar">Fluid with top bar</a>
-                                </li>
-                                <li>
-                                    <a href="#layout-fluid-sidebar">Fluid with side bar</a>
-                                </li>
-                                <li>
-                                    <a href="#layout-fluid-topbar-sidebar">Fluid with top bar and side bar</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#layout-dialog">Dialog</a>
-                        </li>
-                    </ul>
                 </li>
             </ol>
         </div>
@@ -194,7 +172,7 @@ README.md</xmp></code></pre>
     </div>
     <div class="row">
         <div class="col-12">
-            <pre id="text" class="language-markup"><code><xmp>{% include "./includes/helloworld.html" %}</xmp></code></pre>
+            <pre id="text" class="line-numbers  language-markup"><code><xmp>{% include "./includes/helloworld.html" %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">

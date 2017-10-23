@@ -7,9 +7,13 @@ tabs_left %}
     <li class="active">
         <a href="/examples/prototype/layouts/">2. Layouts</a>
     </li>
+    <li><a href="/examples/prototype/grids/">3. Grids</a></li>
 </ul>
 {% endblock %} {% block head %}
-<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> {% endblock %} {% block content %}
+<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" /> 
+<script src="/public/javascripts/styleguide/prism.js"></script>
+<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script>
+{% endblock %} {% block content %}
 <div class="container">
     <div class="breadcrumbs">
         <ol>
@@ -114,6 +118,11 @@ tabs_left %}
     <div class="row">
         <div class="col-12">
             <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-dialog.html' %}{% endraw %}</xmp></code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 btn-pushdown" style="text-align: right;">
+            <a href="/examples/prototype/grids" class="btn btn-primary">Grids</a>
         </div>
     </div>
 </div>
