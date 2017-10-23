@@ -95,6 +95,13 @@
         text-decoration: underline;
       }
 
+      a{
+        text-decoration: none;
+        &:visited{
+          color: $primary;
+        }
+      }
+
       &:active, &.active{
         color: $primary;
         border-left: 8px solid $primary;

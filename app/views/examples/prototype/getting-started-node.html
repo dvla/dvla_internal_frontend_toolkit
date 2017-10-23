@@ -1,8 +1,8 @@
 {% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %}
 {% block tabs_left %}
 <ul>
-    <li class="active"><a href="/examples/prototype/getting-started/">Getting started</a></li>
-    <li><a href="/examples/prototype/layouts/">Layouts</a></li>
+    <li class="active"><a href="/examples/prototype/getting-started/">1. Getting started</a></li>
+    <li><a href="/examples/prototype/layouts/">2. Layouts</a></li>
 </ul>
  {% endblock %}
 {% block head %}
@@ -220,26 +220,8 @@ README.md</xmp></code></pre>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <h3>Layouts</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <p>When creating a screen using the prototype kit, we only have control over what content is shown within a view.
-                For the most part this is ok, however certain screens will require us to use a different layout. Up until
-                now, we have been using the fixed layout, however there are many different layouts that exist in the system
-                as shown below.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h4>Fixed</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <pre id="text" class="language-markup"><code><xmp>{% raw %}{% extends 'layout-fixed.html' %}{% endraw %}</xmp></code></pre>
+        <div class="col-12 btn-pushdown" style="text-align: right;">
+            <a href="/examples/prototype/layouts" class="btn btn-primary">Layouts</a>
         </div>
     </div>
 </div>
