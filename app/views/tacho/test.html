@@ -34,37 +34,27 @@
 
     {% block after_header %}{% endblock %}
 
-    <script type="text/javascript">
-        function toggle(toggle) {
-            var isTicked = toggle.className.includes('tick');
-            if (isTicked) {
-                toggle.classList.remove('tick');
-            } else {
-                toggle.classList.add('tick');
-            }
-            console.log('class', toggle.className)
-        }
-    </script>
-
     <main id="content">
         <div class="container">
             <!-- <div class="container"> -->
             <div class="row">
                 <div class="col-12">
-                    <div>
-                        <div onclick="toggle(this)" class="toggle"></div>
-                        <label for="toggle">Apple</label>
-                    </div>
-                    <div>
-                        <div onclick="toggle(this)" id="toggle2" class="toggle tick"></div>
-                        <label for="toggle2">Apple</label>
+                    <p></p>
+                    <div class="file-upload">
+                      
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                    <div class="col-12">
+                        <p></p>
+                            <div class="textarea-playback-date"><strong>Date: </strong>07/07/1995</div>
+                            <div class="textarea-playback">
+                                hi    
+                            </div>  
+                        </div>
+                    </div>
                 </div>
-            </div>
             <!-- </div> -->
         </div>
     </main>
