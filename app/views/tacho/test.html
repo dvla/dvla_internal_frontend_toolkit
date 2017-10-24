@@ -4,20 +4,18 @@
 <head>
     <title>{% block page_title %} {% endblock %} – DVLA Internal Elements</title>
     <link rel="stylesheet" type="text/css" href="/public/stylesheets/dvla-internal-elements-styles.css" />
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="/public/javascripts/prism.js"></script>
-    <script src="/public/javascripts/prism-line-numbers.js"></script>
-    {% block head %} {% endblock %}
+    <script src="/public/javascripts/prism-line-numbers.js"></script> {% block head %} {% endblock %}
 </head>
 
 <body class="{% block body_classes %}{% endblock %}">
     <script>
         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-    </script>
-    {% block body_start %}{% endblock %}
-    
+    </script> {% block body_start %}{% endblock %}
+
     <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
         <div id="header-wrapper">
             <div id="header-contents">
@@ -33,26 +31,23 @@
         </div>
         <!-- <div id="global-header-bar"></div> -->
     </header>
-     
+
     {% block after_header %}{% endblock %}
-    
+
     <main id="content">
         <div class="container">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col-12">
-                            <p></p>
-                            <div class="form-group error">
-                                <label for="hello">
-                                    <div class="label-title">National insurance number</div>
-                                    <div class="label-hint">For example: KP 01 92 UK K</div>
-                                    <div class="label-error">Error message about national insurance</div>
-                                    <input type="text" id="hello" class="form-control" />
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                <!-- </div> -->
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="toggle"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="toggle tick"></div>
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
     </main>
 </body>

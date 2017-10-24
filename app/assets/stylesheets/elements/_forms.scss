@@ -247,3 +247,57 @@ fieldset {
 .multiple-choice:last-child, .multiple-choice:last-of-type {
     margin-bottom: 0;
 }
+
+.toggle{
+    width: 64px;
+    margin: 16px 0;
+    background: $grey-1;
+    position: relative;
+    color: white;
+    border-radius: 16px;
+    padding: 4px;
+    min-height: 34px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:before{
+        display: inline-block;
+        content: '';
+        width: 26px;
+        height: 26px;
+        border-radius: 100%;
+        background: white;
+    }
+    &:after{
+        font-family: $icon-font;
+        content: '\e90d';
+        position: absolute;
+        right: 8px;
+        top: 5px;
+    }
+
+    &.tick{
+        background: $success;
+
+        &:before{
+            font-family: $icon-font;
+            content: '\e90a';
+            position: absolute;
+            left: 8px;
+            top: 5px;
+            background: $success;
+        }
+
+        &:after{
+            display: inline;
+            content: ' ';
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            background: white;
+            top: 4px;
+        }
+    }
+}
