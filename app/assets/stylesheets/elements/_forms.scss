@@ -187,12 +187,14 @@ fieldset {
     }    
 
     [type=checkbox] {
+        width: 28px;
+        height: 28px;
         & + label::before {
             content: "";
             border: 2px solid $black;
             background: transparent;
-            width: 34px;
-            height: 34px;
+            width: 28px;
+            height: 28px;
             position: absolute;
             top: 0;
             left: 0;
@@ -207,8 +209,8 @@ fieldset {
             width: 17px;
             height: 10px;
             position: absolute;
-            top: 10px;
-            left: 8px;
+            top: 7px;
+            left: 6px;
             -moz-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
