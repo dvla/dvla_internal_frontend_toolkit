@@ -1,9 +1,28 @@
-{% extends "layout.html" %} {% block page_title %} Prototype kit {% endblock %} {% block content %}
-<div class="container">
+{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block tabs_left %}
+<ul>
+    <li class="active">
+        <a href="/examples/prototype/getting-started/">1. Getting started</a>
+    </li>
+    <li>
+        <a href="/examples/prototype/layouts-ruby">2. Layouts</a>
+    </li>
+    <li>
+        <a href="/examples/prototype/grids-ruby/">3. Grids</a>
+    </li>
+</ul>
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
+<script src="/public/javascripts/styleguide/prism.js"></script>
+<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script> {% endblock %} {% block content %}
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/">DVLA internal elements</a></li>
-            <li><a href="/examples/prototype/getting-started">Prototype kit</a></li>
+            <li>
+                <a href="/">DVLA internal elements</a>
+            </li>
+            <li>
+                <a href="/examples/prototype/getting-started">Prototype kit</a>
+            </li>
             <li>Getting started with Ruby on Rails</li>
         </ol>
     </div>
@@ -15,9 +34,15 @@
     <div class="row">
         <div class="col-12">
             <ol class="list-numbered">
-                <li><a href="#prerequsites">Prerequisites</a></li>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#running">Running</a></li>
+                <li>
+                    <a href="#prerequsites">Prerequisites</a>
+                </li>
+                <li>
+                    <a href="#installation">Installation</a>
+                </li>
+                <li>
+                    <a href="#running">Running</a>
+                </li>
             </ol>
         </div>
     </div>
@@ -114,5 +139,4 @@
             <p>This will start your prototype app running on localhost:3000.</p>
         </div>
     </div>
-</div>
 {% endblock %}
