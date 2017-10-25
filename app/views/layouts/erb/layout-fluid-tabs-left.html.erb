@@ -34,7 +34,7 @@
     <main id="content">
         <div id="side-bar">
             <% if content_for?(:tabs_left) %>
-            <% yield :tabs_left %>
+            <%= yield :tabs_left %>
             <% else %>
             <ul>
                 <li>Tab title one</li>
