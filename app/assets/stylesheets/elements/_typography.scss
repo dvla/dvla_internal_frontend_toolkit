@@ -10,7 +10,7 @@ body {
     margin-bottom: 0.25em;
 }
 
-h1 {
+h1, .heading-extra-large {
     @include heading();
     font-size: 40px;
     line-height: 48px;
@@ -19,28 +19,28 @@ h1 {
     margin-bottom: 0.2em;
 }
 
-h2 {
+h2, .heading-large {
     @include heading();
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.2px;
 }
 
-h3 {
+h3, .heading-medium {
     @include heading();
     font-size: 28px;
     line-height: 32px;
     letter-spacing: -0.1px;
 }
 
-h4 {
+h4, .heading-small {
     @include heading();
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0;
 }
 
-h5 {
+h5, .heading-extra-small {
     @include heading();
     font-size: 20px;
     line-height: 24px;
