@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dvla_internal_frontend_toolkit (0.3.2)
+    dvla_internal_frontend_toolkit (0.3.4)
       railties (~> 5.1)
 
 GEM

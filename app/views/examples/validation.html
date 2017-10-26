@@ -1,14 +1,10 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  Errors and Validation
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} Errors and Validation {% endblock %} {% block content %}
 <div class="container">
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/">DVLA internal elements</a></li> 
+            <li>
+                <a href="/">DVLA internal elements</a>
+            </li>
             <li>Errors and validation</li>
         </ol>
     </div>
@@ -16,17 +12,31 @@
         <div class="col-12">
             <h1>Errors and validation</h1>
             <ol class="numbered-list">
-                <li><a href="#form-validation">Form validation</a></li>
-                <li><a href="#alerts">Alerts</a>
+                <li>
+                    <a href="#form-validation">Form validation</a>
+                </li>
+                <li>
+                    <a href="#alerts">Alerts</a>
                     <ul>
-                        <li><a href="#alert-success">Success alert</a></li>
-                        <li><a href="#alert-info">Info alert</a></li>
-                        <li><a href="#alert-warning">Warning alert</a></li>
+                        <li>
+                            <a href="#alert-success">Success alert</a>
+                        </li>
+                        <li>
+                            <a href="#alert-info">Info alert</a>
+                        </li>
+                        <li>
+                            <a href="#alert-warning">Warning alert</a>
+                        </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#prototype-validation">Prototype validation</a>
                 </li>
             </ol>
             <h2 id="form-validation">Form validation</h2>
-            <p>To active the error styling on a form-group, add the <code>.error</code> class to the surrounding element. The specific error should be placed within a <code>.label-error</code> class.</p>
+            <p>To active the error styling on a form-group, add the
+                <code>.error</code> class to the surrounding element. The specific error should be placed within a
+                <code>.label-error</code> class.</p>
             <div class="example-demo">
                 {% include './includes/errors-and-validation/input-error.html' %}
             </div>
@@ -53,5 +63,7 @@
             <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/warning-alert.html' %}</xmp></code></pre>
         </div>
     </div>
+
+    {% include './prototype/includes/validation.html' %}
 </div>
 {% endblock %}
