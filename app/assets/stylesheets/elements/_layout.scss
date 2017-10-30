@@ -256,3 +256,44 @@ div {
     left: -9999px !important;
     top: -9999px !important;
 }
+
+aside {
+    font-size: 16px;
+    margin-bottom: 40px;
+
+    &.bar {
+        border-top: 8px solid $primary;
+        padding-top: 24px;
+    }
+
+    &.panel {
+        background: $grey-4;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+
+    .aside-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 24px;
+    }
+
+    .aside-action {
+        margin-top: 28px;
+        
+        a {
+            color: $primary;
+            text-decoration: underline;
+    
+            &:visited {
+                color: $primary;
+            }
+    
+            &:hover {
+                color: $primary-light;
+            }
+        }
+    }
+}
