@@ -1,0 +1,34 @@
+<div class="form-group">
+    <label for="driving-licence-type">
+        <div class="label-title">Driving licence type</div>
+    </label>
+    <input id="driving-licence-type" list="licences" class="form-control" />
+    <datalist id="licences">
+        <select>
+            <option value="A" />
+            <option value="B" />
+            <option value="C" />
+            <option value="D" />
+            <option value="F" />
+            <option value="R" />
+        </select>
+    </datalist>
+</div>
+
+<div class="form-group">
+    <label for="driving-licence-type-2">
+        <div class="label-title">Driving licence type</div>
+        <div class="label-hint">With full descriptions</div>
+    </label>
+    <input id="driving-licence-type-2" list="licences-2" class="form-control" />
+    <datalist id="licences-2">
+        <select>
+            <option value="A" selected>1 year</option>
+            <option value="B">2 year</option>
+            <option value="C">3 year</option>
+            <option value="D">5 year</option>
+            <option value="F">Full licence</option>
+            <option value="R">Revoked licence</option>
+        </select>
+    </datalist>
+</div>

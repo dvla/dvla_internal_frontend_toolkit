@@ -68,9 +68,20 @@ textarea {
     padding: 8px;
 }
 
-input[type="text"] {
+input[type="text"], input[list] {
     height: 40px;
     padding: 0 8px;
+}
+input[list] {
+
+    &::-webkit-calendar-picker-indicator {
+        color: $black;
+    
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+    }
 }
 
 .label-title {
