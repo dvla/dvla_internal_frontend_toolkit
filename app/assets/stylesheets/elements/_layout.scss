@@ -57,44 +57,81 @@ body {
             padding: 0 24px;
         }
     }
-}
 
-#header-float-left {
-    // position: absolute;
-    // left: 2.5em;
-    float: left;
-}
-
-#header-float-right {
-    // position: absolute;
-    // right: 2.5em;
-    float: right;
-}
-
-#header-logo {
-
-    #coat-of-arms {
-        float: left;
-        margin-right: 1.5em;
-        background-image: url('/images/coat-of-arms-logo.svg');
-        background-repeat: no-repeat; 
-        width: 36px;
-        height: 32px;
+    #header-float-left {
+        // position: absolute;
+        // left: 2.5em;
         float: left;
     }
+    
+    #header-float-right {
+        // position: absolute;
+        // right: 2.5em;
+        float: right;
+    }
 
-    a {
-        text-decoration: none;
-        
-        .name {
+    #header-logo {
+    
+        #coat-of-arms {
             float: left;
-            font-size: 28px;
-            line-height: 32px;
-            letter-spacing: 0.8;
-            color: white;
-            font-weight: bold;
+            margin-right: 1.5em;
+            background-image: url('/images/coat-of-arms-logo.svg');
+            background-repeat: no-repeat; 
+            width: 36px;
+            height: 32px;
+            float: left;
+        }
+    
+        a {
+            text-decoration: none;
+            
+            .name {
+                float: left;
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 0.8;
+                color: white;
+                font-weight: bold;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+    
+                &:visited {
+                    color: white;
+                }
+            }
+            .service-name   {
+                display: inline-block;
+                color: white;
+                letter-spacing: 2px;
+                border-left: 2px solid $primary-lighter;
+                vertical-align: bottom;
+                margin-left: 8px;
+                margin-top: 14px;
+                padding: 0 8px;
+                line-height: 12px;
+                font-size: 16px;
+            }
+        }
+    }
 
-            &:hover {
+    #header-application-title {
+        margin-top: 14px;
+        margin-left: 16px;
+        font-size: 17px;
+        line-height: 12px;
+        border-left: 1px solid $primary-light;
+        padding-left: 16px;
+        display: inline-block;
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        a {
+            color: white;
+
+            &:hover, &:focus {
+                color: white;
                 text-decoration: underline;
             }
 
@@ -102,47 +139,35 @@ body {
                 color: white;
             }
         }
-        .service-name   {
-            display: inline-block;
-            color: white;
-            letter-spacing: 2px;
-            border-left: 2px solid $primary-lighter;
-            vertical-align: bottom;
-            margin-left: 8px;
-            margin-top: 14px;
-            padding: 0 8px;
-            line-height: 12px;
+    }
+    
+    #user-account {
+        #user-account-email {
+            line-height: 32px;
             font-size: 16px;
-        }
-    }
-}
-
-#user-account {
-    #user-account-email {
-        line-height: 32px;
-        font-size: 16px;
-        float: right;
-
-        &:after {
-            content: ':';
-        }
-    }
-
-    #logout {
-        margin-left: 24px;
-        line-height: 32px;
-        font-size: 16px;
-        float: right;
-        
-        a {
-            color: white;
-
-            &:hover {
-                text-decoration: none;
+            float: right;
+    
+            &:after {
+                content: ':';
             }
-
-            &:visited {
+        }
+    
+        #logout {
+            margin-left: 24px;
+            line-height: 32px;
+            font-size: 16px;
+            float: right;
+            
+            a {
                 color: white;
+    
+                &:hover {
+                    text-decoration: none;
+                }
+    
+                &:visited {
+                    color: white;
+                }
             }
         }
     }

@@ -11,8 +11,7 @@ module.exports = app
 
 // Set the location of the views file
 var appViews = [
-  path.join(__dirname, '/app/views'),
-  path.join(__dirname, '/vendor/assets/layouts'),
+  path.join(__dirname, '/app/views')
 ]
 
 // Tell nunjucks we are using express to serve the templates within
@@ -28,6 +27,7 @@ app.engine('html', nunjucks.render);
 app.set('view engine', 'html')
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')))
+app.use('/favicon.ico', express.static(path.join(__dirname, '/public/images/favicon.ico')))
 
 // app.use('/', express.static(path.join(__dirname, '/app/views')))
 app.get('/', (req, res) => {
