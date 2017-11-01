@@ -6,7 +6,7 @@
   "version": "0.3.8",
   "license": "MIT",
   "engines": {
-    "node": ">=8.1.4"
+    "node": "^8.1.4"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
