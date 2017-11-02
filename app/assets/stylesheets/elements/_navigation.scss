@@ -63,12 +63,13 @@
         a {
           padding: 0 32px;
           text-decoration: none;
-          color: $primary;
+          color: $black;
           display: block;
           height: 100%;
 
           &:hover{
               cursor: pointer;
+              color: $primary;
               // text-decoration: underline;
           }
         }
@@ -76,6 +77,10 @@
         &:active, &.active{
             color: $primary;
             border-bottom: 2px solid $primary;
+
+            a {
+                color: $primary;
+            }
         }
     }
   }
@@ -103,20 +108,25 @@
       font-weight: bold;
       height: 40px;
 
-      &:hover {
-        cursor: pointer;
-        background-color: $primary-lightest;
-      }
-
       a {
         padding-left: 40px;
         text-decoration: none;
-        color: $primary;
-        display:block;
-        height:100%;
+        color: $black;
+        display: block;
+        height: 100%;
 
         &:visited{
           text-decoration: none;
+          color: $black;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $primary-lightest;
+        color: $primary;
+
+        a {
           color: $primary;
         }
       }
@@ -127,6 +137,7 @@
         background-color: $primary-lightest;
 
         a {
+          color: $primary;
           padding-left: 32px;
         }
       }
