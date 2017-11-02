@@ -1,4 +1,4 @@
-{% extends "layout-fixed.html" %}
+{% extends "layout-fluid-tabs.html" %}
 
 {% block page_title %} Data {% endblock %}
 
@@ -10,7 +10,7 @@
 <div class="container">
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/">DVLA internal elements</a></li>
+            <li><a href="/styles">Styles</a></li>
             <li>Components</li>
         </ol>
     </div>
@@ -86,4 +86,34 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li class="active"><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% block tabs_left %}
+<ul>
+    <li><a href="/styles/layout">Layout</a></li>
+    <li><a href="/styles/typography">Typography</a></li>
+    <li><a href="/styles/colour">Colour</a></li>
+    <li><a href="/styles/icons-and-images">Icons and images</a></li>
+    <li><a href="/styles/data">Data</a></li>
+    <li><a href="/styles/buttons">Buttons</a></li>
+    <li><a href="/styles/forms">Form elements</a></li>
+    <li><a href="/styles/errors-and-validation">Errors and validation</a></li>
+    <li><a href="/styles/navigation">Navigation</a></li>
+    <li class="active"><a href="/styles/components">Components</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/styles">Styles</a>
 {% endblock %}

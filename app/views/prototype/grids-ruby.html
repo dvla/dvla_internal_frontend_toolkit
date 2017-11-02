@@ -1,14 +1,14 @@
-{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
+{% extends "layout-fluid-tabs.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
 tabs_left %}
 <ul>
     <li>
-        <a href="/examples/prototype/getting-started/">1. Getting started</a>
+        <a href="/prototype/">1. Getting started</a>
     </li>
     <li>
-        <a href="/examples/prototype/layouts-ruby">2. Layouts</a>
+        <a href="/prototype/layouts-ruby">2. Layouts</a>
     </li>
     <li class="active">
-        <a href="/examples/prototype/grids-ruby/">3. Grids</a>
+        <a href="/prototype/grids-ruby/">3. Grids</a>
     </li>
 </ul>
 {% endblock %} {% block head %}
@@ -20,10 +20,7 @@ tabs_left %}
 <div class="breadcrumbs">
     <ol>
         <li>
-            <a href="/">DVLA internal elements</a>
-        </li>
-        <li>
-            <a href="/examples/prototype/getting-started">Prototype kit</a>
+            <a href="/prototype">Prototype</a>
         </li>
         <li>Grids</li>
     </ol>
@@ -63,4 +60,19 @@ tabs_left %}
     </div>
 </div>
 
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li class="active"><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/prototype">Prototype</a>
 {% endblock %}

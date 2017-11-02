@@ -1,4 +1,4 @@
-{% extends "layout-fixed.html" %}
+{% extends "layout-fluid-tabs.html" %}
 
 {% block page_title %}
   Layouts and grids
@@ -9,16 +9,15 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
     <div class="breadcrumbs">
         <ol>
-            <li><a href="/">DVLA internal elements</a></li> 
-            <li>Layouts</li>
+            <li><a href="/styles">Styles</a></li>
+            <li>Layout</li>
         </ol>
     </div>
     <div class="row">
         <div class="col-12">
-            <h1>Layouts</h1>
+            <h1>Layout</h1>
             <ol class="list-numbered">
                 <li><a href="#fixed-container">Fixed container</a></li>
                 <li><a href="#fluid-container">Fluid container</a></li>
@@ -31,8 +30,6 @@
             <h2 id="fluid-container" class="example">Fluid container</h2>
         </div>
     </div>
-</div>
-<div class="container-fluid">
     <div class="row">
         <div class="col-12">
             <div class="example-demo">
@@ -40,13 +37,40 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container">
     <div class="row">
         <div class="col-12">
             <pre class="line-numbers language-markup"><code><xmp>{% include './includes/layouts/fluid-container.html' %}</xmp></code></pre>
         </div>
     </div>
-</div>
 
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li class="active"><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% block tabs_left %}
+<ul>
+    <li class="active"><a href="/styles/layout">Layout</a></li>
+    <li><a href="/styles/typography">Typography</a></li>
+    <li><a href="/styles/colour">Colour</a></li>
+    <li><a href="/styles/icons-and-images">Icons and images</a></li>
+    <li><a href="/styles/data">Data</a></li>
+    <li><a href="/styles/buttons">Buttons</a></li>
+    <li><a href="/styles/forms">Form elements</a></li>
+    <li><a href="/styles/errors-and-validation">Errors and validation</a></li>
+    <li><a href="/styles/navigation">Navigation</a></li>
+    <li><a href="/styles/components">Components</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/styles">Styles</a>
 {% endblock %}

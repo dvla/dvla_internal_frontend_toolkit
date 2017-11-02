@@ -1,15 +1,9 @@
-{% extends "layouts/nunjucks/layout-fluid-tabs-left.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
+{% extends "layout-fluid-tabs.html" %} {% block page_title %} Prototype kit {% endblock %} {% block
 tabs_left %}
 <ul>
-    <li class="active">
-        <a href="/examples/prototype/getting-started/">1. Getting started</a>
-    </li>
-    <li>
-        <a href="/examples/prototype/layouts/">2. Layouts</a>
-    </li>
-    <li>
-        <a href="/examples/prototype/grids/">3. Grids</a>
-    </li>
+    <li class="active"><a href="/prototype/getting-started">Getting started</a></li>
+    <li><a href="/prototype/layouts">Layouts</a></li>
+    <li><a href="/prototype/grids">Grids</a></li>
 </ul>
 {% endblock %} {% block head %}
 <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
@@ -18,17 +12,14 @@ tabs_left %}
 <div class="breadcrumbs">
     <ol>
         <li>
-            <a href="/">DVLA internal elements</a>
+            <a href="/prototype">Prototype</a>
         </li>
-        <li>
-            <a href="/examples/prototype/getting-started">Prototype kit</a>
-        </li>
-        <li>Getting started with Node</li>
+        <li>Getting started</li>
     </ol>
 </div>
 <div class="row">
     <div class="col-12">
-        <h2>Prototype kit</h2>
+        <h2>Getting started</h2>
     </div>
 </div>
 <div class="row">
@@ -201,7 +192,22 @@ README.md</xmp></code></pre>
 </div>
 <div class="row">
     <div class="col-12 btn-pushdown" style="text-align: right;">
-        <a href="/examples/prototype/layouts" class="btn btn-primary">Layouts</a>
+        <a href="/prototype/layouts" class="btn btn-primary">Layouts</a>
     </div>
 </div>
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li class="active"><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/prototype">Prototype</a>
 {% endblock %}

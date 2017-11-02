@@ -1,50 +1,47 @@
-{% extends "layout-fixed.html" %}
+{% extends "layout-fluid-tabs.html" %}
 
 {% block page_title %} Errors and Validation {% endblock %}
 
 {% block head %}
-    {% include "includes/head.html" %}
+{% include "includes/head.html" %}
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="breadcrumbs">
-        <ol>
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/styles">Styles</a></li>
+        <li>Errors and validation</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Errors and validation</h1>
+        <ol class="numbered-list">
             <li>
-                <a href="/">DVLA internal elements</a>
+                <a href="#form-validation">Form validation</a>
+                <ul>
+                    <li><a href="#text-input">Text</a></li>
+                    <li><a href="#radio-input">Radio</a></li>
+                    <li><a href="#checkbox-input">Checkbox</a></li>
+                </ul>
             </li>
-            <li>Errors and validation</li>
+            <li>
+                <a href="#alerts">Alerts &amp; summaries</a>
+                <ul>
+                    <li><a href="#error-summary">Error summary</a></li>
+                    <li><a href="#alert-success">Success alert</a></li>
+                    <li><a href="#alert-info">Info alert</a></li>
+                    <li><a href="#alert-warning">Warning alert</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#prototype-validation">Prototype validation</a>
+            </li>
         </ol>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h1>Errors and validation</h1>
-            <ol class="numbered-list">
-                <li>
-                    <a href="#form-validation">Form validation</a>
-                    <ul>
-                        <li><a href="#text-input">Text</a></li>
-                        <li><a href="#radio-input">Radio</a></li>
-                        <li><a href="#checkbox-input">Checkbox</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#alerts">Alerts &amp; summaries</a>
-                    <ul>
-                        <li><a href="#error-summary">Error summary</a></li>
-                        <li><a href="#alert-success">Success alert</a></li>
-                        <li><a href="#alert-info">Info alert</a></li>
-                        <li><a href="#alert-warning">Warning alert</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#prototype-validation">Prototype validation</a>
-                </li>
-            </ol>
-            <h2 id="form-validation">Form validation</h2>
-            <p>To active the error styling on a form-group, add the
-                <code>.error</code> class to the surrounding element. The specific error should be placed within a
-                <code>.label-error</code> class.</p>
+        <h2 id="form-validation">Form validation</h2>
+        <p>To active the error styling on a form-group, add the
+            <code>.error</code> class to the surrounding element. The specific error should be placed within a
+            <code>.label-error</code> class.</p>
             <h3 id="text-input">Text</h3>
             <div class="example-demo">
                 {% include './includes/errors-and-validation/input/text-error.html' %}
@@ -87,7 +84,36 @@
             <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/warning-alert.html' %}</xmp></code></pre>
         </div>
     </div>
-
+    
     {% include './prototype/includes/validation.html' %}
-</div>
-{% endblock %}
+    {% endblock %}
+    
+    {% block tabs_top %}
+    <ul>
+        <li><a href="/">About</a></li>
+        <li class="active"><a href="/styles">Styles</a></li>
+        <li><a href="/components">Components</a></li>
+        <li><a href="/patterns">Patterns</a></li>
+        <li><a href="/prototype">Prototype</a></li>
+    </ul>
+    {% endblock %}
+    
+    {% block tabs_left %}
+    <ul>
+        <li><a href="/styles/layout">Layout</a></li>
+        <li><a href="/styles/typography">Typography</a></li>
+        <li><a href="/styles/colour">Colour</a></li>
+        <li><a href="/styles/icons-and-images">Icons and images</a></li>
+        <li><a href="/styles/data">Data</a></li>
+        <li><a href="/styles/buttons">Buttons</a></li>
+        <li><a href="/styles/forms">Form elements</a></li>
+        <li class="active"><a href="/styles/errors-and-validation">Errors and validation</a></li>
+        <li><a href="/styles/navigation">Navigation</a></li>
+        <li><a href="/styles/components">Components</a></li>
+    </ul>
+    {% endblock %}
+    
+    {% set show_header_application_title = true %}
+    {% block header_application_title %}
+    <a href="/styles">Styles</a>
+    {% endblock %}

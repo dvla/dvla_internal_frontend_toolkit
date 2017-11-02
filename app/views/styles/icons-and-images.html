@@ -1,0 +1,58 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Icons and Images {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/styles">Styles</a></li>
+        <li>Icons and images</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Icons and images</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="example-demo">
+            {% include './includes/icons/icons.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li class="active"><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% block tabs_left %}
+<ul>
+    <li><a href="/styles/layout">Layout</a></li>
+    <li><a href="/styles/typography">Typography</a></li>
+    <li><a href="/styles/colour">Colour</a></li>
+    <li class="active"><a href="/styles/icons-and-images">Icons and images</a></li>
+    <li><a href="/styles/data">Data</a></li>
+    <li><a href="/styles/buttons">Buttons</a></li>
+    <li><a href="/styles/forms">Form elements</a></li>
+    <li><a href="/styles/errors-and-validation">Errors and validation</a></li>
+    <li><a href="/styles/navigation">Navigation</a></li>
+    <li><a href="/styles/components">Components</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/styles">Styles</a>
+{% endblock %}

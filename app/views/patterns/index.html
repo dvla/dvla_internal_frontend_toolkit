@@ -1,0 +1,36 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Patterns | DVLA internal frontend toolkit {% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Patterns</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li class="active"><a href="/patterns">Patterns</a></li>
+    <li><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% block tabs_left %}
+<ul>
+    
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/patterns">Patterns</a>
+{% endblock %}
