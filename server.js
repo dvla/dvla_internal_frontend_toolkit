@@ -1,6 +1,7 @@
 var path = require('path')
 var express = require('express')
 var nunjucks = require('nunjucks')
+var routes = require('./app/routes.js')
 var app = express()
 var bodyParser = require('body-parser')
 var port = (process.env.PORT || 3000)
@@ -30,37 +31,42 @@ app.set('view engine', 'html')
 app.use('/public', express.static(path.join(__dirname, '/public')))
 app.use('/favicon.ico', express.static(path.join(__dirname, '/public/images/favicon.ico')))
 
-// app.use('/', express.static(path.join(__dirname, '/app/views')))
-app.get('/', (req, res) => {
-  res.render('index.html');
-})
-app.get('/examples/:type/:page', (req, res) => {
-  res.render(`examples/${req.params.type}/${req.params.page}`);
-})
-app.get('/examples/:page', (req, res) => {
-  res.render(`examples/${req.params.page}`);
-})
-app.get('/tacho/:page', (req, res) => {
-  res.render(`tacho/${req.params.page}`);
-})
-app.get('/:page', (req, res) => {
-  res.render(req.params.page);
-})
-// app.get('/examples/typography/:page', (req, res) => {
-//   res.render(`examples/prototype/${req.params.page}`);
-// })
+// routes (found in app/routes.js)
+if (typeof (routes) !== 'function') {
+  console.log(routes.bind)
+  console.log('Warning: the use of bind in routes is deprecated - please check the prototype kit documentation for writing routes.')
+  routes.bind(app)
+} else {
+  app.use('/', routes)
+}
 
-// Support for parsing data in POSTs
-// app.use(bodyParser.json())
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }))
+// Strip .html and .htm if provided
+app.get(/\.html?$/i, function (req, res) {
+  var path = req.path
+  var parts = path.split('.')
+  parts.pop()
+  path = parts.join('.')
+  res.redirect(path)
+});
 
-// // send assetPath to all views
-// app.use(function (req, res, next) {
-//   res.locals.asset_path = '/public/'
-//   next()
-// })
+// Auto render any view that exists
+// App folder routes get priority
+app.get(/^\/([^.]+)$/, function (req, res) {
+  var path = (req.params[0])
+  res.render(path, function (err, html) {
+      if (err) {
+          res.render(path + '/index', function (err2, html) {
+              if (err2) {
+                  res.status(404).send(err + '<br>' + err2)
+              } else {
+                  res.end(html)
+              }
+          })
+      } else {
+          res.end(html)
+      }
+  })
+});
 
 // start the app
 
