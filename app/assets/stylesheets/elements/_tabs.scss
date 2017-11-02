@@ -43,6 +43,7 @@
             height: calc(100% - 1px);
             text-decoration: none;
             padding: 0 24px;
+            color: $black;
 
             &:visited {
                 color: $black;
@@ -96,6 +97,8 @@
             height: calc(100% - 1px);
             text-decoration: none;
             padding: 0 32px;
+
+            color: $black;
 
             &:visited {
                 color: $black;
