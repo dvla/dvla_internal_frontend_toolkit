@@ -7,7 +7,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background: $grey-4;
-    min-height:100%;
+    min-height: 100%;
 }
 
 #global-header {
@@ -41,7 +41,6 @@ body {
     box-sizing: content-box;
 
     #header-contents {
-        clear: both;
         margin: 0 auto;
         width: 944px;
         max-width: calc(100% - 32px);
@@ -55,6 +54,12 @@ body {
         @media screen and (min-width: 1024px) {
             width: 100%;
             padding: 0 24px;
+        }
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     }
 
@@ -71,6 +76,7 @@ body {
     }
 
     #header-logo {
+        display: inline-block;
     
         #coat-of-arms {
             float: left;
@@ -129,6 +135,7 @@ body {
 
         a {
             color: white;
+            text-decoration: none;
 
             &:hover, &:focus {
                 color: white;
@@ -140,9 +147,100 @@ body {
             }
         }
     }
+
+    #header-search {
+        display: inline-block;
+        margin-left: 44px;
+        position: relative;
+        width: 400px;
+        vertical-align: middle;
+
+        input {
+            font-weight: normal;
+            position: fixed;
+            top: 8px;
+            padding-top: 0px;
+            padding-left: 12px;
+            height: 32px;
+            background: $primary-darker;
+            border: none;
+            color: white;
+            width: 400px;
+            // max-width: 300px;
+            font-size: 16px;
+
+            // &::after {
+            //     
+            // }
+
+            &:focus {
+                outline-offset: 0;
+                outline: $focus-colour solid 3px;
+            }
+
+            &::placeholder {
+                color: white;
+                font-size: 16px;
+                font-family: $primary-font;
+                letter-spacing: 0.8px;
+            }
+            
+            &::-webkit-input-placeholder {
+                color: white;
+                font-size: 16px;
+                font-family: $primary-font;
+                letter-spacing: 0.8px;
+            }
+            
+            &::-moz-placeholder {
+                color: white;
+                font-size: 16px;
+                font-family: $primary-font;
+                letter-spacing: 0.8px;
+            }
+            
+            &:-ms-input-placeholder {
+                color: white;
+                font-size: 16px;
+                font-family: $primary-font;
+                letter-spacing: 0.8px;
+            }
+            
+            &:-moz-placeholder {
+                color: white;
+                font-size: 16px;
+                font-family: $primary-font;
+                letter-spacing: 0.8px;
+            }
+        }
+
+        .search-btn {
+        
+            width: 100%;
+            display: block;
+
+            &::after{
+                font-family: $icon-font;
+                content: "\e908";
+                text-align: right;
+                position: relative;
+                float: right;
+                margin-right: 8px;
+                margin-top: -9px;
+                color: white;
+                font-size: 26px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
     
     #user-account {
+
         #user-account-email {
+            font-weight: normal;
             line-height: 32px;
             font-size: 16px;
             float: right;
@@ -153,6 +251,7 @@ body {
         }
     
         #logout {
+            font-weight: normal;
             margin-left: 24px;
             line-height: 32px;
             font-size: 16px;

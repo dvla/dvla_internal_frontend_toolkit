@@ -21,19 +21,47 @@
                         <a href="/" title="Home" id="logo" class="content">
                             <div id="coat-of-arms" alt=""></div>
                             <div class="name">DVLA</div>
-                            <div class="service-name">{% block service_name %}{% endblock %}</div>
                         </a>
+                        {% if show_header_application_title %}
+                        <div id="header-application-title">
+                            {% block header_application_title %}<a href="#" title="Service home">SERVICE</a>{% endblock %}
+                        </div>
+                        {% endif %}
                     </div>
+                    {% if show_header_search %}
+                    <div id="header-search">
+                        {% block header_search %}
+                        <form>
+                            <input type="text" placeholder="Search" />
+                            <span class="search-btn"></span>
+                        </form>
+                        {% endblock %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div id="header-float-right">
+                    {% if show_header_user_account %}
+                    <div id="user-account">
+                        {% block header_user_account %}
+                        <div id="logout">
+                            <a href="#">Log out</a>
+                        </div>
+                        <div id="user-account-email">
+                            demo.email@dvla.gov.uk
+                        </div>
+                        {% endblock %}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
         {% block tabs_top %}
-            <ul>
-                <li>Tab title one</li>
-                <li class="active">Active tab</li>
-                <li>Tab title two</li>
-            </ul>
-        {% endblock %}
+        <ul>
+            <li>Tab title one</li>
+            <li class="active">Active tab</li>
+            <li>Tab title two</li>
+        </ul>
+       {% endblock %}
     </header>
 
     {% block after_header %}

@@ -45,19 +45,33 @@
     display: block;
     width: 100%;
     background-color: $grey-4;
-    line-height: 48px;
+    line-height: 50px;
     margin: 0 auto;
     border-bottom: 1px solid $grey-2;
     box-sizing: border-box;
     
-    li{
+    li {
         display: inline-block;
-        padding: 0 32px;
+        // padding: 0 32px;
         list-style: none;
         font-weight: bold;
+        height: 50px;
 
-        &:hover{
-            cursor: pointer;
+        &:hover {
+          border-bottom: 2px solid $primary-lighter;
+        }
+
+        a {
+          padding: 0 32px;
+          text-decoration: none;
+          color: $primary;
+          display: block;
+          height: 100%;
+
+          &:hover{
+              cursor: pointer;
+              // text-decoration: underline;
+          }
         }
 
         &:active, &.active{
@@ -83,36 +97,44 @@
     padding: 0;
     padding-top: 40px;
 
-    li{
+    li {
       list-style: none;
-      padding-left: 40px;
+      // padding-left: 40px;
       line-height: 40px;
       font-weight: bold;
+      height: 40px;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         background-color: $primary-lightest;
-        text-decoration: underline;
       }
 
-      a{
+      a {
+        padding-left: 40px;
         text-decoration: none;
         color: $primary;
+        display:block;
+        height:100%;
+
         &:visited{
           text-decoration: none;
           color: $primary;
         }
       }
 
-      &:active, &.active{
+      &:active, &.active {
         color: $primary;
         border-left: 8px solid $primary;
-        padding-left: 32px;
         background-color: $primary-lightest;
+
+        a {
+          padding-left: 32px;
+        }
       }
     }
   }
-  &+.container-fluid {
+
+  & + .container-fluid {
     padding-left: 312px;
 
     @media screen and (max-width: 1023px) {

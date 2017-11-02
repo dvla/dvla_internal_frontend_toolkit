@@ -11,7 +11,8 @@ module.exports = app
 
 // Set the location of the views file
 var appViews = [
-  path.join(__dirname, '/app/views')
+  path.join(__dirname, '/app/views'),
+  path.join(__dirname, '/app/views/layouts/nunjucks')
 ]
 
 // Tell nunjucks we are using express to serve the templates within

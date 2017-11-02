@@ -1,4 +1,12 @@
-{% extends "layout.html" %} {% block page_title %} DVLA internal frontend toolkit {% endblock %} {% block content %}
+{% extends "layout-fixed.html" %}
+
+{% block page_title %} DVLA internal frontend toolkit {% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -64,3 +72,7 @@
     </div>
 </div>
 {% endblock %}
+
+{% set show_header_application_title = true %}
+{% set show_header_search = true %}
+{% set show_header_user_account = true %}
