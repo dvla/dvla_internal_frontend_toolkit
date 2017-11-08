@@ -1,0 +1,29 @@
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                Reason for replacement
+            </legend>
+            <div class="multiple-choice">
+                <input id="defaced-destroyed" type="radio" name="replacement-group" value="DD">
+                <label for="defaced-destroyed">Defaced/Destroyed</label>
+            </div>
+            <div class="multiple-choice">
+                <input id="malfunctioned" type="radio" name="replacement-group" value="M">
+                <label for="malfunctioned">Malfunctioned</label>
+            </div>
+            <div class="multiple-choice">
+                <input id="lost-stolen" type="radio" name="replacement-group" value="LS" checked>
+                <label for="lost-stolen">Lost/Stolen</label>
+            </div>
+        </fieldset>
+    </div>
+    <div id="lost-stolen-details" class="form-group">
+        <fieldset class="inset">
+            <label for="amount-received">
+                <div class="label-title">Amount received</div>
+            </label>
+            <input type="text" id="amount-received" class="form-control" />
+        </fieldset>
+    </div>
+</form>
