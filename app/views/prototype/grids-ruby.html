@@ -11,10 +11,11 @@ tabs_left %}
         <a href="/prototype/grids-ruby/">3. Grids</a>
     </li>
 </ul>
-{% endblock %} {% block head %}
-<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
-<script src="/public/javascripts/styleguide/prism.js"></script>
-<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script> {% endblock %} {% block content %}
+{% endblock %}
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+{% block content %}
 
 
 <div class="breadcrumbs">
@@ -74,5 +75,5 @@ tabs_left %}
 
 {% set show_header_application_title = true %}
 {% block header_application_title %}
-<a href="/prototype">Prototype</a>
+<a href="/">frontend toolkit</a>
 {% endblock %}

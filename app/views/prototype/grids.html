@@ -2,24 +2,10 @@
 
 {% block page_title %} Prototype kit {% endblock %}
 
-{% block tabs_left %}
-<ul>
-    <li>
-        <a href="/prototype/getting-started">Getting started</a>
-    </li>
-    <li>
-        <a href="/prototype/layouts">Layouts</a>
-    </li>
-    <li class="active">
-        <a href="/prototype/grids">Grids</a>
-    </li>
-</ul>
-{% endblock %}
-
 {% block head %}
-<link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
-<script src="/public/javascripts/styleguide/prism.js"></script>
-<script src="/public/javascripts/styleguide/prism-line-numbers.js"></script> {% endblock %} {% block content %}
+    {% include "includes/head.html" %}
+{% endblock %}
+{% block content %}
 
 <div class="breadcrumbs">
     <ol>
@@ -49,7 +35,7 @@
 <div class="row">
     <div class="col-12">
         <div class="example-demo">
-            {% include 'styles/includes/layouts/fixed-container.html' %}
+            {% include 'styles/layout/includes/fixed-container.html' %}
         </div>
     </div>
 </div>
@@ -60,7 +46,7 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <pre class="line-numbers language-markup"><code><xmp>{% include "styles/includes/layouts/fixed-container.html" %}</xmp></code></pre>
+        <pre class="line-numbers language-markup"><code><xmp>{% include "styles/layout/includes/fixed-container.html" %}</xmp></code></pre>
     </div>
 </div>
 
@@ -76,7 +62,15 @@
 </ul>
 {% endblock %}
 
+{% block tabs_left %}
+<ul>
+    <li><a href="/prototype/getting-started">Getting started</a></li>
+    <li><a href="/prototype/layouts">Layouts</a></li>
+    <li class="active"><a href="/prototype/grids">Grids</a></li>
+</ul>
+{% endblock %}
+
 {% set show_header_application_title = true %}
 {% block header_application_title %}
-<a href="/prototype">Prototype</a>
+<a href="/">frontend toolkit</a>
 {% endblock %}

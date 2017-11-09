@@ -3,46 +3,43 @@
 {% block page_title %} Prototype kit {% endblock %}
 
 {% block tabs_left %}
-  <ul>
-      <li>
-          <a href="/prototype/getting-started">Getting started</a>
-      </li>
-      <li>
-          <a href="/prototype/layouts">Layouts</a>
-      </li>
-      <li>
-          <a href="/prototype/grids">Grids</a>
-      </li>
-  </ul>
+<ul>
+    <li>
+        <a href="/prototype/getting-started">Getting started</a>
+    </li>
+    <li>
+        <a href="/prototype/layouts">Layouts</a>
+    </li>
+    <li>
+        <a href="/prototype/grids">Grids</a>
+    </li>
+</ul>
 {% endblock %}
 
 {% block head %}
-  <link rel="stylesheet" href="/public/stylesheets/dvla-internal-elements-styles.css" />
-  <script src="/public/javascripts/styleguide/prism.js"></script>
-  <script src="/public/javascripts/styleguide/prism-line-numbers.js"></script>
-  
+{% include "includes/head.html" %}
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-      <div class="col-12">
-          <h1>Prototype</h1>
-          <p class="text-large">Examples and tutorials for putting components and patterns into practice.</p>
-      </div>
-  </div>
-  {% endblock %}
-  
-  {% block tabs_top %}
-  <ul>
-      <li><a href="/">About</a></li>
-      <li><a href="/styles">Styles</a></li>
-      <li><a href="/components">Components</a></li>
-      <li><a href="/patterns">Patterns</a></li>
-      <li class="active"><a href="/prototype">Prototype</a></li>
-  </ul>
-  {% endblock %}
+<div class="row">
+    <div class="col-12">
+        <h1>Prototype</h1>
+        <p class="text-large">Examples and tutorials for putting components and patterns into practice.</p>
+    </div>
+</div>
+{% endblock %}
 
-  {% set show_header_application_title = true %}
-  {% block header_application_title %}
-  <a href="/prototype">Prototype</a>
-  {% endblock %}
+{% block tabs_top %}
+<ul>
+    <li><a href="/">About</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li><a href="/components">Components</a></li>
+    <li><a href="/patterns">Patterns</a></li>
+    <li class="active"><a href="/prototype">Prototype</a></li>
+</ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

@@ -27,13 +27,10 @@
                     <li><a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">DVLA internal prototype kit [Node/Express app]</a></li>
                 </ul>
             </p>
-            <p>For advice on how to use the prototype kit, there is a <a href="">prototype guidance</a> section on this site.</p>
+            <p>For advice on how to use the prototype kit, there is a <a href="/prototype">prototype guidance</a> section on this site.</p>
         </div>
     </div>
 </div>
-
-    
-
 {% endblock %}
 
 {% block tabs_top %}
@@ -44,4 +41,9 @@
     <li><a href="/patterns">Patterns</a></li>
     <li><a href="/prototype">Prototype</a></li>
 </ul>
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
 {% endblock %}
