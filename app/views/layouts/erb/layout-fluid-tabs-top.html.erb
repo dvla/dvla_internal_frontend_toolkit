@@ -21,9 +21,45 @@
                         <a href="/" title="Home" id="logo" class="content">
                             <div id="coat-of-arms" alt=""></div>
                             <div class="name">DVLA</div>
-                            <div class="service-name"><%= yield :service_name %></div>
                         </a>
+                        <% if show_header_application_title %>
+                        <div id="header-application-title">
+                            <% if content_for?(:header_application_title) %>
+                            <%= yield :header_application_title %}
+                            <% else %>
+                            <a href="#" title="Service home">SERVICE</a>
+                            <% end %>
+                        </div>
+                        <% end %>
                     </div>
+                    <% if show_header_search %>
+                    <div id="header-search">
+                        <% if content_for?(:header_search) %>
+                        <%= yield :header_search %>
+                        <% else %>
+                        <form>
+                            <input type="text" placeholder="Search" />
+                            <span class="search-btn"></span>
+                        </form>
+                        <% end %>
+                    </div>
+                    <% end %>
+                </div>
+                <div id="header-float-right">
+                    <% if show_header_user_account %>
+                    <div id="user-account">
+                        <% if content_for?(:header_user_account) %>
+                        <%= yield :header_user_account %>
+                        <% else %>
+                        <div id="logout">
+                            <a href="#">Log out</a>
+                        </div>
+                        <div id="user-account-email">
+                            demo.email@dvla.gov.uk
+                        </div>
+                        <% end %>
+                    </div>
+                    <% end %>
                 </div>
             </div>
         </div>
@@ -31,10 +67,10 @@
             <%= yield :tabs_top %>
         <% else %>
             <ul>
-                <li>Tab title one</li>
-                <li class="active">Tab title two</li>
-                <li>Tab title three</li>
-                <li>Tab title four</li>
+                <li><a href="#">Tab title one</a></li>
+                <li class="active"><a href="#">Tab title two</a></li>
+                <li><a href="#">Tab title three</a></li>
+                <li><a href="#">Tab title four</a></li>
             </ul>
         <% end %>
     </header>
