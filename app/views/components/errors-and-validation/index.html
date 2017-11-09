@@ -9,7 +9,7 @@
 {% block content %}
 <div class="breadcrumbs">
     <ol>
-        <li><a href="/styles">Styles</a></li>
+        <li><a href="/components">Components</a></li>
         <li>Errors and validation</li>
     </ol>
 </div>
@@ -44,19 +44,19 @@
             <code>.label-error</code> class.</p>
             <h3 id="text-input">Text</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/input/text-error.html' %}
+                {% include './includes/input/text-error.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/input/text-error.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/input/text-error.html' %}</xmp></code></pre>
             <h3 id="radio-input">Radio</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/input/radio-error.html' %}
+                {% include './includes/input/radio-error.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/input/radio-error.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/input/radio-error.html' %}</xmp></code></pre>
             <h3 id="checkbox-input">Checkbox</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/input/checkbox-error.html' %}
+                {% include './includes/input/checkbox-error.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/input/checkbox-error.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/input/checkbox-error.html' %}</xmp></code></pre>
         </div>
     </div>
     <div class="row">
@@ -64,24 +64,24 @@
             <h2 id="alerts">Alerts &amp; summaries</h2>
             <h3>Error summary</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/error-summary.html' %}
+                {% include './includes/error-summary.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/error-summary.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/error-summary.html' %}</xmp></code></pre>
             <h3 id="success-alert">Success alert</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/success-alert.html' %}
+                {% include './includes/success-alert.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/success-alert.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/success-alert.html' %}</xmp></code></pre>
             <h3 id="information-alert">Information alert</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/info-alert.html' %}
+                {% include './includes/info-alert.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/info-alert.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/info-alert.html' %}</xmp></code></pre>
             <h3 id="warning-alert">Warning alert</h3>
             <div class="example-demo">
-                {% include './includes/errors-and-validation/warning-alert.html' %}
+                {% include './includes/warning-alert.html' %}
             </div>
-            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/errors-and-validation/warning-alert.html' %}</xmp></code></pre>
+            <pre class="line-numbers language-markup"><code><xmp>{% include './includes/warning-alert.html' %}</xmp></code></pre>
         </div>
     </div>
     
@@ -90,8 +90,8 @@
     {% block tabs_top %}
     <ul>
         <li><a href="/">About</a></li>
-        <li class="active"><a href="/styles">Styles</a></li>
-        <li><a href="/components">Components</a></li>
+        <li><a href="/styles">Styles</a></li>
+        <li class="active"><a href="/components">Components</a></li>
         <li><a href="/patterns">Patterns</a></li>
         <li><a href="/prototype">Prototype</a></li>
     </ul>
@@ -99,20 +99,16 @@
     
     {% block tabs_left %}
     <ul>
-        <li><a href="/styles/layout">Layout</a></li>
-        <li><a href="/styles/typography">Typography</a></li>
-        <li><a href="/styles/colour">Colour</a></li>
-        <li><a href="/styles/icons-and-images">Icons and images</a></li>
-        <li><a href="/styles/data">Data</a></li>
-        <li><a href="/styles/buttons">Buttons</a></li>
-        <li><a href="/styles/forms">Form elements</a></li>
-        <li class="active"><a href="/styles/errors-and-validation">Errors and validation</a></li>
-        <li><a href="/styles/navigation">Navigation</a></li>
-        <li><a href="/styles/components">Components</a></li>
+        <li><a href="/components/buttons">Buttons</a></li>
+        <li><a href="/components/forms">Form elements</a></li>
+        <li class="active"><a href="/components/errors-and-validation">Errors and validation</a></li>
+        <li><a href="/components/navigation">Navigation</a></li>
+        <li><a href="/components/components">Components</a></li>
+        <li><a href="/components/data">Data</a></li>
     </ul>
     {% endblock %}
     
     {% set show_header_application_title = true %}
     {% block header_application_title %}
-    <a href="/styles">Styles</a>
+    <a href="/components">Components</a>
     {% endblock %}

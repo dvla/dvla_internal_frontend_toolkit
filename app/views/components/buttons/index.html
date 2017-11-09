@@ -11,7 +11,7 @@ Buttons
 {% block content %}
 <div class="breadcrumbs">
     <ol>
-        <li><a href="/styles">Styles</a></li>
+        <li><a href="/components">Components</a></li>
         <li>Buttons</li>
     </ol>
 </div>
@@ -38,13 +38,13 @@ Buttons
 <div class="row">
     <div class="col-12">
         <div class="example-demo">
-            {% include './includes/buttons/text.html' %}
+            {% include './includes/text.html' %}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <pre id="text" class="line-numbers language-markup"><code><xmp>{% include './includes/buttons/text.html' %}</xmp></code></pre>
+        <pre id="text" class="line-numbers language-markup"><code><xmp>{% include './includes/text.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">
@@ -55,13 +55,13 @@ Buttons
 <div class="row">
     <div class="col-12">
         <div class="example-demo">
-            {% include './includes/buttons/styles.html' %}
+            {% include './includes/styles.html' %}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <pre id="styles" class="line-numbers language-markup"><code><xmp>{% include './includes/buttons/styles.html' %}</xmp></code></pre>
+        <pre id="styles" class="line-numbers language-markup"><code><xmp>{% include './includes/styles.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">
@@ -72,13 +72,13 @@ Buttons
 <div class="row">
     <div class="col-12">
         <div class="example-demo">
-            {% include './includes/buttons/sizes.html' %}
+            {% include './includes/sizes.html' %}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <pre id="sizes" class="line-numbers language-markup"><code><xmp>{% include './includes/buttons/sizes.html' %}</xmp></code></pre>
+        <pre id="sizes" class="line-numbers language-markup"><code><xmp>{% include './includes/sizes.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">
@@ -89,13 +89,13 @@ Buttons
 <div class="row">
     <div class="col-12">
         <div class="example-demo">
-            {% include './includes/buttons/disabled.html' %}
+            {% include './includes/disabled.html' %}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <pre id="disabled" class="line-numbers language-markup"><code><xmp>{% include './includes/buttons/disabled.html' %}</xmp></code></pre>
+        <pre id="disabled" class="line-numbers language-markup"><code><xmp>{% include './includes/disabled.html' %}</xmp></code></pre>
     </div>
 </div>
 {% endblock %}
@@ -103,8 +103,8 @@ Buttons
 {% block tabs_top %}
 <ul>
     <li><a href="/">About</a></li>
-    <li class="active"><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li class="active"><a href="/components">Components</a></li>
     <li><a href="/patterns">Patterns</a></li>
     <li><a href="/prototype">Prototype</a></li>
 </ul>
@@ -112,20 +112,16 @@ Buttons
 
 {% block tabs_left %}
 <ul>
-    <li><a href="/styles/layout">Layout</a></li>
-    <li><a href="/styles/typography">Typography</a></li>
-    <li><a href="/styles/colour">Colour</a></li>
-    <li><a href="/styles/icons-and-images">Icons and images</a></li>
-    <li><a href="/styles/data">Data</a></li>
-    <li  class="active"><a href="/styles/buttons">Buttons</a></li>
-    <li><a href="/styles/forms">Form elements</a></li>
-    <li><a href="/styles/errors-and-validation">Errors and validation</a></li>
-    <li><a href="/styles/navigation">Navigation</a></li>
-    <li><a href="/styles/components">Components</a></li>
+    <li class="active"><a href="/components/buttons">Buttons</a></li>
+    <li><a href="/components/forms">Forms</a></li>
+    <li><a href="/components/errors-and-validation">Errors and validation</a></li>
+    <li><a href="/components/navigation">Navigation</a></li>
+    <li><a href="/components/components">Components</a></li>
+    <li><a href="/components/data">Data</a></li>
 </ul>
 {% endblock %}
 
 {% set show_header_application_title = true %}
 {% block header_application_title %}
-<a href="/styles">Styles</a>
+<a href="/components">Components</a>
 {% endblock %}

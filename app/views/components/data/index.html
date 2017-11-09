@@ -9,7 +9,7 @@
 {% block content %}
 <div class="breadcrumbs">
     <ol>
-        <li><a href="/styles">Styles</a></li>
+        <li><a href="/components">Components</a></li>
         <li>Data</li>
     </ol>
 </div>
@@ -34,12 +34,12 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <div class="example-demo">{% include './includes/data/highlight.html' %}</div>
+        <div class="example-demo">{% include './includes/highlight.html' %}</div>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/data/highlight.html' %}</xmp></code></pre>
+        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/highlight.html' %}</xmp></code></pre>
     </div>
 </div>
 {% endblock %}
@@ -47,8 +47,8 @@
 {% block tabs_top %}
 <ul>
     <li><a href="/">About</a></li>
-    <li class="active"><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
+    <li><a href="/styles">Styles</a></li>
+    <li class="active"><a href="/components">Components</a></li>
     <li><a href="/patterns">Patterns</a></li>
     <li><a href="/prototype">Prototype</a></li>
 </ul>
@@ -56,20 +56,16 @@
 
 {% block tabs_left %}
 <ul>
-    <li><a href="/styles/layout">Layout</a></li>
-    <li><a href="/styles/typography">Typography</a></li>
-    <li><a href="/styles/colour">Colour</a></li>
-    <li><a href="/styles/icons-and-images">Icons and images</a></li>
-    <li class="active"><a href="/styles/data">Data</a></li>
-    <li><a href="/styles/buttons">Buttons</a></li>
-    <li><a href="/styles/forms">Form elements</a></li>
-    <li><a href="/styles/errors-and-validation">Errors and validation</a></li>
-    <li><a href="/styles/navigation">Navigation</a></li>
-    <li><a href="/styles/components">Components</a></li>
+    <li><a href="/components/buttons">Buttons</a></li>
+    <li><a href="/components/forms">Form elements</a></li>
+    <li><a href="/components/errors-and-validation">Errors and validation</a></li>
+    <li><a href="/components/navigation">Navigation</a></li>
+    <li><a href="/components/components">Components</a></li>
+    <li class="active"><a href="/components/data">Data</a></li>
 </ul>
 {% endblock %}
 
 {% set show_header_application_title = true %}
 {% block header_application_title %}
-<a href="/styles">Styles</a>
+<a href="/components">Components</a>
 {% endblock %}
