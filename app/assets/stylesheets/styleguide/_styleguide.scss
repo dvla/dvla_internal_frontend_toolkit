@@ -30,232 +30,232 @@ p.grid-example {
     }
 }
 
-pre.language-markup{
+pre.language-markup {
     border: 2px solid $grey-2;
     // background-color: white !important;
 }
 
-.swatch-wrapper{
+.swatch-wrapper {
     margin: 24px 16px;
     display: inline-block;
     width: 20%;
     text-align: center;
-     span{
+    span {
         display: block;
-        &.variable{
+        &.variable {
             font-style: italic;
         }
-        &.hex{
+        &.hex {
             
         }
     }
-    .swatch{
+    .swatch {
         margin: 8px;
-        margin-left: 33%;
         width: 60px;
         height: 60px;
         border-radius: 100%;
+        display: inline-block;
         
-        &.swatch-primary{
+        &.swatch-primary {
             background-color: $primary;
         }
 
-        &.swatch-primary-dark{
+        &.swatch-primary-dark {
             background-color: $primary-dark;
         }
-        &.swatch-primary-darker{
+        &.swatch-primary-darker {
             background-color: $primary-darker;
         }
-        &.swatch-primary-darkest{
+        &.swatch-primary-darkest {
             background-color: $primary-darkest;
         }
-        &.swatch-primary-light{
+        &.swatch-primary-light {
             background-color: $primary-light;
         }
-        &.swatch-primary-lighter{
+        &.swatch-primary-lighter {
             background-color: $primary-lighter;
         }
-        &.swatch-primary-lightest{
+        &.swatch-primary-lightest {
             background-color: $primary-lightest;
         }
 
 
-        &.swatch-secondary{
+        &.swatch-secondary {
             background-color: $secondary;
         }
-        &.swatch-secondary-dark{
+        &.swatch-secondary-dark {
             background-color: $secondary-dark;
         }
-        &.swatch-secondary-darker{
+        &.swatch-secondary-darker {
             background-color: $secondary-darker;
         }
-        &.swatch-secondary-darkest{
+        &.swatch-secondary-darkest {
             background-color: $secondary-darkest;
         }
-        &.swatch-secondary-light{
+        &.swatch-secondary-light {
             background-color: $secondary-light;
         }
-        &.swatch-secondary-lighter{
+        &.swatch-secondary-lighter {
             background-color: $secondary-lighter;
         }
-        &.swatch-secondary-lightest{
+        &.swatch-secondary-lightest {
             background-color: $secondary-lightest;
         }
-        &.swatch-success{
+        &.swatch-success {
             background-color: $success;
         }
-        &.swatch-success-dark{
+        &.swatch-success-dark {
             background-color: $success-dark;
         }
-        &.swatch-success-darker{
+        &.swatch-success-darker {
             background-color: $success-darker;
         }
-        &.swatch-success-darkest{
+        &.swatch-success-darkest {
             background-color: $success-darkest;
         }
-        &.swatch-success-light{
+        &.swatch-success-light {
             background-color: $success-light;
         }
-        &.swatch-success-lighter{
+        &.swatch-success-lighter {
             background-color: $success-lighter;
         }
-        &.swatch-success-lightest{
+        &.swatch-success-lightest {
             background-color: $success-lightest;
         }
 
-        &.swatch-error{
+        &.swatch-error {
             background-color: $error;
         }
-        &.swatch-error-dark{
+        &.swatch-error-dark {
             background-color: $error-dark;
         }
-        &.swatch-error-darker{
+        &.swatch-error-darker {
             background-color: $error-darker;
         }
-        &.swatch-error-darkest{
+        &.swatch-error-darkest {
             background-color: $error-darkest;
         }
-        &.swatch-error-light{
+        &.swatch-error-light {
             background-color: $error-light;
         }
-        &.swatch-error-lighter{
+        &.swatch-error-lighter {
             background-color: $error-lighter;
         }
-        &.swatch-error-lightest{
+        &.swatch-error-lightest {
             background-color: $error-lightest;
         }
 
-        &.swatch-warning{
+        &.swatch-warning {
             background-color: $warning;
         }        
-        &.swatch-warning-dark{
+        &.swatch-warning-dark {
             background-color: $warning-dark;
         }
-        &.swatch-warning-darker{
+        &.swatch-warning-darker {
             background-color: $warning-darker;
         }
-        &.swatch-warning-darkest{
+        &.swatch-warning-darkest {
             background-color: $warning-darkest;
         }
-        &.swatch-warning-light{
+        &.swatch-warning-light {
             background-color: $warning-light;
         }
-        &.swatch-warning-lighter{
+        &.swatch-warning-lighter {
             background-color: $warning-lighter;
         }
-        &.swatch-warning-lightest{
+        &.swatch-warning-lightest {
             background-color: $warning-lightest;
         }        
         
 
-        &.swatch-text-primary{
+        &.swatch-text-primary {
             background-color: $text-primary-colour;
         }
 
-        &.swatch-text-secondary{
+        &.swatch-text-secondary {
             background-color: $text-secondary-colour;
         }
-        &.swatch-link{
+        &.swatch-link {
             background-color: $link-colour;
         }
-        &.swatch-link-hover{
+        &.swatch-link-hover {
             background-color: $link-hover-colour;
         }
-        &.swatch-focus{
+        &.swatch-focus {
             background-color: $focus-colour;
         }
-        &.swatch-visited{
+        &.swatch-visited {
             background-color: $visited-colour;
         }
-        &.swatch-black{
+        &.swatch-black {
             background-color: $black;
         }
-        &.swatch-grey-1{
+        &.swatch-grey-1 {
             background-color: $grey-1;
         }
-        &.swatch-grey-2{
+        &.swatch-grey-2 {
             background-color: $grey-2;
         }
-        &.swatch-grey-3{
+        &.swatch-grey-3 {
             background-color: $grey-3;
         }
-        &.swatch-grey-4{
+        &.swatch-grey-4 {
             background-color: $grey-4;
         }
-        &.swatch-alpha{
+        &.swatch-alpha {
             background-color: $alpha;
         }
-        &.swatch-beta{
+        &.swatch-beta {
             background-color: $beta;
         }
-        &.swatch-discovery{
+        &.swatch-discovery {
             background-color: $discovery;
         }
-        &.swatch-live{
+        &.swatch-live {
             background-color: $live;
         }
-        &.swatch-gov-uk-blue{
+        &.swatch-gov-uk-blue{ 
             background-color: $gov-uk-blue;
         }
-        &.swatch-mellow-red{
+        &.swatch-mellow-red {
             background-color: $mellow-red;
         }
-        &.swatch-mauve{
+        &.swatch-mauve {
             background-color: $mauve;
         }
-        &.swatch-baby-pink{
+        &.swatch-baby-pink {
             background-color: $baby-pink;
         }
-        &.swatch-green{
+        &.swatch-green {
             background-color: $green;
         }
-        &.swatch-light-blue{
+        &.swatch-light-blue {
             background-color: $light-blue;
         }
-        &.swatch-brown{
+        &.swatch-brown {
             background-color: $brown;
         }                                    
     }
 }
 
-.icon-swatch-wrapper{
+.icon-swatch-wrapper {
     margin: 24px 16px;
     display: inline-block;
     width: 20%;
     text-align: center;
-     span{
+    span {
         display: block;
-        &.code{
+        &.code {
             font-style: italic;
         }
     }
 
-    .swatch{
+    .swatch {
         margin: 8px;
-        margin-left: 33%;
         width: 60px;
         height: 60px;
         border-radius: 100%;
+        display: inline-block;
         // background: $primary-light;
         color: black;
         position: relative;
@@ -265,50 +265,50 @@ pre.language-markup{
         font-size: 24px;
         border: 1px solid $grey-2;
 
-        &.swatch-add::before{
+        &.swatch-add::before {
             content: '\e900';
         }
-        &.swatch-calendar::before{
+        &.swatch-calendar::before {
             content: '\e901';
         }
-        &.swatch-download::before{
+        &.swatch-download::before {
             content: '\e902';
         }
-        &.swatch-info::before{
+        &.swatch-info::before {
             content: '\e903';
         }
-        &.swatch-key::before{
+        &.swatch-key::before {
             content: '\e904';
         }
-        &.swatch-manufacturer::before{
+        &.swatch-manufacturer::before {
             content: '\e905';
         }
-        &.swatch-refresh::before{
+        &.swatch-refresh::before {
             content: '\e906';
         }
-        &.swatch-retrospective-registration::before{
+        &.swatch-retrospective-registration::before {
             content: '\e907';
         }
-        &.swatch-search::before{
+        &.swatch-search::before {
             content: '\e908';
         }
-        &.swatch-tag::before{
+        &.swatch-tag::before {
             content: '\e909';
         }
-        &.swatch-tick::before{
+        &.swatch-tick::before {
             content: '\e90a';
         }
-        &.swatch-user::before{
+        &.swatch-user::before {
             content: '\e90b';
         }
-        &.swatch-warning::before{
+        &.swatch-warning::before {
             content: '\e90c';
         }
     }
 
 }
 
-.btn-pushdown{
+.btn-pushdown {
     margin-top: 8px;
 }
 
