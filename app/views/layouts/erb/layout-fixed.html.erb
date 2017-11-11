@@ -22,48 +22,18 @@
                             <div id="coat-of-arms" alt=""></div>
                             <div class="name">DVLA</div>
                         </a>
-                        <% if show_header_application_title %>
-                        <div id="header-application-title">
-                            <% if content_for?(:header_application_title) %>
-                            <%= yield :header_application_title %>
-                            <% else %>
-                            <a href="#" title="Service home">SERVICE</a>
-                            <% end %>
-                        </div>
-                        <% end %>
+                        <%= yield :header_application_title %>
                     </div>
-                    <% if show_header_search %>
-                    <div id="header-search">
-                        <% if content_for?(:header_search) %>
-                        <%= yield :header_search %>
-                        <% else %>
-                        <form>
-                            <input type="text" placeholder="Search" />
-                            <span class="search-btn"></span>
-                        </form>
-                        <% end %>
-                    </div>
-                    <% end %>
+                    <%= yield :header_search %>
                 </div>
                 <div id="header-float-right">
-                    <% if show_header_user_account %>
-                    <div id="user-account">
-                        <% if content_for?(:header_user_account) %>
-                        <%= yield :header_user_account %>
-                        <% else %>
-                        <div id="logout">
-                            <a href="#">Log out</a>
-                        </div>
-                        <div id="user-account-email">
-                            demo.email@dvla.gov.uk
-                        </div>
-                        <% end %>
-                    </div>
-                    <% end %>
+                    <%= yield :header_user_account %>
                 </div>
             </div>
         </div>
-        <% if show_header_bar %>
+        <% if content_for?(:global_header_bar) %>
+        <%= yield :global_header_bar %>
+        <% else %>
             <div id="global-header-bar"></div>
         <% end %>
     </header>
