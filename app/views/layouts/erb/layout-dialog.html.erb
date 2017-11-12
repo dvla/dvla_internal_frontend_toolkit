@@ -1,5 +1,5 @@
 <%= yield :top_of_page %>
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <title><%= yield :page_title %></title>
@@ -22,12 +22,18 @@
                             <div id="coat-of-arms" alt=""></div>
                             <div class="name">DVLA</div>
                         </a>
-                        <%= yield :header_application_title %>
+                        <div id="header-application-title">
+                            <%= yield :header_application_title %>
+                        </div>
                     </div>
-                    <%= yield :header_search %>
+                    <div id="header-search">
+                        <%= yield :header_search %>
+                    </div>
                 </div>
                 <div id="header-float-right">
-                    <%= yield :header_user_account %>
+                    <div id="user-account">
+                        <%= yield :header_user_account %>
+                    </div>
                 </div>
             </div>
         </div>

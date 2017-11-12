@@ -2,26 +2,26 @@
 
 @font-face {
     font-family: 'Interface';
-    src: url('/fonts/Inter-UI-Regular.woff') format('woff');
+    src: url('#{$fontPath}Inter-UI-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Interface';
-    src: url('/fonts/Inter-UI-Medium.woff') format('woff');
+    src: url('#{$fontPath}Inter-UI-Medium.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Interface';
-    src: url('/fonts/Inter-UI-Bold.woff') format('woff');
+    src: url('#{$fontPath}Inter-UI-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face{
     font-family: 'dvla-icons';
-    src: url('/fonts/dvla-icons.woff') format('woff');
+    src: url('#{$fontPath}dvla-icons.woff') format('woff');
 }
 
 $primary-font: 'Interface', 'Helvetica Neue', Arial, sans-serif;
