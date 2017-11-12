@@ -4,7 +4,7 @@ var nunjucks = require('nunjucks')
 var routes = require('./app/routes.js')
 var app = express()
 var bodyParser = require('body-parser')
-var port = (process.env.PORT || 3000)
+var port = (process.env.PORT || 3333)
 
 module.exports = app
 
@@ -71,5 +71,5 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 // start the app
 
 app.listen(port, function () {
-  console.log('Listening on port ' + port + '   url: http://localhost:' + port)
+  console.log('Listening on port ' + port + '   url: http://localhost:' + port);
 })

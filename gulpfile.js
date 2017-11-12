@@ -37,17 +37,17 @@ gulp.task('build', cb => {
 gulp.task('styles', () => {
   return gulp.src(paths.assetsScss + '**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(base64({
-      baseDir: 'app/assets',
-      extensions: ['svg', 'png', 'woff'],
-      maxImageSize: 200 * (1024 * 1024),
-      debug: false
-    }))
+    // .pipe(base64({
+    //   baseDir: 'app/assets',
+    //   extensions: ['svg', 'png', 'woff'],
+    //   maxImageSize: 200 * (1024 * 1024),
+    //   debug: false
+    // }))
     .pipe(gulp.dest(paths.publicCss))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.publicCss))
-    .pipe(gulp.dest(paths.assetsScss))
+    // .pipe(gulp.dest(paths.assetsScss))
 })
 
 // Images build task ---------------------
