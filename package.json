@@ -27,7 +27,6 @@
   "scripts": {
     "pretest": "npm run lint --silent",
     "test": "standard && gulp test",
-    "postinstall": "gulp build",
     "start": "gulp develop"
   },
   "standard": {
