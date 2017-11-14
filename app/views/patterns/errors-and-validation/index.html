@@ -9,7 +9,7 @@
 {% block content %}
 <div class="breadcrumbs">
     <ol>
-        <li><a href="/components">Components</a></li>
+        <li><a href="/patterns">Patterns</a></li>
         <li>Errors and validation</li>
     </ol>
 </div>
@@ -89,12 +89,12 @@
     
     {% import "includes/macros/top-nav.html" as top_nav %}
     {% block tabs_top %}
-    {{ top_nav.set('Components') }}
+    {{ top_nav.set('Patterns') }}
     {% endblock %}
     
     {% import "includes/macros/left-nav.html" as left_nav %}
     {% block tabs_left %}
-    {{ left_nav.set('Components', 'Errors and validation') }}
+    {{ left_nav.set('Patterns', 'Errors and validation') }}
     {% endblock %}
 
     {% set show_header_application_title = true %}

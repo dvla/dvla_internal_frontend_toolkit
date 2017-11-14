@@ -1,0 +1,62 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Aside {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Aside</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Aside</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol class="numbered-list">
+            <li><a href="#info">Information</a></li>
+            <li><a href="#info-with-panel">Information (with panel)</a></li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+        <div class="col-12">
+            <h2 id="info-with-panel">Information</h2>
+            <div class="example-demo">
+                {% include './includes/info.html' %}
+            </div>
+            <pre><code class="language-markup"><xmp>{% include './includes/info.html' %}</xmp></code></pre>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="info-with-panel">Information (with panel)</h2>
+        <div class="example-demo">
+            {% include './includes/info-panel.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/info-panel.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Aside') }}
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Lists and tables {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Lists and tables</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Lists and tables</h1>
+        <ol>
+          <li><a href="#list">List</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#queue">Queue</a></li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="list">List</h2>
+        <div class="example-demo">
+            {% include './includes/list.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/list.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="table">Table</h2>
+        <div class="example-demo">
+            {% include './includes/table.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/table.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="queue">Queue</h2>
+        <div class="example-demo">
+            {% include './includes/tacho.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/tacho.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Lists and tables') }}
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

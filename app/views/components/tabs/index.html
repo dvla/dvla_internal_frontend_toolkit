@@ -1,0 +1,104 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Tabs {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Tabs</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Tabs</h1>
+        <ol class="numbered-list">
+            <li><a href="#in-page">In-page</a>
+                <ul>
+                    <li><a href="#page-tabs">Tabs</a></li>
+                    <li><a href="#page-subtabs">Subtabs</a></li>
+                </ul>
+            </li>
+            <li><a href="#navigation">Navigation</a>
+                <ul>
+                    <li><a href="#top-nav">Top</a></li>
+                    <li><a href="#left-nav">Left</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="in-page">In-page</h2>
+        <h3 id="page-tabs">Tabs</h3>
+        <div class="example-demo">
+            {% include './includes/tabs.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/tabs.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="page-subtabs">Subtabs</h3>
+        <div class="example-demo">
+            {% include './includes/subtabs.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/subtabs.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+        <div class="col-12">
+            <h2 id="navigation">Navigation</h2>
+            <h3>Top</h3>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-12">
+        <div id="tabs" class="example-demo">
+            {% include './includes/top-nav.html' %}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre><code class="language-markup"><xmp>{% include './includes/top-nav.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3>Left</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="sidebar" class="example-demo">
+            {% include './includes/side-nav.html' %}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre><code class="language-markup"><xmp>{% include './includes/side-nav.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Tabs') }}
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}
