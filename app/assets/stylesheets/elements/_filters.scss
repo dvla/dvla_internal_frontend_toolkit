@@ -1,0 +1,48 @@
+.filter {
+    margin-right: 16px;
+
+    .filter-header {
+        border-bottom: 1px solid $grey-2;
+
+        .filter-title {
+            font-weight: bold;
+            font-size: 24px;
+            color: $black;
+            margin-bottom: 6px;
+        }
+    }
+    .filter-group {
+        border-bottom: 1px solid $grey-2;
+        padding: 28px 0 20px 0;
+
+        legend {
+            font-weight: bold;
+            font-size: 24px;
+            color: $black;
+            margin-bottom: 16px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        input {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .filter-footer {
+        padding-top: 16px;
+
+        .btn {
+            margin-bottom: 20px;
+            display: block;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

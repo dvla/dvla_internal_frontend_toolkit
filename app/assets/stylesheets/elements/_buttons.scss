@@ -23,18 +23,30 @@
     @include button();
     font-size: 15px;
     padding: 8px 14px;
+
+    &.btn-link {
+        padding: 8px 0;
+    }
 }
 
 .btn-sml {
     @include button();
     font-size: 14px;
     padding: 6.5px 12px;
+
+    &.btn-link {
+        padding: 6.5px 0;
+    }
 }
 
 .btn-lrg {
     @include button();
     font-size: 16px;
     padding: 10px 16px;
+
+    &.btn-link {
+        padding: 10px 0;
+    }
 }
 
 .btn-primary {
@@ -76,6 +88,45 @@
 
     &:visited {
         color: $primary;
+    }
+}
+
+.btn-tertiary {
+    color: white;
+    background: $secondary;
+    border-bottom: 2px solid $secondary-darkest;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background: $secondary-dark;
+        color: white;
+
+        &:disabled {
+            background: $secondary;
+        }
+    }
+
+    &:visited {
+        color: white;
+    }
+}
+
+.btn-link {
+    color: $link-colour;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    &:visited {
+        color: $visited-colour;
+    }
+    &:hover {
+        color: $link-hover-colour;
+    }
+    &:focus {
+        outline: 3px solid $focus-colour;
+        background: $focus-colour;
     }
 }
 

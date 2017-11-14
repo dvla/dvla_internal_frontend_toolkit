@@ -1,0 +1,60 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Filters {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Filters</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Filters</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol class="numbered-list">
+            <li>
+                <a href="#filter">Filter</a>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="filter">Filter</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="example-demo">{% include './includes/filter.html' %}</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/filter.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Filters') }}
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}
