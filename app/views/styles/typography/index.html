@@ -96,23 +96,14 @@ Typography
 </div>
 {% endblock %}
 
+{% import "includes/macros/top-nav.html" as top_nav %}
 {% block tabs_top %}
-<ul>
-    <li><a href="/">About</a></li>
-    <li class="active"><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
-    <li><a href="/patterns">Patterns</a></li>
-    <li><a href="/prototype">Prototype</a></li>
-</ul>
+{{ top_nav.set('Styles') }}
 {% endblock %}
 
+{% import "includes/macros/left-nav.html" as left_nav %}
 {% block tabs_left %}
-<ul>
-    <li><a href="/styles/layout">Layout</a></li>
-    <li class="active"><a href="/styles/typography">Typography</a></li>
-    <li><a href="/styles/colour">Colour</a></li>
-    <li><a href="/styles/icons-and-images">Icons and images</a></li>
-</ul>
+{{ left_nav.set('Styles', 'Typography') }}
 {% endblock %}
 
 {% set show_header_application_title = true %}

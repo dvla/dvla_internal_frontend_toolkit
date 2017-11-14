@@ -33,14 +33,9 @@
 </div>
 {% endblock %}
 
+{% import "includes/macros/top-nav.html" as top_nav %}
 {% block tabs_top %}
-<ul>
-    <li class="active"><a href="/about">About</a></li>
-    <li><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
-    <li><a href="/patterns">Patterns</a></li>
-    <li><a href="/prototype">Prototype</a></li>
-</ul>
+{{ top_nav.set('About') }}
 {% endblock %}
 
 {% set show_header_application_title = true %}

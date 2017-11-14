@@ -15,20 +15,14 @@
 </div>
 {% endblock %}
 
+{% import "includes/macros/top-nav.html" as top_nav %}
 {% block tabs_top %}
-<ul>
-    <li><a href="/">About</a></li>
-    <li><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
-    <li class="active"><a href="/patterns">Patterns</a></li>
-    <li><a href="/prototype">Prototype</a></li>
-</ul>
+{{ top_nav.set('Patterns') }}
 {% endblock %}
 
+{% import "includes/macros/left-nav.html" as left_nav %}
 {% block tabs_left %}
-<ul>
-    
-</ul>
+{{ left_nav.set('Patterns') }}
 {% endblock %}
 
 {% set show_header_application_title = true %}

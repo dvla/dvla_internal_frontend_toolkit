@@ -87,25 +87,14 @@
     
     {% endblock %}
     
+    {% import "includes/macros/top-nav.html" as top_nav %}
     {% block tabs_top %}
-    <ul>
-        <li><a href="/">About</a></li>
-        <li><a href="/styles">Styles</a></li>
-        <li class="active"><a href="/components">Components</a></li>
-        <li><a href="/patterns">Patterns</a></li>
-        <li><a href="/prototype">Prototype</a></li>
-    </ul>
+    {{ top_nav.set('Components') }}
     {% endblock %}
     
+    {% import "includes/macros/left-nav.html" as left_nav %}
     {% block tabs_left %}
-    <ul>
-        <li><a href="/components/buttons">Buttons</a></li>
-        <li><a href="/components/forms">Forms</a></li>
-        <li class="active"><a href="/components/errors-and-validation">Errors and validation</a></li>
-        <li><a href="/components/navigation">Navigation</a></li>
-        <li><a href="/components/components">Components</a></li>
-        <li><a href="/components/data-visualisation">Data visualisation</a></li>
-    </ul>
+    {{ left_nav.set('Components', 'Errors and validation') }}
     {% endblock %}
 
     {% set show_header_application_title = true %}

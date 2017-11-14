@@ -1,0 +1,9 @@
+{% macro set(active) %}
+<ul>
+    <li class="{{'active' if (active == 'About')}}"><a href="/">About</a></li>
+    <li class="{{'active' if (active == 'Styles')}}"><a href="/styles">Styles</a></li>
+    <li class="{{'active' if (active == 'Components')}}"><a href="/components">Components</a></li>
+    <li class="{{'active' if (active == 'Patterns')}}"><a href="/patterns">Patterns</a></li>
+    <li class="{{'active' if (active == 'Prototype')}}"><a href="/prototype">Prototype</a></li>
+</ul>
+{% endmacro %}

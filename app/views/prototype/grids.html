@@ -52,22 +52,14 @@
 
 {% endblock %}
 
+{% import "includes/macros/top-nav.html" as top_nav %}
 {% block tabs_top %}
-<ul>
-    <li><a href="/">About</a></li>
-    <li><a href="/styles">Styles</a></li>
-    <li><a href="/components">Components</a></li>
-    <li><a href="/patterns">Patterns</a></li>
-    <li class="active"><a href="/prototype">Prototype</a></li>
-</ul>
+{{ top_nav.set('Prototype') }}
 {% endblock %}
 
+{% import "includes/macros/left-nav.html" as left_nav %}
 {% block tabs_left %}
-<ul>
-    <li><a href="/prototype/getting-started">Getting started</a></li>
-    <li><a href="/prototype/layouts">Layouts</a></li>
-    <li class="active"><a href="/prototype/grids">Grids</a></li>
-</ul>
+{{ left_nav.set('Prototype', 'Grids') }}
 {% endblock %}
 
 {% set show_header_application_title = true %}

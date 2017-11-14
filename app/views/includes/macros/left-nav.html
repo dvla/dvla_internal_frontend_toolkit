@@ -1,0 +1,26 @@
+{% macro set(section, active) %}
+{% if section === 'Styles' %}
+<ul>
+  <li class="{{'active' if (active == 'Layout')}}"><a href="/styles/layout">Layout</a></li>
+  <li class="{{'active' if (active == 'Typography')}}"><a href="/styles/typography">Typography</a></li>
+  <li class="{{'active' if (active == 'Colour')}}"><a href="/styles/colour">Colour</a></li>
+  <li class="{{'active' if (active == 'Icons and images')}}"><a href="/styles/icons-and-images">Icons and images</a></li>
+</ul>
+{% elif section === 'Components' %}
+<ul>
+  <li class="{{'active' if (active == 'Buttons')}}"><a href="/components/buttons">Buttons</a></li>
+  <li class="{{'active' if (active == 'Forms')}}"><a href="/components/forms">Forms</a></li>
+  <li class="{{'active' if (active == 'Errors and validation')}}"><a href="/components/errors-and-validation">Errors and validation</a></li>
+  <li class="{{'active' if (active == 'Navigation')}}"><a href="/components/navigation">Navigation</a></li>
+  <li class="{{'active' if (active == 'Components')}}"><a href="/components/components">Components</a></li>
+  <li class="{{'active' if (active == 'Data visualisation')}}"><a href="/components/data-visualisation">Data visualisation</a></li>
+</ul>
+{% elif section === 'Patterns' %}
+{% elif section === 'Prototype' %}
+<ul>
+  <li class="{{'active' if (active == 'Getting started')}}"><a href="/prototype/getting-started">Getting started</a></li>
+  <li class="{{'active' if (active == 'Layouts')}}"><a href="/prototype/layouts">Layouts</a></li>
+  <li class="{{'active' if (active == 'Grids')}}"><a href="/prototype/grids">Grids</a></li>
+</ul>
+{% endif %}
+{% endmacro %}
