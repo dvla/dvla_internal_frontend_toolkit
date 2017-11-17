@@ -46,6 +46,46 @@
     &.input-group-3-4 {
         width: 75%;
     }
+
+    .input-group-addon {
+        padding: 0.3rem .75rem 0 .75em;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $primary;
+        text-align: center;
+        background-color: white;
+        border: 2px solid $grey-1;
+        border-radius: 0;
+    }
+
+    .input-group-btn {
+        position: relative;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        font-size: 0;
+        white-space: nowrap;
+        z-index: 2;
+    }
+    
+    .input-group-btn>.btn {
+        position: relative;
+    }
+    
+    .input-group-btn:not(:last-child)>.btn,
+    .input-group-btn:not(:last-child)>.btn-group,
+    .input-group-addon:not(:last-child),
+    .input-group-addon:not(:last-child) {
+        margin-right: -2px;
+    }
+    
+    .input-group-btn:not(:first-child)>.btn-group:first-child,
+    .input-group-btn:not(:first-child)>.btn:first-child,
+    .input-group-addon:not(:first-child),
+    .input-group-addon:not(:first-child) {
+        margin-left: -2px;
+    }
 }
 
 .input-group .form-control, .input-group-btn {
@@ -53,27 +93,6 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.input-group-btn {
-    position: relative;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    font-size: 0;
-    white-space: nowrap;
-    z-index: 2;
-}
-
-.input-group-btn>.btn {
-    position: relative;
-}
-
-.input-group-btn:not(:last-child)>.btn, .input-group-btn:not(:last-child)>.btn-group {
-    margin-right: -2px;
-}
-
-.input-group-btn:not(:first-child)>.btn-group:first-child, .input-group-btn:not(:first-child)>.btn:first-child {
-    margin-left: -2px;
 }
 
 .form-control {
@@ -86,6 +105,7 @@
     border-radius: 0;
     color: $black;
     font-size: 18px;
+    font-family: "Interface", "Helvetica Neue", Arial, sans-serif;
     
     &:focus {
         outline-offset: 0;
