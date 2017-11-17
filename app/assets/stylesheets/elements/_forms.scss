@@ -526,22 +526,28 @@ legend {
     }
 }
 
-.file-upload{
+.file-upload {
     height: 120px;
     background-color: $grey-4;
     border: 2px dashed $grey-2;
     text-align: center;
     border-radius: 10px;
-    &:before{
+    width: 100%;
+
+    &::-webkit-file-upload-button {
+        display: none;
+    }
+
+    &:before {
         display: block;
         content: 'Drag and drop';
         line-height: 22px;
         margin-top: 32px;
         font-size: 22px;
-        
+        text-align: center;
     }
     
-    &:after{
+    &:after {
         content: 'or choose a file to upload';
         display: block;
         line-height: 16px;
@@ -549,9 +555,17 @@ legend {
         text-decoration: underline;
         color: $link-colour;
         margin-top: 8px;
+        text-align: center;
     }
 
-    &:hover{
+    &:focus{
+        -webkit-box-shadow: 0 0 0 3px $focus-colour;
+        -moz-box-shadow: 0 0 0 3px $focus-colour;
+        box-shadow: 0 0 0 3px $focus-colour;
+        outline: none;
+    }
+
+    &:hover {
         cursor: pointer;
     }
 }
