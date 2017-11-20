@@ -1,0 +1,84 @@
+{% extends "layout-fluid-tabs.html" %}
+
+{% block page_title %} Modals {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Modals</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Modals</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol class="numbered-list">
+            <li><a href="#dialog">Dialog</a></li>
+            <li><a href="#small">Small</a></li>
+            <li><a href="#medium">Medium</a></li>
+            <li><a href="#large">Large</a></li>
+            <li><a href="#header-and-footer">Header and footer</a></li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="dialog">Dialog</h3>
+        <p>Modal dialogs can be used for alerts and confirmations. They are the only modal that does not have scroll overflow. Instead, the dialog has a flexible height.</p>
+        <div class="example-demo">{% include './includes/dialog.html' %}</div>
+        <pre><code class="language-markup"><xmp>{% include './includes/dialog.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="small">Small</h3>
+        <div class="example-demo">{% include './includes/small.html' %}</div>
+        <pre><code class="language-markup"><xmp>{% include './includes/small.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="medium">Medium</h3>
+        <div class="example-demo">{% include './includes/medium.html' %}</div>
+        <pre><code class="language-markup"><xmp>{% include './includes/medium.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="large">Large</h3>
+        <div class="example-demo">{% include './includes/large.html' %}</div>
+        <pre><code class="language-markup"><xmp>{% include './includes/large.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h3 id="header-and-footer">Header and footer</h3>
+        <div class="example-demo">{% include './includes/header-and-footer.html' %}</div>
+        <pre><code class="language-markup"><xmp>{% include './includes/header-and-footer.html' %}</xmp></code></pre>
+    </div>
+</div>
+
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Modals') }}
+{% endblock %}
+
+{% set show_header_application_title = true %}
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

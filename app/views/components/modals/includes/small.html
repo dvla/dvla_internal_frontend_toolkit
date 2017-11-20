@@ -1,0 +1,54 @@
+<div id="small-container" class="modal-container">
+    <div class="modal-small">
+        <div class="modal-content">
+            <h3 class="margin-top-0 margin-bottom-2">Create a user</h3>
+            <div class="form-group">
+                <label for="driving-licence-number">
+                    <div class="label-title">First name</div>
+                </label>
+                <input type="text" id="driving-licence-number" class="form-control form-control-3-4" />
+                <label for="driving-licence-number">
+                    <div class="label-title">Last name</div>
+                </label>
+                <input type="text" id="driving-licence-number" class="form-control form-control-3-4" />
+            </div>
+            <div class="form-group inline">
+                <fieldset>
+                    <legend>
+                        System access
+                    </legend>
+                    <div class="toggle-switch">
+                        <input id="toggle4" type="checkbox" name="checkbox-group-4" />
+                        <label for="toggle4">D90</label>
+                    </div>
+                    <div class="toggle-switch">
+                        <input id="toggle5" type="checkbox" name="checkbox-group-4" />
+                        <label for="toggle5">VSS</label>
+                    </div>
+                    <div class="toggle-switch">
+                        <input id="toggle6" type="checkbox" name="checkbox-group-4" />
+                        <label for="toggle6">CASP</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="modal-footer text-left">
+            <button id="create-small" class="btn btn-primary">Create user</button>
+            <button id="cancel-small" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- For demonstration (using jQuery) -->
+<button id="show-small" class="btn btn-secondary">Show small modal</button>
+<script>
+    $('#show-small').click(function() {
+        $('#small-container').show();
+    });
+    $('.modal-small').click(function(e) {
+        e.stopPropagation(); // Stop parent clicks
+    });
+    $('#create-small, #cancel-small, #small-container').click(function() {
+        $('#small-container').hide();
+    });
+</script>

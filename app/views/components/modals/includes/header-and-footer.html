@@ -1,0 +1,31 @@
+<div id="header-and-footer-container" class="modal-container">
+    <div class="modal-small">
+        <div class="modal-header">
+            Terms & conditions
+        </div>
+        <div class="modal-content">
+            <p class="margin-top-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Nam architecto neque cursus lacus venenatis auctor, erat et, eros tempus justo est parturient commodo, tincidunt metus. Vestibulum tempus. Tellus massa sem netus sed porttitor sed. Metus bibendum leo vivamus non placerat, et varius. Viverra rutrum adipiscing dignissim nibh quam amet, consequat sodales, justo quam auctor orci imperdiet posuere, arcu sit. Ipsum ut magnis quam suspendisse nulla nunc, donec praesent etiam imperdiet, egestas mi, netus felis eget dui lacus varius in. Dolor dapibus felis ac, suspendisse cras aenean, placerat sed neque neque, labore sollicitudin, nec est nec nibh elit mi. Diam sem nunc vel mollis, vivamus nibh elementum congue habitasse nec nonummy. Purus diam in, morbi amet gravida wisi justo, eget mattis curabitur lobortis proin odio elit, turpis erat nullam. Metus at velit curabitur cras vel, platea cras, maecenas nec. Arcu dictumst dui, rutrum a ac in, enim ridiculus quam, amet porta eget consequat, aenean libero sapiente rhoncus.</p>
+            <p>Sed venenatis, aliquam vestibulum risus, integer ac eget at erat proin, vivamus mauris euismod, non elit dolor. Amet massa ut in, dis sodales. Integer pulvinar, eu wisi tempor molestie, sagittis est vehicula nemo turpis, nec et feugiat sed. Laoreet suscipit quisque justo ac urna id, sapien ligula sed ultricies tortor, morbi tellus in feugiat id. Turpis interdum dui euismod commodo orci, aenean in, senectus libero nec mollis, nibh porta cras elementum. Cum egestas nonummy vivamus lobortis, leo augue, eu eros dolor metus quis sollicitudin. Fermentum luctus, augue eu, wisi vestibulum, neque natoque dolor id mauris neque, ridiculus quis et odio quis cras. Ac quam tincidunt vestibulum.</p>
+            <p class="margin-bottom-0">Elementum mollis nibh turpis, nunc nulla sodales aliquam tristique, pharetra condimentum, varius nunc ut non natoque cum, luctus aliquam. Mauris tristique nibh fusce nec. Non mi lorem turpis morbi, aliquam quisque, elit lobortis ipsum quam adipiscing rhoncus, aliquam nullam at. Neque convallis volutpat, est sed consectetuer nullam. Cubilia at porta, urna sed eget arcu et, vitae est ullamcorper lacus a et mauris. Velit purus in in purus porttitor donec, fermentum lectus, ut orci suscipit nostra erat malesuada, tempor vestibulum metus. Potenti in id accumsan, pede dictum consequat nulla, consequat sagittis nunc ut risus nisi nisl, suscipit nibh pellentesque. Nec tempus a, adipiscing ac suspendisse, nulla metus semper.</p>
+        </div>
+        <div class="modal-footer">
+            <button id="confirm-button" class="btn btn-primary">Confirm</button>
+            <button id="cancel-button" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- For demonstration (using jQuery) -->
+<button id="show-header-and-footer" class="btn btn-secondary">Show modal with header and footer</button>
+<script>
+    $('#show-header-and-footer').click(function() {
+        $('#header-and-footer-container').show();
+    });
+    $('.modal-small').click(function(e) {
+        e.stopPropagation(); // Stop parent clicks
+    });
+    $('#confirm-button, #cancel-button, #header-and-footer-container').click(function() {
+        $('#header-and-footer-container').hide();
+    });
+</script>

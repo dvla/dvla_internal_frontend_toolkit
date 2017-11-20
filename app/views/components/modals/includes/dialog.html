@@ -1,0 +1,22 @@
+<div id="dialog-container" class="modal-container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h3 class="margin-top-0 margin-bottom-2">Are you sure you want to remove this?</h3>
+            <span>
+                <button id="ok-dialog" class="btn-lrg btn-primary">Yes, remove it</button>
+                <button id="cancel-dialog" class="btn-lrg btn-secondary">Cancel</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- For demonstration (using jQuery) -->
+<button id="show-dialog" class="btn btn-secondary">Show modal dialog</button>
+<script>
+    $('#show-dialog').click(function() {
+        $('#dialog-container').show();
+    });
+    $('#ok-dialog, #cancel-dialog').click(function() {
+        $('#dialog-container').hide();
+    });
+</script>

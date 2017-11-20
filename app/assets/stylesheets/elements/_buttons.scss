@@ -28,6 +28,10 @@
     &.btn-link {
         padding: 8px 0;
     }
+
+    & + & {
+        margin-left: 8px;
+    }
 }
 
 .btn-sml {
@@ -38,6 +42,10 @@
     &.btn-link {
         padding: 6.5px 0;
     }
+
+    & + & {
+        margin-left: 6.5px;
+    }
 }
 
 .btn-lrg {
@@ -47,6 +55,10 @@
 
     &.btn-link {
         padding: 10px 0;
+    }
+
+    & + & {
+        margin-left: 10px;
     }
 }
 
