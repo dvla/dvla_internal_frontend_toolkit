@@ -94,6 +94,8 @@
   background-color: $grey-4; 
   border-right: 1px solid $grey-2; 
   box-sizing: border-box;
+  overflow-y: scroll;
+  padding-bottom: 120px;
   // margin-top: -8px;
 
   ul {
