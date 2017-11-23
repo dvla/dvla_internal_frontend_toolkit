@@ -16,7 +16,10 @@
     $('#show-dialog').click(function() {
         $('#dialog-container').show();
     });
-    $('#ok-dialog, #cancel-dialog').click(function() {
+    $('.modal-dialog').click(function(e) {
+        e.stopPropagation(); // Stop parent clicks
+    });
+    $('#ok-dialog, #cancel-dialog, #dialog-container').click(function() {
         $('#dialog-container').hide();
     });
 </script>
