@@ -300,10 +300,10 @@ body {
         
         @mixin container() {
             box-sizing: border-box;
-            max-width: calc(100% - 16px);
+            max-width: calc(100% - 32px);
             margin: 0 auto;
             // padding: 0 8px;
-            width: 960px;
+            width: 944px;
             min-height: 1px;
             padding-bottom: 2em;
         }
@@ -346,7 +346,7 @@ body {
         }
         
         .row {
-            // margin: 0 -8px;
+            margin: 0 -8px;
             //clear: both;
             box-sizing: border-box;
             font-size: 0;
