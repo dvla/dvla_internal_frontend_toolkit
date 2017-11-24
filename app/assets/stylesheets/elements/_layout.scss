@@ -296,6 +296,7 @@ body {
             // margin-top: 3em; 
             background: white;
             flex: 1 0;
+            overflow-y: scroll;
         }
         
         @mixin container() {
