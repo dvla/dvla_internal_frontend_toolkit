@@ -1,0 +1,65 @@
+{% verbatim %}{% block top_of_page %}{% endblock %}
+
+<html lang="en">
+    <head>
+        <title>{% block page_title %} {% endblock %}</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8">
+        {% block head %} {% endblock %}
+    </head>
+
+    <body class="{% block body_classes %}{% endblock %}">
+        <script>
+            document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+        </script>
+        {% block body_start %}{% endblock %}
+
+        <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+            <div id="header-wrapper">
+                <div id="header-contents">
+                    <div id="header-float-left">
+                        <div id="header-logo">
+                            <a href="/" title="Home" id="logo" class="content">
+                                <div id="coat-of-arms" alt=""></div>
+                                <div class="name">DVLA</div>
+                            </a>
+                            <div id="header-application-title">
+                                {% block header_application_title %}{% endblock %}
+                            </div>
+                        </div>
+                        <div id="header-search">
+                            {% block header_search %}{% endblock %}
+                        </div>
+                    </div>
+                    <div id="header-float-right">
+                        <div id="user-account">
+                            {% block header_user_account %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block after_header %}{% endblock %}
+
+        <main id="content">
+            <div class="container-dialog">
+                <div class="dialog">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </main>
+
+        {% block after_content %}{% endblock %}
+
+        <footer id="global-footer" class="{% block footer_class %}{% endblock %}">
+            {% block footer %}{% endblock %}
+        </footer>
+
+        {% block after_footer %}{% endblock %}
+    </body>
+
+</html>
+
+{% block bottom_of_page %}{% endblock %}
+{% endverbatim %}

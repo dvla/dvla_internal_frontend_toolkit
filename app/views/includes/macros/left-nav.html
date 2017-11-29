@@ -1,31 +1,40 @@
 {% macro set(section, active) %}
-{% if section === 'Styles' %}
-<ul>
-  <li class="{{'active' if (active == 'Layout')}}"><a href="/styles/layout">Layout</a></li>
-  <li class="{{'active' if (active == 'Typography')}}"><a href="/styles/typography">Typography</a></li>
-  <li class="{{'active' if (active == 'Colour')}}"><a href="/styles/colour">Colour</a></li>
-  <li class="{{'active' if (active == 'Icons and images')}}"><a href="/styles/icons-and-images">Icons and images</a></li>
-</ul>
-{% elif section === 'Components' %}
-<ul>
-  <li class="{{'active' if (active == 'Buttons')}}"><a href="/components/buttons">Buttons</a></li>
-  <li class="{{'active' if (active == 'Forms')}}"><a href="/components/forms">Forms</a></li>
-  <li class="{{'active' if (active == 'Tabs')}}"><a href="/components/tabs">Tabs</a></li>
-  <li class="{{'active' if (active == 'Aside')}}"><a href="/components/aside">Aside</a></li>
-  <li class="{{'active' if (active == 'Filters')}}"><a href="/components/filters">Filters</a></li>
-  <li class="{{'active' if (active == 'Lists and tables')}}"><a href="/components/lists-and-tables">Lists and tables</a></li>
-  <li class="{{'active' if (active == 'Data visualisation')}}"><a href="/components/data-visualisation">Data visualisation</a></li>
-  <li class="{{'active' if (active == 'Modals')}}"><a href="/components/modals">Modals</a></li>
-</ul>
-{% elif section === 'Patterns' %}
-<ul>
-    <li class="{{'active' if (active == 'Errors and validation')}}"><a href="/patterns/errors-and-validation">Errors and validation</a></li>
-</ul>
-{% elif section === 'Prototype' %}
-<ul>
-  <li class="{{'active' if (active == 'Getting started')}}"><a href="/prototype/getting-started">Getting started</a></li>
-  <li class="{{'active' if (active == 'Layouts')}}"><a href="/prototype/layouts">Layouts</a></li>
-  <li class="{{'active' if (active == 'Grids')}}"><a href="/prototype/grids">Grids</a></li>
-</ul>
-{% endif %}
+<div class="side-bar">
+    {% if section === 'Styles' %}
+    <ul>
+        <li class="{{'active' if (active == 'Layout')}}"><a href="/styles/layout">Layout</a></li>
+        <li class="{{'active' if (active == 'Typography')}}"><a href="/styles/typography">Typography</a></li>
+        <li class="{{'active' if (active == 'Colour')}}"><a href="/styles/colour">Colour</a></li>
+        <li class="{{'active' if (active == 'Icons and images')}}"><a href="/styles/icons-and-images">Icons and images</a></li>
+    </ul>
+    {% elif section === 'Templates' %}
+    <ul>
+        <li class="{{'active' if (active == 'Blocks')}}"><a href="/templates/blocks">Block reference</a></li>
+        <li class="{{'active' if (active == 'Dialog')}}"><a href="/templates/dialog">Dialog template</a></li>
+        <li class="{{'active' if (active == 'Fixed')}}"><a href="/templates/fixed">Fixed template</a></li>
+        <li class="{{'active' if (active == 'Fluid')}}"><a href="/templates/fluid">Fluid template</a></li>
+    </ul>
+    {% elif section === 'Components' %}
+    <ul>
+        <li class="{{'active' if (active == 'Buttons')}}"><a href="/components/buttons">Buttons</a></li>
+        <li class="{{'active' if (active == 'Forms')}}"><a href="/components/forms">Forms</a></li>
+        <li class="{{'active' if (active == 'Tabs')}}"><a href="/components/tabs">Tabs</a></li>
+        <li class="{{'active' if (active == 'Aside')}}"><a href="/components/aside">Aside</a></li>
+        <li class="{{'active' if (active == 'Filters')}}"><a href="/components/filters">Filters</a></li>
+        <li class="{{'active' if (active == 'Lists and tables')}}"><a href="/components/lists-and-tables">Lists and tables</a></li>
+        <li class="{{'active' if (active == 'Data visualisation')}}"><a href="/components/data-visualisation">Data visualisation</a></li>
+        <li class="{{'active' if (active == 'Modals')}}"><a href="/components/modals">Modals</a></li>
+    </ul>
+    {% elif section === 'Patterns' %}
+    <ul>
+        <li class="{{'active' if (active == 'Errors and validation')}}"><a href="/patterns/errors-and-validation">Errors and validation</a></li>
+    </ul>
+    {% elif section === 'Prototype' %}
+    <ul>
+        <li class="{{'active' if (active == 'Getting started')}}"><a href="/prototype/getting-started">Getting started</a></li>
+        <li class="{{'active' if (active == 'Layouts')}}"><a href="/prototype/layouts">Layouts</a></li>
+        <li class="{{'active' if (active == 'Grids')}}"><a href="/prototype/grids">Grids</a></li>
+    </ul>
+    {% endif %}
+</div>
 {% endmacro %}

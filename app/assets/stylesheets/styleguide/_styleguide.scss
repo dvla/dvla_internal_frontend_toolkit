@@ -25,6 +25,10 @@ p.grid-example {
         margin-bottom: 16px;
     }
 
+    img {
+        width: 100%;
+    }
+
     .side-bar, #global-header{
         position: static;
     }
@@ -323,3 +327,39 @@ pre.language-markup {
 //     color: white;
 //     background: $primary-light;
 // }
+
+.template-tags {
+    margin-top: 16px;
+
+    .template-tag {
+        background: $secondary;
+        color: white;
+        font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        height: 26px;
+    
+        a {
+            display:block;
+            height: 100%;
+            padding: 6px 8px;
+            color: white;
+            text-decoration: none;
+    
+            &:hover, &:focus {
+                background-color: $secondary-dark;
+                text-decoration: underline;
+            }
+    
+            &:visited {
+                color: white;
+            }
+        }
+    }
+}
+
+h4.black-example-heading {
+    color: $black;
+}

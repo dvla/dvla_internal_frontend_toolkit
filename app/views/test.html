@@ -1,0 +1,42 @@
+{% extends "layout-dialog.html" %}
+
+{% block page_title %} DVLA internal frontend toolkit {% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="margin-bottom-1">API Registration</h1>
+            <p class="margin-bottom-3">To register for the DVLA API, you must provide your contact details.</p>
+            <div class="form-group">
+                <label for="driving-licence-number">
+                    <div class="label-title">First name</div>
+                </label>
+                <input type="text" id="driving-licence-number" class="form-control" />
+
+                <label for="driving-licence-number">
+                    <div class="label-title">Last name</div>
+                </label>
+                <input type="text" id="driving-licence-number" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="driving-licence-number">
+                    <div class="label-title">Email address</div>
+                </label>
+                <input type="text" id="driving-licence-number" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" id="driving-licence-number" class="form-control">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">API</a>
+{% endblock %}

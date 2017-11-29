@@ -1,0 +1,377 @@
+{% extends "layout-fluid.html" %}
+
+{% block page_title %}
+  Layouts and grids
+{% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/templates">Templates</a></li>
+        <li>Block reference</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Block reference</h1>
+        <ol class="list-numbered">
+            <li><a href="#pre-html">Pre-HTML</a>
+                <ul class="list-bulleted">
+                    <li><a href="#top_of_page">top_of_page</a></li>
+                </ul>
+            </li>
+                
+            <li><a href="#Head">Head</a>
+                <ul class="list-bulleted">
+                    <li><a href="#page_title">page_title</a></li>
+                    <li><a href="#head">head</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#body">Body</a>
+                <ul class="list-bulleted">
+                    <li><a href="#body_start">body_start</a></li>
+                    <li><a href="#after_header">after_header</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#header">Header</a>
+                <ul class="list-bulleted">
+                    <li><a href="#header_class">header_class</a></li>
+                    <li><a href="#header_application_title">header_application_title</a></li>
+                    <li><a href="#header_search">header_search</a></li>
+                    <li><a href="#header_user_account">header_user_account</a></li>
+                    <li><a href="#tabs_top">tabs_top</a></li>
+                    <li><a href="#global_header_bar">global_header_bar</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#main">Main</a>
+                <ul class="list-bulleted">
+                    <li><a href="#tabs_left">tabs_left</a></li>
+                    <li><a href="#Content">content</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#Footer">Footer</a>
+                <ul class="list-bulleted">
+                    <li><a href="#footer_class">footer_class</a></li>
+                    <li><a href="#footer">footer</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#post-html">Post-HTML</a>
+                <ul class="list-bulleted">
+                    <li><a href="#bottom_of_page">bottom_of_page</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="pre-html">Pre-HTML</h2>
+        <h3 id="top_of_page">top_of_page</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for placing content before the intial HTML tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/top_of_page/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/top_of_page/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="Head">Head</h2>
+        <h3 id="page_title">page_title</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>The title element of the HTML page.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/page_title/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/page_title/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="head">head</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for placing scripts and stylesheets inside of the <code>&lt;head&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/head/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/head/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="body">Body</h2>
+        <h3 id="body_start">body_start</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for placing content inside of the <code>&lt;body&gt;</code> tag, but before the <code>&lt;header&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/body_start/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/body_start/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="after_header">after_header</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for placing content after the <code>&lt;header&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/after_header/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/after_header/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="header">Header</h2>
+        <h3 id="header_class">header_class</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Add classes to the <code>&lt;header&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_class/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_class/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="header_application_title">header_application_title</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>To insert a clickable, pre-formatted application title into the page header.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_application_title/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_application_title/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="header_search">header_search</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>To place a pre-formatted search box in the header.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_search/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_search/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <code></code>
+        <h3 id="header_user_account">header_user_account</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>To place user account information in the top right of the header.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_user_account/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header_user_account/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="tabs_top">tabs_top</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Add and configure navigation tabs in the header.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/tabs_top/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/tabs_top/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="global_header_bar">global_header_bar</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+        </div>
+        <p>Use this block to overwrite the solid bar which runs the width of the main content body.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/global_header_bar/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/global_header_bar/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="main">Main</h2>
+        <h3 id="tabs_left">tabs_left</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Add and configure navigation tabs in the left pane.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/tabs_left/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/tabs_left/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="Content">content</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Content of the main body.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/content/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/content/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="Footer">Footer</h2>
+        <h3 id="footer_class">footer_class</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Add classes to the <code>&lt;footer&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/footer_class/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/footer_class/nunjucks.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3 id="footer">footer</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for adding content inside of the <code>&lt;footer&gt;</code> tag.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/footer/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/footer/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="post-html">Post-HTML</h2>
+        <h3 id="bottom_of_page">bottom_of_page</h3>
+        <div class="template-tags">
+            <span class="template-tag"><a href="/templates/dialog">Dialog</a></span>
+            <span class="template-tag"><a href="/templates/fixed">Fixed</a></span>
+            <span class="template-tag"><a href="/templates/fluid">Fluid</a></span>
+        </div>
+        <p>Empty block for placing content outside of the <code>&lt;HTML&gt;</code> tag at the end of the page.</p>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">eRuby</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/bottom_of_page/eRuby.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-6">
+        <h4 class="black-example-heading">Nunjucks</h4>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/bottom_of_page/nunjucks.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Templates') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Templates', 'Blocks') }}
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

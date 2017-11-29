@@ -1,4 +1,4 @@
-{% extends "layout-fluid-tabs.html" %}
+{% extends "layout-fluid.html" %}
 
 {% block page_title %} Errors and Validation {% endblock %}
 
@@ -96,8 +96,7 @@
     {% block tabs_left %}
     {{ left_nav.set('Patterns', 'Errors and validation') }}
     {% endblock %}
-
-    {% set show_header_application_title = true %}
+    
     {% block header_application_title %}
     <a href="/">frontend toolkit</a>
     {% endblock %}

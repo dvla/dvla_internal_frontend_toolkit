@@ -1,0 +1,68 @@
+{% extends "layout-fluid.html" %}
+
+{% block page_title %}
+  Layouts and grids
+{% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/templates">Templates</a></li>
+        <li>Dialog template</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Dialog template</h1>
+        <ol class="list-numbered">
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#source">Source</a>
+                <ul class="list-bulleted">
+                    <li><a href="#source-eruby">eRuby</a></li>
+                    <li><a href="#source-nunjucks">Nunjucks</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-9">
+        <h2 id="usage">Usage</h2>
+        <p>The dialog template is generally used for pages with very little content. It can be used for error pages, exit pages, log in, log out and sign up. This template should not be interjected within flows or user joruneys that include other templates.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="example-demo">
+            <img src="/public/images/examples/dialog.png" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2 id="source">Source</h2>
+        <h3 id="source-eruby">eRuby</h2>
+        <pre class="line-numbers language-markup"><code><xmp>{% include 'layouts/erb/layout-dialog.html.erb' %}</xmp></code></pre>
+        <h3 id="source-nunjucks">Nunjucks</h2>
+        <pre class="line-numbers language-markup"><code><xmp>{% include '../includes/nunjucks/layout-dialog.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Templates') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Templates', 'Dialog') }}
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}
