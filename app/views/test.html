@@ -1,0 +1,57 @@
+{% extends "layout-fixed.html" %}
+
+{% block page_title %} 
+About | DVLA internal frontend toolkit 
+{% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-12">
+            <h1>DVLA internal frontend toolkit</h1>
+            <p class="text-large">This frontend toolkit is used in internal DVLA services. It contains the <a href="/styles">styles</a>, <a href="/templates">templates</a>, <a href="/components">components</a> and <a href="/patterns">patterns</a> that developers need to create them.</p>
+            
+            <h2>Using the toolkit</h2>
+            <p>Depending on your development needs, you have a choice of two packages:
+                <ul>
+                    <li><a href="https://www.npmjs.com/package/dvla-internal-frontend-toolkit" target="_blank">dvla-internal-frontend-toolkit [NPM module]</a></li>
+                    <li><a href="https://rubygems.org/gems/dvla_internal_frontend_toolkit" target="_blank">dvla_internal_frontend_toolkit [Ruby gem]</a></li>
+                </ul>
+            </p>
+
+            <h2>Prototyping</h2>
+            <p>The frontend toolkit is also used in the DVLA internal prototype kit. You can download the prototype kit from Github:
+                <ul>
+                    <li><a href="https://github.com/liam-betsworth/dvla_internal_prototype_kit">DVLA internal prototype kit [Node/Express app]</a></li>
+                </ul>
+            </p>
+            <p>For advice on how to use the prototype kit, there is a <a href="/prototype">prototype guidance</a> section on this site.</p>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">test</a>
+{% endblock %}
+
+{% block header_search %}
+<form>
+    <input type="text" placeholder="Search" />
+    <span class="search-btn"></span>
+</form>
+{% endblock %}
+
+{% block header_user_account %}
+    <div id="logout">
+        <a href="#">Log out</a>
+    </div>
+    <div id="user-account-email">
+        demo.email@dvla.gov.uk
+    </div>
+{% endblock %}
+

@@ -80,9 +80,8 @@ body {
         }
         
         #header-logo {
-            display: inline-block;
-            position: absolute;
-            top: 8px;
+            // display: inline-block;
+            float: left;
             
             #coat-of-arms {
                 float: left;
@@ -221,8 +220,7 @@ body {
                     }
                 }
                 
-                .search-btn {
-                    
+                .search-btn {   
                     width: 100%;
                     display: block;
                     
@@ -233,7 +231,7 @@ body {
                         position: relative;
                         float: right;
                         margin-right: 8px;
-                        margin-top: -9px;
+                        margin-top: 4px;
                         color: white;
                         font-size: 26px;
                     }
