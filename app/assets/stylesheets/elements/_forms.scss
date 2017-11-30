@@ -19,7 +19,7 @@
     align-items: stretch;
     width: 100%;
 
-    .form-control {
+    .form-control, .form-control-sml, .form-control-lrg {
         position: relative;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
@@ -95,8 +95,9 @@
     align-items: center;
 }
 
-.form-control {
+@mixin form-control() {
     width: 100%;
+    margin-bottom: 16px;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -104,9 +105,7 @@
     border: 2px solid $grey-1;
     border-radius: 0;
     color: $black;
-    font-size: 18px;
     font-family: "Interface", "Helvetica Neue", Arial, sans-serif;
-    margin-bottom: 16px;
 
     &:last-child {
         margin-bottom: 0;
@@ -142,9 +141,23 @@
     }
 }
 
+.form-control {
+    @include form-control();
+    font-size: 18px;
+}
+
+.form-control-sml {
+    @include form-control();
+    font-size: 14px;
+}
+
+.form-control-lrg {
+    @include form-control();
+    font-size: 24px;
+}
+
 
 select {
-    height: 40px;
     background-color: white;
     background-image: url('#{$imagePath}triangle-caret-down.svg');
     background-repeat: no-repeat;
@@ -164,9 +177,24 @@ textarea {
     padding: 8px;
 }
 
-input[type="text"], input[list] {
+input[type="text"], input[list], select {
     height: 40px;
     padding: 0 8px;
+    
+    &.form-control-sml {
+        height: 32px;
+        padding: 0 6px;
+    }
+
+    &.form-control {
+        height: 40px;
+        padding: 0 8px;
+    }
+
+    &.form-control-lrg {
+        height: 50px;
+        padding: 0 10px;
+    }
 }
 input[list] {
 
