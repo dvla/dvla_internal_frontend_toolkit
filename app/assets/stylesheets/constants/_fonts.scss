@@ -29,3 +29,67 @@ $icon-font: 'dvla-icons';
 
 $normal-font-size: 16px;
 $large-font-size: 20px;
+
+.icon {
+    font-family: $icon-font;
+
+    &.icon-add::before {
+        content: '\e900';
+    }
+
+    &.icon-calendar::before {
+        content: '\e901';
+    }
+
+    &.icon-download::before {
+        content: '\e902';
+    }
+
+    &.icon-info::before {
+        content: '\e903';
+    }
+
+    &.icon-key::before {
+        content: '\e904';
+    }
+
+    &.icon-manufacturer::before {
+        content: '\e905';
+    }
+
+    &.icon-refresh::before {
+        content: '\e906';
+    }
+
+    &.icon-retroreg::before {
+        content: '\e907';
+    }
+
+    &.icon-search::before {
+        content: '\e908';
+    }
+
+    &.icon-tag::before {
+        content: '\e909';
+    }
+
+    &.icon-tick::before {
+        content: '\e90a';
+    }
+
+    &.icon-user::before {
+        content: '\e90b';
+    }
+
+    &.icon-warning::before {
+        content: '\e90c';
+    }
+
+    &.icon-cross::before {
+        content: '\e90d';
+    }
+
+    &.icon-link::before {
+        content: '\e90e';
+    }
+}

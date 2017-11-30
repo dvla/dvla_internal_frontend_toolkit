@@ -296,7 +296,7 @@ body {
             // margin-top: 3em; 
             background: white;
             flex: 1 0;
-            overflow-y: scroll;
+            // overflow-y: scroll;
         }
         
         @mixin container() {
@@ -307,6 +307,7 @@ body {
             width: 944px;
             min-height: 1px;
             padding-bottom: 2em;
+            // position: relative;
         }
         
         .container {

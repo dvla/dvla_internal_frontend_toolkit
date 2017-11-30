@@ -3,11 +3,57 @@ body {
     line-height: 24px;
 }
 
+@mixin anchor() {
+    a {
+        color: $black;
+        position: relative;
+        text-decoration: none;
+        opacity: 0;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            height: 120px;
+            top: -120px;
+            visibility: none;
+        }
+
+        &::after {
+            font-family: $icon-font;
+            font-size: 0.6em;
+            vertical-align: middle;
+            content: '\e90e';
+        }
+
+        &:visited {
+            color: inherit;
+        }
+
+        &:hover, &:focus {
+            outline: none;
+            background: none;
+            opacity: 0.75;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    &:hover, &:focus  {
+        a {
+            opacity: 0.75;
+        }            
+    }
+}
+
 @mixin heading() {
     font-weight: 500;
     color: $primary;
     margin-top: 1.25em;
     margin-bottom: 0.25em;
+
+    @include anchor();
 }
 
 h1, .heading-extra-large {

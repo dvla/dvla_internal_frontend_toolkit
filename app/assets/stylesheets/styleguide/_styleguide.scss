@@ -309,6 +309,12 @@ pre.language-markup {
         &.swatch-warning::before {
             content: '\e90c';
         }
+        &.swatch-cross::before {
+            content: '\e90d';
+        }
+        &.swatch-link::before {
+            content: '\e90e';
+        }
     }
 
 }

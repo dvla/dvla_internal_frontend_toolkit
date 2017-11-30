@@ -19,13 +19,24 @@ Icons and images – Styles | DVLA internal frontend toolkit
     <div class="col-12">
         <h1>Icons and images</h1>
         <ol class="numbered-list">
-            <li><a href="#dvla-icon-font">DVLA icon font</a></li>
+            <li><a href="#dvla-icon-font">DVLA icon font</a>
+                <ul>
+                    <li><a href="#dvla-icon-font-usage">Using the font</a></li>
+                </ul>
+            </li>
         </ol>
-        <h2 id="dvla-icon-font">DVLA icon font</h2>
-        <p>DVLA icons are provided as a font. To access these icons, use <code>font-family: 'dvla-icons';</code> and set <code>content: '\e900';</code> in the <code>:before</code> or <code>:after</code> of your element.</p>
+        <h2>DVLA icon font <a href="#dvla-icon-font" id="dvla-icon-font"></a></h2>
         <div class="example-demo">
             {% include './includes/icons.html' %}
         </div>
+        <h3>Using the font <a href="#dvla-icon-font-usage" id="dvla-icon-font-usage"></a></h3>
+        <p>DVLA icons are provided as the font 'dvla-icons'. All icons are accessible through the use of classes or unicode values. Classes are used by combining the <code>icon</code> class along with the corresponding class for that icon. For example:</p>
+        <div class="example-demo">
+            {% include './includes/icon-usage.html' %}
+        </div>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/icon-usage.html' %}</xmp></code></pre>
+        <p>To access the font directly with unicode, use <code>font-family: 'dvla-icons';</code> or <code>font-family: $icon-font;</code> and set the corresponding <code>content: '';</code> value in the <code>:before</code> or <code>:after</code> of your element.</p>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/icon-usage-unicode.css' %}</xmp></code></pre>
     </div>
 </div>
 {% endblock %}
