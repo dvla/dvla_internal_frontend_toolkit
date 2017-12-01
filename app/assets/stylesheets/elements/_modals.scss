@@ -64,6 +64,22 @@
         display: block;
         flex: 0 0 auto;
         color: $black;
+        position: relative;
+        
+        .modal-header-close{
+            opacity: .5;
+
+            &::before {
+                font-family: 'dvla-icons';
+                content: '\e90d';
+                position: absolute;
+                right: 16px;
+            }
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
     }
 
     .modal-content {
