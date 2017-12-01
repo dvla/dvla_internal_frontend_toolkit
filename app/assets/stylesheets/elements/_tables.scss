@@ -34,6 +34,30 @@ table {
             }
         }
     }
+
+    &.table-sml {
+        thead {
+            th {
+                height: 36px;
+    
+                &:first-child {
+                    padding-left: 12px;
+                }
+            }
+        }
+    
+        tbody {
+            tr {
+                td {
+                    height: 36px;
+    
+                    &:first-child {
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 table.tachonet-queue {

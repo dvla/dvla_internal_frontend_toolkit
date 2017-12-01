@@ -19,9 +19,17 @@ Lists and tables – Components | DVLA internal frontend toolkit
     <div class="col-12">
         <h1>Lists and tables</h1>
         <ol>
-          <li><a href="#list">List</a></li>
-          <li><a href="#table">Table</a></li>
-          <li><a href="#queue">Queue</a></li>
+            <li><a href="#list">List</a>
+                <ul>
+                    <li><a href="#list-compact">Compact list</a></li>
+                </ul>
+            </li>
+            <li><a href="#table">Table</a>
+                <ul>
+                    <li><a href="#table-compact">Compact table</a></li>
+                </ul>
+            </li>
+            <li><a href="#queue">Queue</a></li>
         </ol>
     </div>
 </div>
@@ -29,18 +37,28 @@ Lists and tables – Components | DVLA internal frontend toolkit
     <div class="col-12">
         <h2>List <a href="#list" id="list"></a></h2>
         <div class="example-demo">
-            {% include './includes/list.html' %}
+            {% include './includes/list/index.html' %}
         </div>
-        <pre><code class="language-markup"><xmp>{% include './includes/list.html' %}</xmp></code></pre>
+        <pre><code class="language-markup"><xmp>{% include './includes/list/index.html' %}</xmp></code></pre>
+        <h3>Compact list <a href="#list-compact" id="list-compact"></a></h3>
+        <div class="example-demo">
+            {% include './includes/list/small.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/list/small.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <h2>Table <a href="#table" id="table"></a></h2>
         <div class="example-demo">
-            {% include './includes/table.html' %}
+            {% include './includes/table/index.html' %}
         </div>
-        <pre><code class="language-markup"><xmp>{% include './includes/table.html' %}</xmp></code></pre>
+        <pre><code class="language-markup"><xmp>{% include './includes/table/index.html' %}</xmp></code></pre>
+        <h3>Compact table <a href="#table-compact" id="table-compact"></a></h3>
+        <div class="example-demo">
+            {% include './includes/table/small.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/table/small.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">

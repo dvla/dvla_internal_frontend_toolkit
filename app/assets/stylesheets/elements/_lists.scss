@@ -1,4 +1,4 @@
-.list {
+@mixin list() {
     width: 100%;
     color: $black;
     margin-bottom: 40px;
@@ -6,7 +6,6 @@
     .list-title-row {
         border-bottom: 2px solid $grey-2;
         box-sizing: border-box;
-        height: 40px;
         display: flex;
 
         .list-title {
@@ -35,7 +34,6 @@
     }
 
     .list-row {
-        padding: 16px;
         border-bottom: 1px solid $grey-2;
         font-size: 16px;
         display: flex;
@@ -53,4 +51,29 @@
         
     }
 
+}
+
+.list {
+    @include list();
+
+    .list-title-row {
+        height: 40px;
+    }
+
+    .list-row {
+        padding: 16px;
+    }
+}
+
+.list-sml {
+    @include list();
+
+    .list-title-row {
+        height: 36px;
+    }
+    
+    .list-row {
+        padding: 6px;
+        padding-left: 12px;
+    }
 }
