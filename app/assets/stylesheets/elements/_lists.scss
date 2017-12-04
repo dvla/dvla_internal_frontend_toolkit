@@ -1,7 +1,9 @@
 @mixin list() {
     width: 100%;
     color: $black;
+    margin-top: 0;
     margin-bottom: 40px;
+    padding-left: 0;
 
     .list-title-row {
         border-bottom: 2px solid $grey-2;
@@ -24,15 +26,12 @@
                 &:visited {
                     color: $primary;
                 }
-
                 &:hover {
                     color: $primary-darker;
                 }
             }
         }
-
     }
-
     .list-row {
         border-bottom: 1px solid $grey-2;
         font-size: 16px;
@@ -42,13 +41,12 @@
             min-height: 16px;
             flex: 1 1 50%;
         }
-
+        
         .list-data {
             font-weight: bold;
             min-height: 16px;
             flex: 1 1 50%;
         }
-        
     }
 
 }
