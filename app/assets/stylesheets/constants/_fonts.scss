@@ -92,4 +92,20 @@ $large-font-size: 20px;
     &.icon-link::before {
         content: '\e90e';
     }
+
+    &.icon-caret-up::before {
+        content: '\e90f';
+    }
+    
+    &.icon-caret-right::before {
+        content: '\e910';
+    }
+    
+    &.icon-caret-down::before {
+        content: '\e911';
+    }
+    
+    &.icon-caret-left::before {
+        content: '\e912';
+    }
 }

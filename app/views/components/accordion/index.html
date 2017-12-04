@@ -1,0 +1,61 @@
+{% extends "layout-fluid.html" %}
+
+{% block page_title %}
+Accordion – Components | DVLA internal frontend toolkit
+{% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Accordion</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Accordion</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol class="numbered-list">
+            <li>
+                <a href="#accordion">Accordion</a>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Accordion <a href="#accordion" id="accordion"></a></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="example-demo">{% include './includes/accordion.html' %}</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/accordion.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Accordion') }}
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

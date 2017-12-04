@@ -1,0 +1,86 @@
+<div class="accordion">
+    <div class="accordion-section opened">
+        <button class="accordion-header">
+            <span class="accordion-icon"></span>
+            2 Volkswagen, Golf GTi 24
+        </button>
+        <div class="accordion-content">
+            <table>
+                <thead>
+                    <th>VIN</th>
+                    <th>Retailer</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#">EXAMPLEVIN001</a>
+                        </td>
+                        <td>Harison Motors</td>
+                        <td>Volkswagen</td>
+                        <td>Golf 2.0 TDI</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">EXAMPLEVIN002</a>
+                        </td>
+                        <td>Bob‘s Motors</td>
+                        <td>Audi</td>
+                        <td>A4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="accordion-section closed">
+        <button class="accordion-header">
+            <span class="accordion-icon"></span>
+            15 Volkswagen, Caddy Maxi 1.6 TDI
+        </button>
+        <div class="accordion-content">
+            <table>
+                <thead>
+                    <th>VIN</th>
+                    <th>Retailer</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#">EXAMPLEVIN001</a>
+                        </td>
+                        <td>Harison Motors</td>
+                        <td>Volkswagen</td>
+                        <td>Golf 2.0 TDI</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">EXAMPLEVIN002</a>
+                        </td>
+                        <td>Bob‘s Motors</td>
+                        <td>Audi</td>
+                        <td>A4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- For demonstration (using jQuery) -->
+<script>
+    $('.accordion-header').click(function () {
+        var parent = $(this).parent();
+
+        if (parent.hasClass('opened')) {
+            parent.removeClass('opened');
+            parent.addClass('closed');
+        } else {
+            parent.removeClass('closed');
+            parent.addClass('opened');
+        }
+    });
+</script>

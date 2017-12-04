@@ -1,0 +1,51 @@
+.accordion {
+    .accordion-section {
+        &.opened {
+            .accordion-icon::before {
+                font-family: $icon-font;
+                padding: 0 11px 0 18px;
+                content: '\e911';
+            }
+        }
+        &.closed {
+            .accordion-icon::before {
+                font-family: $icon-font;
+                padding: 0 11px 0 18px;
+                content: '\e910';
+            }
+
+            .accordion-content {
+                display: none;
+            }
+        }
+    }
+
+    .accordion-header {
+        font-family: $primary-font;
+        height: 64px;
+        line-height: 64px;
+        width: 100%;
+        padding: 0;
+        background: $grey-3;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 16px;
+        border-radius: 0;
+        border-width: 0;
+        border-bottom: 2px solid $grey-2;
+
+        &:active, &:focus {
+            outline: 4px solid $focus-colour;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .accordion-content {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+}
