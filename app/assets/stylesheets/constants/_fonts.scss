@@ -108,4 +108,20 @@ $large-font-size: 20px;
     &.icon-caret-left::before {
         content: '\e912';
     }
+    
+    &.icon-chevron-up::before {
+        content: '\e913';
+    }
+    
+    &.icon-chevron-right::before {
+        content: '\e914';
+    }
+    
+    &.icon-chevron-down::before {
+        content: '\e915';
+    }
+    
+    &.icon-chevron-left::before {
+        content: '\e916';
+    }
 }
