@@ -1,3 +1,8 @@
-$assetPath: '';
-$imagePath: $assetPath;
-$fontPath: $assetPath;
+
+@mixin imageAsset($image) {
+  background-image: url(asset-path('#{$image}'));
+}
+
+@mixin fontAsset($font) {
+  src: font-url('#{$font}') format('woff');
+}

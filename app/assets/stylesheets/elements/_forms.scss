@@ -159,7 +159,7 @@
 
 select {
     background-color: white;
-    background-image: url('#{$imagePath}triangle-caret-down.svg');
+    @include imageAsset('triangle-caret-down.svg');
     background-repeat: no-repeat;
     background-size: 28px 12px;
     background-position: right center;
