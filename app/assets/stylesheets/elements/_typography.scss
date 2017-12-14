@@ -156,6 +156,22 @@ ul, ol {
     display: block;
 }
 
+details {
+
+    summary {
+        color: $link-colour;
+        margin-bottom: 16px;
+        
+        &:focus {
+            outline: 3px solid $focus-colour;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
 .important {
     font-weight: bold;
     position: relative;
