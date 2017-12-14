@@ -1,0 +1,70 @@
+{% extends "layout-fluid.html" %}
+
+{% block page_title %}
+Tags – Components | DVLA internal frontend toolkit
+{% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/components">Components</a></li>
+        <li>Tags</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Tags</h1>
+        <ol class="numbered-list">
+            <li><a href="#basic">Basic</a>
+                <ul>
+                    <li><a href="#basic-stretch">Stretch</a></li>
+                </ul>
+            </li>
+            <li><a href="#interactive">Interactive</a></li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Basic <a href="#basic" id="basic"></a></h2>
+        <div class="example-demo">
+            {% include './includes/basic.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/basic.html' %}</xmp></code></pre>
+    </div>
+    <div class="col-12">
+        <h3>Stretch <a href="#basic-stretch" id="basic-stretch"></a></h3>
+        <div class="example-demo">
+            {% include './includes/basic-stretch.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/basic-stretch.html' %}</xmp></code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Interactive <a href="#interactive" id="interactive"></a></h2>
+        <div class="example-demo">
+            {% include './includes/interactive.html' %}
+        </div>
+        <pre><code class="language-markup"><xmp>{% include './includes/interactive.html' %}</xmp></code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Components') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Components', 'Tags') }}
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}

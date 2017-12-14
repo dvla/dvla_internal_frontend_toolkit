@@ -1,0 +1,86 @@
+@mixin tag() {
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+
+  &.orange {
+    border-color: #DD810A;
+    color: #DD810A;
+    background-color: rgba($color: #EA890B, $alpha: 0.15);
+  }
+
+  &.green {
+    border-color: #659600;
+    color: #659600;
+    background-color: rgba($color: #74AD00, $alpha: 0.10);
+  }
+
+  &.grey {
+    border-color: #4A4A4A;
+    color: #4A4A4A;
+    background-color: rgba($color: #9B9B9B, $alpha: 0.15);
+  }
+
+  &.blue {
+    border-color: #2782b7;
+    color: #2782b7;
+    background-color: rgba($color: #599bc1, $alpha: 0.15);
+  }
+
+  &.red {
+    border-color: #DF3034;
+    color: #DF3034;
+    background-color: rgba($color: #ea4a4e, $alpha: 0.15);
+  }
+
+  & + & {
+    margin-left: 16px;
+  }
+
+  &.stretch {
+    display: block;
+    text-align: left;
+  }
+
+  &.stretch + &.stretch {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+.tag-basic {
+  @include tag();
+  border-left-width: 3px;
+  padding: 0 18px;
+
+}
+
+.tag-interactive {
+  @include tag();
+  padding: 0 40px 0 18px;
+
+  .tag-remove {
+    width: 28px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    background-color: rgba($black, 0.05);
+    top: 0;
+    right: 0;
+    text-align: center;
+
+    &::after {
+      font-family: $icon-font;
+      content: '\e90d';
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
