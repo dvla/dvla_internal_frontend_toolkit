@@ -158,6 +158,20 @@
     &.form-control-3-4 {
         width: 75%;
     }
+
+    &.day {
+        width: 44px;
+        margin-right: 8px;
+    }
+
+    &.month {
+        width: 44px;
+        margin-right: 8px;
+    }
+
+    &.year {
+        width: 64px;
+    }
 }
 
 .form-control {
