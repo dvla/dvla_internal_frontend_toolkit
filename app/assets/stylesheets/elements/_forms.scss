@@ -11,11 +11,22 @@
     }
 }
 
-.optional {
+@mixin hint() {
+    font-weight: 400;
+    color: $grey-1;
+}
+
+.hint-optional {
     &::after {
         content: ' (optional)';
-        font-weight: 400;
-        color: $grey-1;
+        @include hint();
+    }
+}
+
+.hint-date {
+    &::after {
+        content: ' (DD/MM/YYYY)';
+        @include hint();
     }
 }
 
