@@ -1,4 +1,4 @@
-.data-highlight{
+.data-highlight {
     background: $primary-light;
     text-align: center;
     color: white;
@@ -16,5 +16,77 @@
     
     .content{
         line-height: 134px;
+    }
+
+    &.light {
+        background: white;
+        height: 64px;
+        border-width: 1px;
+        border-top-width: 3px;
+        border-bottom-width: 2px;
+        border-color: $grey-3;
+        border-style: solid;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        vertical-align: middle;
+
+        .title {
+            display: inline-block;
+            background: white;
+            font-size: 16px;
+            color: $grey-1;
+            font-weight: 400;
+            text-align: right;
+            padding-right: 16px;
+            line-height: 18px;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: left;
+        }
+
+        &.orange {
+            border-top-color: #DD810A;
+
+            .content {
+                color: #DD810A;
+            }
+        }
+    
+        &.green {
+            border-top-color: #659600;
+            
+            .content {
+                color: #659600;
+            }
+        }
+    
+        &.grey {
+            border-top-color: #4A4A4A;
+            
+            .content {
+                color: #4A4A4A;
+            }
+        }
+    
+        &.blue {
+            border-top-color: #2782b7;
+
+            .content {
+                color: #2782b7;
+            }
+        }
+    
+        &.red {
+            border-top-color: #DF3034;
+
+            .content {
+                color: #DF3034;
+            }
+        }
     }
 }

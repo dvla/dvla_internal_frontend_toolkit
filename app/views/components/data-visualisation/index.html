@@ -23,8 +23,11 @@ Data visualisation – Components | DVLA internal frontend toolkit
 <div class="row">
     <div class="col-12">
         <ol class="numbered-list">
-            <li>
-                <a href="#highlight">Highlight</a>
+            <li><a href="#highlight">Highlight</a>
+                <ul>
+                    <li><a href="#highlight-dark">Dark</a></li>
+                    <li><a href="#highlight-light">Light</a></li>
+                </ul>
             </li>
         </ol>
     </div>
@@ -32,16 +35,16 @@ Data visualisation – Components | DVLA internal frontend toolkit
 <div class="row">
     <div class="col-12">
         <h2>Highlight <a href="#highlight" id="highlight"></a></h2>
+        <h3>Dark <a href="#highlight-dark" id="highlight-dark"></a></h3>
+        <div class="example-demo">{% include './includes/highlight-dark.html' %}</div>
+        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/highlight-dark.html' %}</xmp></code></pre>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <div class="example-demo">{% include './includes/highlight.html' %}</div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/highlight.html' %}</xmp></code></pre>
+        <h3>Light <a href="#highlight-light" id="highlight-light"></a></h3>
+        <div class="example-demo">{% include './includes/highlight-light.html' %}</div>
+        <pre><code class="line-numbers language-markup"><xmp>{% include './includes/highlight-light.html' %}</xmp></code></pre>
     </div>
 </div>
 {% endblock %}
