@@ -11,6 +11,14 @@
     }
 }
 
+.optional {
+    &::after {
+        content: ' (optional)';
+        font-weight: 400;
+        color: $grey-1;
+    }
+}
+
 .input-group {
     position: relative;
     display: -ms-flexbox;
