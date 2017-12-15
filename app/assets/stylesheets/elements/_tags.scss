@@ -7,6 +7,7 @@
   font-weight: bold;
   display: inline-block;
   position: relative;
+  margin-right: 16px;
 
   &.orange {
     border-color: #DD810A;
@@ -36,10 +37,6 @@
     border-color: #DF3034;
     color: #DF3034;
     background-color: rgba($color: #ea4a4e, $alpha: 0.15);
-  }
-
-  & + & {
-    margin-left: 16px;
   }
 
   &.stretch {
