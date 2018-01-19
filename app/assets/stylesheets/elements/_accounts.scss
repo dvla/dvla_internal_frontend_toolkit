@@ -1,0 +1,78 @@
+.account-header {
+    margin-bottom: 40px;
+
+    .account-icon {
+        display: inline-block;
+        vertical-align: middle;
+
+        &::before {
+            font-family: 'dvla-icons';
+            color: white;
+            border-radius: 24px;
+            display: inline;
+        }
+        
+        &.account-icon-retailer::before {
+            content: '\e904';
+            font-size: 23px;
+            padding: 12.5px 12.5px;
+            background-color: rgb(0, 167, 207);
+        }
+
+        &.account-icon-manufacturer::before {
+            content: '\e905';
+            font-size: 18px;
+            padding: 15px 15px;
+            background-color: rgb(145, 43, 136);
+        }
+
+        &.account-icon-user::before {
+            content: '\e90b';
+            font-size: 18px;
+            padding: 15px 15px;
+            background-color: rgb(129, 188, 0);
+        }
+    }
+
+    .account-info {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 12px;
+
+        .account-type {
+            font-size: 16px;
+            letter-spacing: 1;
+            color: $grey-1;
+            display: inline;
+            margin-left: -1px;
+        }
+
+        .account-dot {
+            width: 3px;
+            height: 3px;
+            background: $grey-2;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 12px;
+        }
+
+        .account-id {
+            font-size: 14px;
+            letter-spacing: 1;
+            color: $grey-1;
+            display: inline;
+        }
+    }
+
+    .account-name {
+        display: inline-block;
+        font-size: 36px;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: -2px;
+        line-height: 35px;
+    }
+}

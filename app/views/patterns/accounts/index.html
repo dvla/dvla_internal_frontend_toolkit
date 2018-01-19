@@ -1,0 +1,82 @@
+{% extends "layout-fluid.html" %}
+
+{% block page_title %} Accounts – Patterns | DVLA internal frontend toolkit {% endblock %}
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumbs">
+    <ol>
+        <li><a href="/patterns">Patterns</a></li>
+        <li>Accounts</li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1>Accounts</h1>
+        <ol class="numbered-list">
+            <li><a href="#usage">Usage</a></li>
+            <li>
+                <a href="#header">Header</a>
+                <ul>
+                    <li><a href="#header-retailer">Retailer</a></li>
+                    <li><a href="#header-manufacturer">Manufacturer</a></li>
+                    <li><a href="#header-user">User</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Usage <a href="#usage" id="usage"></a></h2>
+        <p>Account patterns should be used when there is a need to display the details of a specific user, retailer or manufacturer account. By following these account patterns, all DVLA services will have common looking accounts. </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Header <a href="#header" id="header"></a></h2>
+        <p>All account pages should begin with a header that clearly and succinctly describes that account. When using account headers, it is suggested that you include the following key bits of information:
+            <ol>
+                <li>An icon that indicates the account type</li>
+                <li>A label that indicates the account type</li>
+                <li>A label that indicates the account ID</li>
+                <li>A large heading that displays the account name</li>
+            </ol>
+            Account headers have been built to be flexible, allowing developers to alter these fields if some are more or less flexible. Here are some examples of account headings for a retailer, manufacturer and user.
+        </p>
+        <h3>Retailer <a href="#header-retailer" id="header-retailer"></a></h3>
+        <div class="example-demo">
+            {% include './includes/header/retailer.html' %}
+        </div>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header/retailer.html' %}</xmp></code></pre>
+        <h3>Manufacturer <a href="#header-manufacturer" id="header-manufacturer"></a></h3>
+        <div class="example-demo">
+            {% include './includes/header/manufacturer.html' %}
+        </div>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header/manufacturer.html' %}</xmp></code></pre>
+        <h3>User <a href="#header-user" id="header-user"></a></h3>
+        <div class="example-demo">
+            {% include './includes/header/user.html' %}
+        </div>
+        <pre class="line-numbers language-markup"><code><xmp>{% include './includes/header/user.html' %}</xmp></code></pre>
+    </div>
+</div>
+
+{% endblock %}
+
+{% import "includes/macros/top-nav.html" as top_nav %}
+{% block tabs_top %}
+{{ top_nav.set('Patterns') }}
+{% endblock %}
+
+{% import "includes/macros/left-nav.html" as left_nav %}
+{% block tabs_left %}
+{{ left_nav.set('Patterns', 'Accounts') }}
+{% endblock %}
+
+{% block header_application_title %}
+<a href="/">frontend toolkit</a>
+{% endblock %}
