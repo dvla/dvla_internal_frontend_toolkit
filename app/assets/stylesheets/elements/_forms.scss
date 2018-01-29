@@ -290,20 +290,20 @@ legend {
         font-size: 24px;
         font-weight: 500;
     }
+}
 
-    .legend-hint {
-        display: block;
-        color: $text-secondary-colour;
-        font-size: 18px;
-        font-weight: normal;
-    }
+.legend-hint {
+    display: block;
+    color: $text-secondary-colour;
+    font-size: 18px;
+    font-weight: normal;
+}
 
-    .legend-error {
-        display: block;
-        color: $error;
-        font-size: 18px;
-        font-weight: bold;
-    }
+.legend-error {
+    display: block;
+    color: $error;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .inline .multiple-choice {
