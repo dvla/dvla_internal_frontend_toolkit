@@ -4,7 +4,7 @@ var nunjucks = require('nunjucks')
 var routes = require('./app/routes.js')
 var app = express()
 var bodyParser = require('body-parser')
-var port = (process.env.PORT || 5000)
+var port = (process.env.PORT || 3333)
 
 module.exports = app
 
