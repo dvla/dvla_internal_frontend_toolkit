@@ -4,17 +4,8 @@
   "repository": "liam-betsworth/dvla_internal_frontend_toolkit",
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
   "version": "2.2.1",
-  "scripts": {
-    "pretest": "npm run lint --silent",
-    "test": "standard && gulp test",
-    "start": "gulp develop"
-  },
   "license": "MIT",
-  "engines": {
-    "node": "^10.15.3",
-    "npm": "^6.4.1"
-  },
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.14.1",
     "del": "^3.0.0",
     "express": "^4.16.2",
@@ -31,7 +22,11 @@
     "nunjucks": "^3.0.0",
     "run-sequence": "^1.2.2"
   },
-  "dependencies": {},
+  "scripts": {
+    "pretest": "npm run lint --silent",
+    "test": "standard && gulp test",
+    "start": "gulp develop"
+  },
   "standard": {
     "ignore": [
       "assets/javascripts/vendor/",
