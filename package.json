@@ -5,6 +5,9 @@
   "homepage": "https://dvla-internal-elements.herokuapp.com/",
   "version": "2.2.1",
   "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
+  },
   "devDependencies": {
     "body-parser": "^1.14.1",
     "del": "^3.0.0",
