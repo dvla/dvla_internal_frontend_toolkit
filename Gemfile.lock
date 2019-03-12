@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dvla_internal_frontend_toolkit (2.1.15)
+    dvla_internal_frontend_toolkit (2.2.0)
       railties (~> 5.1)
 
 GEM
@@ -26,7 +26,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     builder (3.2.3)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     crass (1.0.4)
     erubi (1.8.0)
     i18n (1.6.0)
