@@ -2,7 +2,7 @@
   "name": "dvla-internal-frontend-toolkit",
   "description": "DVLA internal frontend toolkit. Contains assets including styles, elements and layouts.",
   "repository": "liam-betsworth/dvla_internal_frontend_toolkit",
-  "homepage": "https://dvla-internal-elements.herokuapp.com/",
+  "homepage": "https://dvla-internal-frontend-toolkit.herokuapp.com/",
   "version": "2.2.2",
   "license": "MIT",
   "dependencies": {
