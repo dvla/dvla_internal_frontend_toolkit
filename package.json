@@ -26,7 +26,7 @@
     "pretest": "npm run lint --silent",
     "test": "standard && gulp test",
     "start": "gulp develop",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev"
   },
   "standard": {
     "ignore": [
